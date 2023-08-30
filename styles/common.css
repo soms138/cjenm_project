@@ -1,0 +1,138 @@
+header {
+    background-color: aqua;
+    padding: 15px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+}
+header h1 {
+    width: 120px; height: 68.51px;
+}
+header h1 a {display: block;}
+header h1 a img {width: 100%;}
+header .lnb {
+    display: flex;
+    align-items: center;
+}
+header .lnb .lang {
+    background-color: pink;
+    display: flex;
+    align-items: center;
+    margin-right: 50px;
+    z-index: 600;
+}
+header .lnb .lang a {
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    color: rgba(255,255,255,0.5);
+}
+header .lnb .lang a:hover, header .lnb .lang a.active {
+    color: #fff;
+}
+header .lnb .lang a:first-child,header .lnb .lang img {margin-right: 10px;}
+header .lnb .lang img {width: 40px;}
+header .lnb .m_nav {
+    background-color: blue;
+    width: 40px; height: 40px;
+    padding: 10px 5px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    z-index: 600;
+}
+header .lnb .m_nav span {
+    width: 100%; height: 3px;
+    border-radius: 1.5px;
+    background: #fff;
+    transition: all 0.3s;
+}
+/* js 효과 클릭시 transform 활성화 */
+/* header .lnb .m_nav:hover span:nth-child(1) {
+    transform: translateY(8.5px) rotate(45deg);
+}
+header .lnb .m_nav:hover span:nth-child(2) {opacity: 0;}
+header .lnb .m_nav:hover span:nth-child(3) {
+    transform: translateY(-8.5px) rotate(-45deg);
+} */
+header .nav_open {
+    background-color: cadetblue;
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 0 60px;
+    height: 100vh;
+    z-index: 500;
+}
+header .nav_open .nav_wrap {
+    position: absolute;
+    top: 159px;
+}
+/* open nav 폰트 통합 태그 */
+header .nav_open .nav_wrap > li > a,
+header .nav_open .nav_wrap > li > a span,
+header .nav_open .nav_wrap > li > .sub > li > a {color: #fff;}
+header .nav_open .nav_wrap > li > a,
+header .nav_open .nav_wrap > li > a span,
+header .nav_open .nav_wrap > li > .sub > li > a,
+header .nav_open .nav_wrap > li > .sub > li > .sub2 li a {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+}
+header .nav_open .nav_wrap > li > a,
+header .nav_open .nav_wrap > li > a span {font-size: 1.777rem;}
+/* 기본 태그 */
+header .nav_open .nav_wrap > li {}
+header .nav_open .nav_wrap > li > a {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .nav_open .nav_wrap > li > a span {}
+header .nav_open .nav_wrap > li > a img {}
+header .nav_open .nav_wrap > li > .sub {}
+header .nav_open .nav_wrap > li > .sub > li {}
+header .nav_open .nav_wrap > li > .sub > li > a {
+    font-size: 1.333rem;
+}
+header .nav_open .nav_wrap > li > .sub > li > .sub2 {}
+header .nav_open .nav_wrap > li > .sub > li > .sub2 li {}
+header .nav_open .nav_wrap > li > .sub > li > .sub2 li a {color: rgba(255,255,255,0.7);}
+header .nav_open .open_link {
+    position: absolute;
+    bottom: 60px;
+    right: 0;
+}
+header .nav_open .open_link .sns {}
+header .nav_open .open_link .sns a {}
+header .nav_open .open_link .sns a:nth-child(1) {}
+header .nav_open .open_link .sns a:nth-child(2) {}
+header .nav_open .open_link .sns a:nth-child(3) {}
+header .nav_open .open_link .etc {}
+header .nav_open .open_link .etc a {}
+header .nav_open .open_link .etc a span {}
+header .nav_open .open_link .etc a img {}
+footer {}
+footer .fnb_t {}
+footer .fnb_t .t_left {}
+footer .fnb_t .t_left a {}
+footer .fnb_t .t_left span {}
+footer .fnb_t .t_right {}
+footer .fnb_t .t_right a {}
+footer .fnb_t .t_right a:nth-child(1) {}
+footer .fnb_t .t_right a:nth-child(2) {}
+footer .fnb_t .t_right a:nth-child(3) {}
+footer .fnb_mid {}
+footer .fnb_mid .mid_left {}
+footer .fnb_mid .mid_left p {}
+footer .fnb_mid .mid_right {}
+footer .fnb_mid .mid_right .site_btn {}
+footer .fnb_mid .mid_right .site_btn span {}
+footer .fnb_mid .mid_right .site_btn img {}
+footer .fnb_mid .mid_right .site_open {}
+footer .fnb_mid .mid_right .site_open > li {}
+footer .fnb_mid .mid_right .site_open > li .site_sub {}
+footer .fnb_mid .mid_right .site_open > li .site_sub li {}
+footer .fnb_mid .mid_right .site_open > li .site_sub li a {}
