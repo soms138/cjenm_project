@@ -1,5 +1,20 @@
+/* Firefox */
+html {scrollbar-width: 10px;;scrollbar-color: #222 #f1f1f1;}
+/* Opera */
+html::-o-scrollbar {width: 10px;}/*스크롤바 크기*/
+html::-o-scrollbar-thumb {background-color: #222;border-radius: 5px;}/*스크롤 드래그바*/
+html::-o-scrollbar-thumb:hover {background-color: #555;}
+/* Chrome, Safari, Edge 등 웹킷 기반 브라우저 */
+::-webkit-scrollbar {width: 10px;}/*스크롤바 크기*/
+::-webkit-scrollbar-track {box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.3);}/*스크롤바 배경*/
+::-webkit-scrollbar-thumb {background-color: #222;border-radius: 5px;}/*스크롤 드래그바*/
+::-webkit-scrollbar-thumb:hover {background-color: #555;}
+header, main, footer {scroll-behavior: smooth;}
+header,footer {
+    min-width: 320px;
+}
 header {
-    background-color: aqua;
+    background-color: rgba(173, 216, 230,0.5);
     padding: 15px 30px;
     display: flex;
     align-items: center;
@@ -11,14 +26,15 @@ header {
 header h1 {
     width: 120px; height: 68.51px;
 }
-header h1 a {display: block;}
+header h1 a {
+    display: block;
+}
 header h1 a img {width: 100%;}
 header .lnb {
     display: flex;
     align-items: center;
 }
 header .lnb .lang {
-    background-color: pink;
     display: flex;
     align-items: center;
     margin-right: 50px;
@@ -34,7 +50,6 @@ header .lnb .lang a:hover, header .lnb .lang a.active {
 header .lnb .lang a:first-child,header .lnb .lang img {margin-right: 10px;}
 header .lnb .lang img {width: 40px;}
 header .lnb .m_nav {
-    background-color: blue;
     width: 40px; height: 40px;
     padding: 10px 5px;
     display: flex;
@@ -65,6 +80,7 @@ header .nav_open {
     padding: 0 60px;
     height: 100vh;
     z-index: 500;
+    display: none;
 }
 header .nav_open .nav_wrap {
     padding-top: 159px;
@@ -82,6 +98,22 @@ header .nav_open .nav_wrap > li > .sub > li > .sub2 li a {
 }
 header .nav_open .nav_wrap > li > a,
 header .nav_open .nav_wrap > li > a span {font-size: 1.777rem;}
+/* nav hover & active 태그 모음 */
+header .nav_open .nav_wrap > li > a.active {border-bottom: 2px solid #FF9700;}
+header .nav_open .nav_wrap > li > a:hover span,
+header .nav_open .nav_wrap > li > a:hover,
+header .nav_open .nav_wrap > li > a.active span {color: #FF9700;}
+header .nav_open .nav_wrap > li > a.active img {transform: rotate(90deg);}
+header .nav_open .nav_wrap > li > .sub > li > a.active,
+header .nav_open .nav_wrap > li > .sub > li > a:hover {color: #FF9700;}
+header .nav_open .nav_wrap > li > .sub > li > .sub2 li a.active,
+header .nav_open .nav_wrap > li > .sub > li > .sub2 li:hover a {
+    color: #FF9700;
+    background: #fff;
+    border-radius: 50px;
+}
+header .nav_open .open_link .etc a:hover span {color: #006ECD;}
+header .nav_open .open_link .etc a:hover img {transform: rotate(-45deg);}
 /* 기본 태그 */
 header .nav_open .nav_wrap > li {}
 header .nav_open .nav_wrap > li > a {
@@ -89,72 +121,168 @@ header .nav_open .nav_wrap > li > a {
     align-items: center;
     justify-content: space-between;
     padding: 15px 0;
+    transition: all 0.3s linear;
 }
-
-header .nav_open .nav_wrap > li > a span {}
+header .nav_open .nav_wrap > li > a span {transition: all 0.3s linear;}
 header .nav_open .nav_wrap > li > a img {}
 header .nav_open .nav_wrap > li > .sub {
     margin-left: 30px;
 }
-header .nav_open .nav_wrap > li > .sub > li {}
+header .nav_open .nav_wrap > li > .sub > li {display: none;}
 header .nav_open .nav_wrap > li > .sub > li > a {
     display: block;
     font-size: 1.333rem;
     padding: 15px 0;
+    transition: all 0.3s linear;
 }
-header .nav_open .nav_wrap > li > .sub > li > a:hover {
-    color: #006ECD;
-}
-header .nav_open .nav_wrap > li > .sub > li > a.active {}
 header .nav_open .nav_wrap > li > .sub > li > .sub2 {
     margin-left: 30px;
 }
-header .nav_open .nav_wrap > li > .sub > li > .sub2 li {}
+header .nav_open .nav_wrap > li > .sub > li > .sub2 li {display: none;}
 header .nav_open .nav_wrap > li > .sub > li > .sub2 li:last-child {margin-bottom: 0;}
 header .nav_open .nav_wrap > li > .sub > li > .sub2 li a {
     display: block;
     padding: 10px 20px;
     color: rgba(255,255,255,0.7);
-    transition: all 0.3s;
-}
-header .nav_open .nav_wrap > li > .sub > li > .sub2 li:hover a {
-    color: #006ECD;
-    background: #fff;
-    border-radius: 50px;
+    transition: all 0.3s linear;
 }
 header .nav_open .open_link {
     position: absolute;
     bottom: 60px;
-    right: 0;
+    left: 60px;
 }
-header .nav_open .open_link .sns {}
-header .nav_open .open_link .sns a {}
-header .nav_open .open_link .sns a:nth-child(1) {}
-header .nav_open .open_link .sns a:nth-child(2) {}
-header .nav_open .open_link .sns a:nth-child(3) {}
-header .nav_open .open_link .etc {}
-header .nav_open .open_link .etc a {}
-header .nav_open .open_link .etc a span {}
-header .nav_open .open_link .etc a img {}
-footer {}
-footer .fnb_t {}
-footer .fnb_t .t_left {}
-footer .fnb_t .t_left a {}
-footer .fnb_t .t_left span {}
-footer .fnb_t .t_right {}
-footer .fnb_t .t_right a {}
-footer .fnb_t .t_right a:nth-child(1) {}
-footer .fnb_t .t_right a:nth-child(2) {}
-footer .fnb_t .t_right a:nth-child(3) {}
-footer .fnb_mid {}
-footer .fnb_mid .mid_left {}
-footer .fnb_mid .mid_left p {}
-footer .fnb_mid .mid_right {}
-footer .fnb_mid .mid_right .site_btn {}
-footer .fnb_mid .mid_right .site_btn span {}
-footer .fnb_mid .mid_right .site_btn img {}
-footer .fnb_mid .mid_right .site_open {}
-footer .fnb_mid .mid_right .site_open > li {}
-footer .fnb_mid .mid_right .site_open > li .site_sub {}
-footer .fnb_mid .mid_right .site_open > li .site_sub li {}
-footer .fnb_mid .mid_right .site_open > li .site_sub li a {}
+header .nav_open .open_link .sns {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+header .nav_open .open_link .sns a {
+    display: block;
+    width: 20px; height: 20px;
+    text-indent: -9999px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-right: 20px;
+    transition: all 0.3s linear;
+}
+header .nav_open .open_link .sns a:last-child {margin-right: 0;}
+header .nav_open .open_link .sns a:nth-child(1) {background-image: url(../images/icon/ico_youtube_w.png);}
+header .nav_open .open_link .sns a:nth-child(1):hover {background-image: url(../images/icon/ico_youtube.png);}
+header .nav_open .open_link .sns a:nth-child(2) {background-image: url(../images/icon/ico_fb_w.png);}
+header .nav_open .open_link .sns a:nth-child(2):hover {background-image: url(../images/icon/ico_fb.png);}
+header .nav_open .open_link .sns a:nth-child(3) {background-image: url(../images/icon/ico_instargram_w.png);}
+header .nav_open .open_link .sns a:nth-child(3):hover {background-image: url(../images/icon/ico_instargram.png);}
+header .nav_open .open_link .etc {
+    display: flex;
+    flex-flow: column nowrap;
+}
+header .nav_open .open_link .etc a {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+header .nav_open .open_link .etc a span {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    color: #fff;
+    margin-right: 5px;
+    transition: all 0.3s linear;
+}
+header .nav_open .open_link .etc a img {
+    width: 15px; height: 15px;
+    transition: all 0.3s linear;
+}
+footer {background: #f3f3f3;}
+footer .fnb_wrap {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 50px 0;
+    position: relative;
+}
+footer .fnb_t {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+footer .fnb_t .t_left {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+}
+footer .fnb_t .t_left a,
+footer .fnb_t .t_left span {line-height: 30px;}
+footer .fnb_t .t_left a,
+footer .fnb_t .t_left span,
+footer .fnb_btm .btm_left p {letter-spacing: -0.02rem;}
+footer .fnb_t .t_left a:last-child {font-weight: 800;}
+footer .fnb_t .t_left span {margin: 0 10px;}
+footer .fnb_t .t_right {
+    display: flex;
+    align-items: center;
+}
+footer .fnb_t .t_right a {
+    display: block;
+    width: 30px; height: 30px;
+    text-indent: -9999px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-right: 20px;
+    transition: all 0.3s linear;
+}
+footer .fnb_t .t_right a:nth-child(1) {background-image: url(../images/icon/ico_youtube_b.png);}
+footer .fnb_t .t_right a:nth-child(1):hover {background-image: url(../images/icon/ico_youtube.png);}
+footer .fnb_t .t_right a:nth-child(2) {background-image: url(../images/icon/ico_fb_b.png);}
+footer .fnb_t .t_right a:nth-child(2):hover {background-image: url(../images/icon/ico_fb.png);}
+footer .fnb_t .t_right a:nth-child(3) {background-image: url(../images/icon/ico_instargram_b.png);}
+footer .fnb_t .t_right a:nth-child(3):hover {background-image: url(../images/icon/ico_instargram.png);}
+footer .fnb_btm {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+footer .fnb_btm .btm_left {}
+footer .fnb_btm .btm_left p {margin-bottom: 10px;}
+footer .fnb_btm .btm_left p:nth-child(3) {margin-bottom: 30px;}
+footer .fnb_btm .btm_right {}
+footer .fnb_btm .btm_right .site_btn {
+    display: flex;
+    align-items: center;
+}
+footer .fnb_btm .btm_right .site_btn span {
+    margin-right: 10px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+}
+footer .fnb_btm .btm_right .site_btn img {width: 15px; height: 15px;}
+footer .fnb_btm .btm_right .site_open {
+    display: none;
+    position: absolute;
+    z-index: 500;
+    bottom: 190px; right: 0;
+    padding: 20px;
+    background: #fff;
+    filter: drop-shadow(0 3px 5px rgba(0,0,0,0.25));
+    border-radius: 10px;
+    width: 220px;
+    height: 300px;
+    overflow-y: auto;
+}
+footer .fnb_btm .btm_right .site_open > li {}
+footer .fnb_btm .btm_right .site_open > li > .site_sub {}
+footer .fnb_btm .btm_right .site_open > li > .site_sub li {
+    margin-bottom: 7px;
+    letter-spacing: -0.02rem;
+}
+footer .fnb_btm .btm_right .site_open > li > .site_sub li:last-child {margin-bottom: 20px;}
+footer .fnb_btm .btm_right .site_open > li:last-child > .site_sub li:last-child {margin-bottom: 0;}
+footer .fnb_btm .btm_right .site_open > li > .site_sub li:first-child {font-weight: 800;}
+footer .fnb_btm .btm_right .site_open > li:hover > .site_sub li:first-child {color: #FF9700;}
+footer .fnb_btm .btm_right .site_open > li > .site_sub li a {
+    font-size: 0.75rem;
+    letter-spacing: -0.02rem;
+    padding: 3px 0;
+}
+footer .fnb_btm .btm_right .site_open > li > .site_sub li a:hover {border-bottom: 1px solid #000;}

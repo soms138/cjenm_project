@@ -1,0 +1,168 @@
+/* aside */
+aside {}
+aside .bar {}
+aside span.active {}
+/* margin 통합 태그 */
+.news_wrap{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+/* main */
+main {min-width: 320px;}
+/* section 통합 태그 */
+main .section {
+    height: 100vh;
+}
+/* visual */
+main .visual {
+    position: relative;
+}
+main .visual .txt {}
+main .visual .txt > h2 {
+    position: absolute;
+    z-index: 300;
+    bottom: 150px;
+    left: 120px;
+}
+main .visual .txt > h2 > p {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    color: #fff;
+}
+main .visual .txt > h2 p:first-child {
+    font-size: 1.777rem;
+    margin-bottom: 20px;
+}
+main .visual .txt > h2 p:last-child {font-size: 3.75rem;}
+main .visual .txt .txt_box {
+    position: absolute;
+    bottom: 120px;
+    right: 115px;
+    z-index: 300;
+    background: rgba(0,0,0,0.7);
+    padding: 50px;
+    width: 505px;
+}
+main .visual .txt .txt_box p,
+main .visual .txt .txt_box h2 {
+    letter-spacing: -0.02rem;
+    font-weight: 800;
+}
+main .visual .txt .txt_box p,
+main .visual .txt .txt_box h2,
+main .visual .txt .txt_box a {color: #fff;}
+main .visual .txt .txt_box p {}
+main .visual .txt .txt_box p:nth-child(1) {font-size: 1.333rem;}
+main .visual .txt .txt_box h2 {
+    font-size: 1.777rem;
+    margin: 10px 0 35px;
+}
+main .visual .txt .txt_box p:nth-child(3) {font-weight: 400;}
+main .visual .txt .txt_box a {
+    display: block;
+    margin-top: 60px;
+    font-family: 'Inter', sans-serif;
+    text-align: center;
+    padding: 20px 0;
+    width: 150px;
+    border: 1px solid #fff;
+}
+main .visual video {
+    width: auto;
+    position: relative;
+    z-index: 1;
+    left: 50%;
+    transform: translateX(-50%);
+}
+/* contents */
+main .contents {}
+main .contents p {}
+main .contents p img {}
+main .contents p:first-child img {}
+main .contents p:last-child img {}
+main .contents .swiper {}
+main .contents #c_slide {}
+main .contents .swiper .swiper-wrapper {}
+main .contents .swiper .swiper-wrapper .swiper-slide {}
+main .contents .swiper .swiper-wrapper .slide1 {}
+main .contents .swiper .swiper-wrapper .slide2 {}
+main .contents .swiper .swiper-wrapper .slide3 {}
+main .contents .swiper .swiper-wrapper .slide4 {}
+main .contents .swiper .swiper-wrapper .slide5 {}
+main .contents .swiper .swiper-wrapper .slide6 {}
+main .contents .swiper .swiper-wrapper .slide7 {}
+main .contents .swiper .swiper-wrapper .swiper-slide a {}
+main .contents .swiper .swiper-wrapper .swiper-slide a .slide_txt {}
+main .contents .swiper .swiper-wrapper .swiper-slide a .slide_txt .title {}
+main .contents .swiper .swiper-wrapper .swiper-slide a .slide_txt .desc {}
+main .contents .swiper .swiper-wrapper .swiper-slide a .slide_txt .genre {}
+main .contents .swiper .swiper-wrapper .swiper-slide a .slide_txt .genre span {}
+main .contents .more {}
+main .contents .more span {}
+main .contents .more img {}
+/* business 통합태그 */
+main .business {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    position: relative;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+}
+main .business::after {
+    content: '';
+    display: block;
+    height: 100vh;
+    width: 100%;
+    background: rgba(0,0,0,0.6); 
+    position: absolute;
+    left: 0; top: 0;
+    z-index: 10;
+}
+main .business p,
+main .business h2,
+main .business a {
+    color: #fff;
+    position: relative;
+    z-index: 300;
+}
+main .business h2,
+main .business a {
+    font-family: 'Inter', sans-serif;
+}
+main .business p {letter-spacing: -0.02rem;}
+main .business p:nth-child(1) {font-size: 1.333rem;}
+main .business h2 {
+    font-weight: 700;
+    font-size: 4.375rem;
+    margin: 10px 0 45px;
+}
+main .business p:nth-child(3) {line-height: 26px;}
+main .business a {
+    margin: 70px auto 100px;
+    display: block;
+    font-size: 1.333rem;
+    text-align: center;
+    padding: 20px 0;
+    width: 150px;
+    border: 2px solid #fff;
+    transition: all 0.3s linear;
+}
+main .business a:hover {
+    background: rgba(239, 21, 30,0.7);
+    border: 2px solid #EF151E;
+}
+main .business p img {
+    width: 40px; height: 40px;
+    animation: move 1s linear alternate infinite;
+}
+/* business 배경태그 */
+main .bus1 {background-image: url(../images/business1.jpg);}
+main .bus2 {background-image: url(../images/business2.jpg);}
+main .bus3 {background-image: url(../images/business3.jpg);}
+main .bus4 {background-image: url(../images/business4.jpg);}
+main .bus5 {background-image: url(../images/business5.jpg);}
+main .bus6 {background-image: url(../images/business6.jpg);}
+/* news */
