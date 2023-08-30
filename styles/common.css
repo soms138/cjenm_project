@@ -6,6 +6,7 @@ header {
     justify-content: space-between;
     position: fixed;
     width: 100%;
+    z-index: 999;
 }
 header h1 {
     width: 120px; height: 68.51px;
@@ -21,7 +22,6 @@ header .lnb .lang {
     display: flex;
     align-items: center;
     margin-right: 50px;
-    z-index: 600;
 }
 header .lnb .lang a {
     font-family: 'Inter', sans-serif;
@@ -57,8 +57,9 @@ header .lnb .m_nav:hover span:nth-child(3) {
     transform: translateY(-8.5px) rotate(-45deg);
 } */
 header .nav_open {
-    background-color: cadetblue;
-    position: absolute;
+    background: #222;
+    position: fixed;
+    width: 420px;
     right: 0;
     top: 0;
     padding: 0 60px;
@@ -66,8 +67,7 @@ header .nav_open {
     z-index: 500;
 }
 header .nav_open .nav_wrap {
-    position: absolute;
-    top: 159px;
+    padding-top: 159px;
 }
 /* open nav 폰트 통합 태그 */
 header .nav_open .nav_wrap > li > a,
@@ -88,18 +88,40 @@ header .nav_open .nav_wrap > li > a {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 15px 0;
 }
 
 header .nav_open .nav_wrap > li > a span {}
 header .nav_open .nav_wrap > li > a img {}
-header .nav_open .nav_wrap > li > .sub {}
+header .nav_open .nav_wrap > li > .sub {
+    margin-left: 30px;
+}
 header .nav_open .nav_wrap > li > .sub > li {}
 header .nav_open .nav_wrap > li > .sub > li > a {
+    display: block;
     font-size: 1.333rem;
+    padding: 15px 0;
 }
-header .nav_open .nav_wrap > li > .sub > li > .sub2 {}
+header .nav_open .nav_wrap > li > .sub > li > a:hover {
+    color: #006ECD;
+}
+header .nav_open .nav_wrap > li > .sub > li > a.active {}
+header .nav_open .nav_wrap > li > .sub > li > .sub2 {
+    margin-left: 30px;
+}
 header .nav_open .nav_wrap > li > .sub > li > .sub2 li {}
-header .nav_open .nav_wrap > li > .sub > li > .sub2 li a {color: rgba(255,255,255,0.7);}
+header .nav_open .nav_wrap > li > .sub > li > .sub2 li:last-child {margin-bottom: 0;}
+header .nav_open .nav_wrap > li > .sub > li > .sub2 li a {
+    display: block;
+    padding: 10px 20px;
+    color: rgba(255,255,255,0.7);
+    transition: all 0.3s;
+}
+header .nav_open .nav_wrap > li > .sub > li > .sub2 li:hover a {
+    color: #006ECD;
+    background: #fff;
+    border-radius: 50px;
+}
 header .nav_open .open_link {
     position: absolute;
     bottom: 60px;
