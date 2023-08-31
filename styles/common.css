@@ -80,7 +80,7 @@ header .nav_open {
     padding: 0 60px;
     height: 100vh;
     z-index: 500;
-    display: none;
+    transform: translateX(100%);
 }
 header .nav_open .nav_wrap {
     padding-top: 159px;

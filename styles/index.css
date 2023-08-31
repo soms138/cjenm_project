@@ -62,50 +62,130 @@ main .visual .txt .txt_box a {
     display: block;
     margin-top: 60px;
     font-family: 'Inter', sans-serif;
+    font-weight: 700;
     text-align: center;
     padding: 20px 0;
     width: 150px;
     border: 1px solid #fff;
+    transition: all 0.3s linear;
+}
+main .visual .txt .txt_box a:hover {
+    background: rgba(239, 21, 30,0.7);
+    border: 2px solid #EF151E;
 }
 main .visual video {
-    width: auto;
+    width: 120%;
     position: relative;
     z-index: 1;
-    left: 50%;
-    transform: translateX(-50%);
+    top: 50%;
+    transform: translateY(-50%);
 }
 /* contents */
-main .contents {}
-main .contents p {}
-main .contents p img {}
-main .contents p:first-child img {}
-main .contents p:last-child img {}
-main .contents .swiper {}
+main .contents {
+    background: linear-gradient(90deg, rgba(0,110,205,1) 0%, rgba(239,21,30,1) 25%, rgba(255,151,0,1) 50%, rgba(239,21,30,1) 75%, rgba(0,110,205,1) 100%);
+    background-size: 400%;
+    animation: gra_bg 20s linear alternate infinite;
+    position: relative;
+    z-index: 50;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+main .contents::after {
+    content: '';
+    display: block;
+    height: 100vh;
+    width: 100%;
+    background: rgba(0,0,0,0.5);
+    position: absolute;
+    left: 0; top: 0;
+    z-index: 100;
+}
+main .contents .swiper {
+    position: relative;
+    z-index: 150;
+}
 main .contents #c_slide {}
 main .contents .swiper .swiper-wrapper {}
-main .contents .swiper .swiper-wrapper .swiper-slide {}
-main .contents .swiper .swiper-wrapper .slide1 {}
-main .contents .swiper .swiper-wrapper .slide2 {}
-main .contents .swiper .swiper-wrapper .slide3 {}
-main .contents .swiper .swiper-wrapper .slide4 {}
-main .contents .swiper .swiper-wrapper .slide5 {}
-main .contents .swiper .swiper-wrapper .slide6 {}
-main .contents .swiper .swiper-wrapper .slide7 {}
-main .contents .swiper .swiper-wrapper .swiper-slide a {}
-main .contents .swiper .swiper-wrapper .swiper-slide a .slide_txt {}
-main .contents .swiper .swiper-wrapper .swiper-slide a .slide_txt .title {}
-main .contents .swiper .swiper-wrapper .swiper-slide a .slide_txt .desc {}
+main .contents .swiper .swiper-wrapper .swiper-slide {
+    /* display: block; */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 450px; height: 300px;
+    margin-right: 30px;
+}
+main .contents .swiper .swiper-wrapper .slide1 {background-image: url(../images/contents1.jpg);}
+main .contents .swiper .swiper-wrapper .slide2 {background-image: url(../images/contents2.jpg);}
+main .contents .swiper .swiper-wrapper .slide3 {background-image: url(../images/contents3.jpg);}
+main .contents .swiper .swiper-wrapper .slide4 {background-image: url(../images/contents4.jpg);}
+main .contents .swiper .swiper-wrapper .slide5 {background-image: url(../images/contents5.jpg);}
+main .contents .swiper .swiper-wrapper .slide6 {background-image: url(../images/contents6.jpg);}
+main .contents .swiper .swiper-wrapper .slide7 {background-image: url(../images/contents7.jpg);}
+main .contents .swiper .swiper-wrapper .swiper-slide a {
+    display: block;
+    opacity: 0;
+    width: 450px; height: 300px;
+    transition: all 0.3s linear;
+}
+main .contents .swiper .swiper-wrapper .swiper-slide:hover a {
+    opacity: 1;
+}
+main .contents .swiper .swiper-wrapper .swiper-slide a .slide_txt {
+    background: rgba(0,0,0,0.6);
+    width: 100%; height: 100%;
+    padding: 70px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+}
+.title, .desc, .genre {color: #fff;}
+main .contents .swiper .swiper-wrapper .swiper-slide a .slide_txt .title {
+    font-size: 1.777rem;
+    font-weight: 800;
+    line-height: 32px;
+}
+main .contents .swiper .swiper-wrapper .swiper-slide a .slide_txt .desc {
+    font-size: 0.75rem;
+    line-height: 16px;
+}
 main .contents .swiper .swiper-wrapper .swiper-slide a .slide_txt .genre {}
-main .contents .swiper .swiper-wrapper .swiper-slide a .slide_txt .genre span {}
-main .contents .more {}
-main .contents .more span {}
-main .contents .more img {}
+main .contents .swiper .swiper-wrapper .swiper-slide a .slide_txt .genre span {
+    font-size: 0.75rem;
+    font-weight: 800;
+}
+main .contents .text_bg {
+    background: url(../images/txt_bg.png) repeat-x;
+    position: relative;
+    z-index: 150;
+    width: 100%;
+    height: 115px;
+    margin: 20px 0 30px;
+    filter: opacity(30%);
+    animation: text_bg 50s linear alternate-reverse infinite;
+}
+main .contents .more {
+    position: relative;
+    z-index: 150;
+    padding: 10px 0;
+    border-bottom: 2px solid #fff;
+}
+main .contents .more a {
+    color: #fff;
+    font-size: 1.333rem;
+    font-weight: 800;
+}
+main .contents .more img {
+    width: 15px; height: 15px;
+    transition: all 0.3s linear;
+}
+main .contents .more:hover img {transform: rotate(90deg);}
 /* business 통합태그 */
 main .business {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    text-align: center;
     position: relative;
     display: flex;
     flex-flow: column nowrap;
@@ -121,18 +201,22 @@ main .business::after {
     left: 0; top: 0;
     z-index: 10;
 }
-main .business p,
-main .business h2,
-main .business a {
-    color: #fff;
-    position: relative;
+main .business .txt_box {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
     z-index: 300;
+    text-align: center;
 }
 main .business h2,
 main .business a {
     font-family: 'Inter', sans-serif;
+    color: #fff;
 }
-main .business p {letter-spacing: -0.02rem;}
+main .business p {
+    color: #fff;
+    letter-spacing: -0.02rem;
+}
 main .business p:nth-child(1) {font-size: 1.333rem;}
 main .business h2 {
     font-weight: 700;
@@ -157,6 +241,11 @@ main .business a:hover {
 main .business p img {
     width: 40px; height: 40px;
     animation: move 1s linear alternate infinite;
+    position: absolute;
+    transform: translateX(-50%);
+    left: 50%;
+    bottom: 70px;
+    z-index: 300;
 }
 /* business 배경태그 */
 main .bus1 {background-image: url(../images/business1.jpg);}
@@ -166,3 +255,87 @@ main .bus4 {background-image: url(../images/business4.jpg);}
 main .bus5 {background-image: url(../images/business5.jpg);}
 main .bus6 {background-image: url(../images/business6.jpg);}
 /* news */
+main .last {
+    background: #222;
+    background-size: cover;
+}
+main .last .news_container {
+    width: 1200px;
+    height: 630px;
+    margin: auto;
+    position: relative;
+    padding: 100px 0;
+}
+main .last .news_container h2,
+.title, .desc, .date {color: #fff;}
+main .last .news_container h2 {
+    font-family: 'Inter', sans-serif;
+    font-size: 1.777rem;
+    font-weight: 700;
+    margin-bottom: 50px;
+}
+main .last .news_container .big {}
+main .last .news_container .big #big_slide {}
+main .last .news_container .big #big_slide .swiper-wrapper {}
+main .last .news_container .big #big_slide .swiper-wrapper .swiper-slide {
+    display: flex;
+}
+main .last .news_container .big #big_slide .swiper-wrapper .swiper-slide .movImg {
+    display: block;
+    width: 550px; height: 350px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-right: 40px;
+}
+main .last .news_container .big #big_slide .swiper-wrapper .slide1 .movImg {background-image: url(../images/news1.jpg);}
+main .last .news_container .big #big_slide .swiper-wrapper .slide2 .movImg {background-image: url(../images/news2.jpg);}
+main .last .news_container .big #big_slide .swiper-wrapper .slide3 .movImg {background-image: url(../images/news3.jpg);}
+main .last .news_container .big #big_slide .swiper-wrapper .slide4 .movImg {background-image: url(../images/news4.jpg);}
+main .last .news_container .big #big_slide .swiper-wrapper .slide5 .movImg {background-image: url(../images/news5.jpg);}
+.big_txt {width: 610px;}
+.big_txt .title, .big_txt .desc, .big_txt .date {
+    color: #fff;
+    letter-spacing: -0.02rem;
+}
+.big_txt .title {
+    font-size: 1.777rem;
+    font-weight: 800;
+    line-height: 32px;
+}
+.big_txt .desc {
+    width: 610px; height: 60px;
+    line-height: 20px;
+    margin: 20px 0;
+    white-space: wrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.big_txt .date {}
+main .last .news_container .small #small_slide {
+    position: absolute;
+    right: 0; bottom: 102px;
+    width: 610px;
+}
+main .last .news_container .small #small_slide .swiper-wrapper {}
+main .last .news_container .small #small_slide .swiper-wrapper .swiper-slide {
+    display: block;
+    width: 224px; height: 143px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-right: 20px;
+}
+main .last .news_container .small #small_slide .swiper-wrapper .slide1 {background-image: url(../images/news1.jpg);}
+main .last .news_container .small #small_slide .swiper-wrapper .slide2 {background-image: url(../images/news2.jpg);}
+main .last .news_container .small #small_slide .swiper-wrapper .slide3 {background-image: url(../images/news3.jpg);}
+main .last .news_container .small #small_slide .swiper-wrapper .slide4 {background-image: url(../images/news4.jpg);}
+main .last .news_container .small #small_slide .swiper-wrapper .slide5 {background-image: url(../images/news5.jpg);}
+main .last .news_container .swiper-button-prev {
+    position: absolute;
+    top: 100px; right: 45px;
+}
+main .last .news_container .swiper-button-next {
+    position: absolute;
+    top: 100px; right: 0;
+}
