@@ -14,30 +14,52 @@ body, html {scroll-behavior: smooth;}
 aside {
     position: fixed;
     right: 50px; top: 50%;
+    transform: translateY(-50%);
     z-index: 500;
-    display: flex;
-    flex-flow: column nowrap;
-    align-items: center;
 }
-aside .bar {
+aside .bar_wrap {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 10px;
+}
+aside .bar_wrap span {
+    transition: all 0.3s linear;
+}
+aside .bar_wrap span:first-child {
+    opacity: 0;
+    margin-right: 5px;
+}
+aside .bar_wrap .bar {
     display: block;
     background: url(../images/icon/icon_dot_star_g.png) no-repeat center;
     background-size: cover;
     width: 15px; height: 15px;
-    margin-bottom: 10px;
     transition: all 0.3s linear;
+    border-radius: 2.5px;
 }
-aside span.active {
+aside .bar_wrap:hover span:first-child {
+    opacity: 1;
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    color: #fff;
+    width: 180px;
+    background: #FF9700;
+    border-radius: 5px;
+    padding: 10px 15px;
+    position: relative;
+}
+aside p.active .bar , aside .bar_wrap:hover .bar {
     background: #FF9700;
     background-size: cover;
-    border-radius: 2.5px;
     width: 5px; height: 30px;
+    margin: 0 5px;
 }
 header,footer {
     min-width: 320px;
 }
 header {
-    background-color: rgba(173, 216, 230,0.5);
     padding: 15px 30px;
     display: flex;
     align-items: center;
@@ -47,7 +69,7 @@ header {
     z-index: 999;
 }
 header h1 {
-    width: 120px; height: 68.51px;
+    width: 100px; height: 57.09px;
 }
 header h1 a {
     display: block;
@@ -138,6 +160,7 @@ header .nav_open .nav_wrap > li > .sub > li > .sub2 li:hover a {
 header .nav_open .open_link .etc a:hover span {color: #006ECD;}
 header .nav_open .open_link .etc a:hover img {transform: rotate(-45deg);}
 /* 기본 태그 */
+header .nav_open .nav_wrap > li .block {display: block;}
 header .nav_open .nav_wrap > li {}
 header .nav_open .nav_wrap > li > a {
     display: flex;

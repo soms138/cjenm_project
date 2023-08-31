@@ -6,10 +6,12 @@ const big_slide = new Swiper('#big_slide',{
     speed:1000,
     loop:true,
     on:{
-        init:function(){
+        init:function(e){
+            e.preventDefault()
             this.slides[this.activeIndex].querySelector('.swiper-slide .big_txt').style.opacity = '1';
         },
-        slideChange:function(){
+        slideChange:function(e){
+            e.preventDefault()
             this.slides.forEach(target => {
                 target.querySelector('.swiper-slide .big_txt').style.opacity = '0';
                 target.querySelector('.swiper-slide .big_txt').style.transform = 'translateX(30%)';
@@ -35,10 +37,24 @@ const small_slide = new Swiper('#small_slide',{
     }
 })
 const section = document.querySelectorAll('.section')
-const nextBtn = document.querySelector('.news_container .swiper-button-next')
-const prevBtn = document.querySelector('.news_container .swiper-button-prev')
-const small = document.querySelectorAll('#small_slide .swiper-slide')
-small.forEach(function(t,i){
-    nextBtn.addEventListener('click',function(){
-    })
+const more = document.querySelector('.more')
+const moreAtag = document.querySelector('.more > a')
+const my = new fullpage('main')
+let moreHover = true
+new fullpage('#fullpage', {
+	//options here
+	autoScrolling:true,
+	scrollHorizontally: true
+});
+
+//methods
+fullpage_api.setAllowScrolling(false);
+
+more.addEventListener('mouseover',function(e){
+    e.preventDefault()
+    moreAtag.innerHTML = 'VIEW MORE CONTENTS'
+})
+more.addEventListener('mouseout',function(e){
+    e.preventDefault()
+    moreAtag.innerHTML = '오리지널 콘텐츠 더보기'
 })

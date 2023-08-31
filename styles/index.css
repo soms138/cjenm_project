@@ -1,8 +1,3 @@
-/* margin 통합 태그 */
-.news_wrap{
-    max-width: 1200px;
-    margin: 0 auto;
-}
 /* main */
 main {min-width: 320px;}
 /* section 통합 태그 */
@@ -67,7 +62,7 @@ main .visual .txt .txt_box a {
 }
 main .visual .txt .txt_box a:hover {
     background: rgba(239, 21, 30,0.7);
-    border: 2px solid #EF151E;
+    border: 1px solid #EF151E;
 }
 main .visual video {
     width: 100%;
@@ -180,6 +175,7 @@ main .contents .more a {
     color: #fff;
     font-size: 1.333rem;
     font-weight: 800;
+    transition: all 0.3s linear;
 }
 main .contents .more img {
     width: 15px; height: 15px;
@@ -268,7 +264,7 @@ main .last {
     justify-content: space-between;
 }
 main .last .news_container {
-    width: 1200px;
+    max-width: 1200px;
     height: 630px;
     margin: auto;
     position: relative;
