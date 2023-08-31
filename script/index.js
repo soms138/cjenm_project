@@ -1,11 +1,3 @@
-const c_slide = new Swiper('#c_slide',{
-    slidesPerView: 'auto',
-    direction: 'horizontal',
-    autoplay:{delay:3000},
-    // effect:'Virtual',
-    speed:1000,
-    loop:true,
-})
 const big_slide = new Swiper('#big_slide',{
     slidesPerView: 1,
     direction: 'horizontal',
@@ -37,6 +29,10 @@ const small_slide = new Swiper('#small_slide',{
     autoplay:{delay:3000},
     speed:1000,
     loop:true,
+    navigation: {
+        nextEl: '.news_container .swiper-button-next',
+        prevEl: '.news_container .swiper-button-prev'
+    }
 })
 const section = document.querySelectorAll('.section')
 const nextBtn = document.querySelector('.news_container .swiper-button-next')
@@ -44,6 +40,5 @@ const prevBtn = document.querySelector('.news_container .swiper-button-prev')
 const small = document.querySelectorAll('#small_slide .swiper-slide')
 small.forEach(function(t,i){
     nextBtn.addEventListener('click',function(){
-        t.
     })
 })

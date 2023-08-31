@@ -1,7 +1,3 @@
-/* aside */
-aside {}
-aside .bar {}
-aside span.active {}
 /* margin 통합 태그 */
 .news_wrap{
     max-width: 1200px;
@@ -74,7 +70,7 @@ main .visual .txt .txt_box a:hover {
     border: 2px solid #EF151E;
 }
 main .visual video {
-    width: 120%;
+    width: 100%;
     position: relative;
     z-index: 1;
     top: 50%;
@@ -91,6 +87,7 @@ main .contents {
     flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
 }
 main .contents::after {
     content: '';
@@ -102,37 +99,36 @@ main .contents::after {
     left: 0; top: 0;
     z-index: 100;
 }
-main .contents .swiper {
+main .contents #scroller {
     position: relative;
     z-index: 150;
+    width: 500%;
+    display: flex;
 }
-main .contents #c_slide {}
-main .contents .swiper .swiper-wrapper {}
-main .contents .swiper .swiper-wrapper .swiper-slide {
-    /* display: block; */
+main .contents #scroller .slide {
+    display: block;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     width: 450px; height: 300px;
     margin-right: 30px;
 }
-main .contents .swiper .swiper-wrapper .slide1 {background-image: url(../images/contents1.jpg);}
-main .contents .swiper .swiper-wrapper .slide2 {background-image: url(../images/contents2.jpg);}
-main .contents .swiper .swiper-wrapper .slide3 {background-image: url(../images/contents3.jpg);}
-main .contents .swiper .swiper-wrapper .slide4 {background-image: url(../images/contents4.jpg);}
-main .contents .swiper .swiper-wrapper .slide5 {background-image: url(../images/contents5.jpg);}
-main .contents .swiper .swiper-wrapper .slide6 {background-image: url(../images/contents6.jpg);}
-main .contents .swiper .swiper-wrapper .slide7 {background-image: url(../images/contents7.jpg);}
-main .contents .swiper .swiper-wrapper .swiper-slide a {
-    display: block;
+main .contents #scroller .slide1 {background-image: url(../images/contents1.jpg);}
+main .contents #scroller .slide2 {background-image: url(../images/contents2.jpg);}
+main .contents #scroller .slide3 {background-image: url(../images/contents3.jpg);}
+main .contents #scroller .slide4 {background-image: url(../images/contents4.jpg);}
+main .contents #scroller .slide5 {background-image: url(../images/contents5.jpg);}
+main .contents #scroller .slide6 {background-image: url(../images/contents6.jpg);}
+main .contents #scroller .slide7 {background-image: url(../images/contents7.jpg);}
+main .contents #scroller .slide .slide_wrap {
     opacity: 0;
     width: 450px; height: 300px;
     transition: all 0.3s linear;
 }
-main .contents .swiper .swiper-wrapper .swiper-slide:hover a {
+main .contents #scroller .slide .slide_wrap:hover{
     opacity: 1;
 }
-main .contents .swiper .swiper-wrapper .swiper-slide a .slide_txt {
+main .contents #scroller .slide .slide_txt {
     background: rgba(0,0,0,0.6);
     width: 100%; height: 100%;
     padding: 70px;
@@ -141,17 +137,18 @@ main .contents .swiper .swiper-wrapper .swiper-slide a .slide_txt {
     justify-content: space-between;
 }
 .title, .desc, .genre {color: #fff;}
-main .contents .swiper .swiper-wrapper .swiper-slide a .slide_txt .title {
+main .contents #scroller .slide .slide_wrap .slide_txt .title {
     font-size: 1.777rem;
     font-weight: 800;
     line-height: 32px;
+    margin-bottom: 20px;
 }
-main .contents .swiper .swiper-wrapper .swiper-slide a .slide_txt .desc {
+main .contents #scroller .slide .slide_wrap .slide_txt .desc {
     font-size: 0.75rem;
     line-height: 16px;
 }
-main .contents .swiper .swiper-wrapper .swiper-slide a .slide_txt .genre {}
-main .contents .swiper .swiper-wrapper .swiper-slide a .slide_txt .genre span {
+main .contents #scroller .slide .slide_wrap .slide_txt .genre {}
+main .contents #scroller .slide .slide_wrap .slide_txt .genre span {
     font-size: 0.75rem;
     font-weight: 800;
 }
@@ -186,6 +183,7 @@ main .business {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
     position: relative;
     display: flex;
     flex-flow: column nowrap;
@@ -242,7 +240,6 @@ main .business p img {
     width: 40px; height: 40px;
     animation: move 1s linear alternate infinite;
     position: absolute;
-    transform: translateX(-50%);
     left: 50%;
     bottom: 70px;
     z-index: 300;
@@ -258,6 +255,9 @@ main .bus6 {background-image: url(../images/business6.jpg);}
 main .last {
     background: #222;
     background-size: cover;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
 }
 main .last .news_container {
     width: 1200px;
@@ -265,6 +265,23 @@ main .last .news_container {
     margin: auto;
     position: relative;
     padding: 100px 0;
+}
+.news_t {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.news_t .swiperBtn {position: relative;}
+.news_t .swiperBtn .swiper-button-prev {
+    position: absolute;
+    top: 0; right: 45px;
+    width: 30px; height: 30px;
+    margin-right: 15px;
+}
+.news_t .swiperBtn .swiper-button-next {
+    position: absolute;
+    top: 0; right: 0;
+    width: 30px; height: 30px;
 }
 main .last .news_container h2,
 .title, .desc, .date {color: #fff;}
@@ -304,8 +321,8 @@ main .last .news_container .big #big_slide .swiper-wrapper .slide5 .movImg {back
     line-height: 32px;
 }
 .big_txt .desc {
-    width: 610px; height: 60px;
-    line-height: 20px;
+    width: 610px; height: 52px;
+    line-height: 26px;
     margin: 20px 0;
     white-space: wrap;
     overflow: hidden;
@@ -331,11 +348,3 @@ main .last .news_container .small #small_slide .swiper-wrapper .slide2 {backgrou
 main .last .news_container .small #small_slide .swiper-wrapper .slide3 {background-image: url(../images/news3.jpg);}
 main .last .news_container .small #small_slide .swiper-wrapper .slide4 {background-image: url(../images/news4.jpg);}
 main .last .news_container .small #small_slide .swiper-wrapper .slide5 {background-image: url(../images/news5.jpg);}
-main .last .news_container .swiper-button-prev {
-    position: absolute;
-    top: 100px; right: 45px;
-}
-main .last .news_container .swiper-button-next {
-    position: absolute;
-    top: 100px; right: 0;
-}

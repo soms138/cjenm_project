@@ -9,7 +9,23 @@ html::-o-scrollbar-thumb:hover {background-color: #555;}
 ::-webkit-scrollbar-track {box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.3);}/*스크롤바 배경*/
 ::-webkit-scrollbar-thumb {background-color: #222;border-radius: 5px;}/*스크롤 드래그바*/
 ::-webkit-scrollbar-thumb:hover {background-color: #555;}
-header, main, footer {scroll-behavior: smooth;}
+body, html {scroll-behavior: smooth;}
+/* aside */
+aside {
+    position: fixed;
+    right: 50px; top: 50%;
+    z-index: 500;
+}
+aside .bar {
+    display: block;
+    width: 5px; height: 20px;
+    background: #fff;
+    border-radius: 2.5px;
+    margin-bottom: 10px;
+}
+aside span.active {
+    background: #FF9700;
+}
 header,footer {
     min-width: 320px;
 }
