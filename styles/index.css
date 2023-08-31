@@ -99,10 +99,18 @@ main .contents::after {
     left: 0; top: 0;
     z-index: 100;
 }
+/* scroller 가로무한 */
+.simply-scroll-container { 
+	width: 100%;
+    height: 300px;
+}
+.simply-scroll .simply-scroll-clip { 
+	width: 100%;
+    height: 300px;
+}
 main .contents #scroller {
     position: relative;
     z-index: 150;
-    width: 500%;
     display: flex;
 }
 main .contents #scroller .slide {
@@ -177,7 +185,7 @@ main .contents .more img {
     width: 15px; height: 15px;
     transition: all 0.3s linear;
 }
-main .contents .more:hover img {transform: rotate(90deg);}
+main .contents .more:hover img {transform: rotate(-90deg);}
 /* business 통합태그 */
 main .business {
     background-position: center;
@@ -271,17 +279,23 @@ main .last .news_container {
     align-items: center;
     justify-content: space-between;
 }
-.news_t .swiperBtn {position: relative;}
-.news_t .swiperBtn .swiper-button-prev {
-    position: absolute;
-    top: 0; right: 45px;
+.news_t .swiperBtn {
+    position: relative;
+    width: 75px;
+}
+.news_t .swiperBtn .swiper-button-prev,
+.news_t .swiperBtn .swiper-button-next {
+    top: 0; 
     width: 30px; height: 30px;
+}
+.news_t .swiperBtn .swiper-button-prev {
+    left: 0;
     margin-right: 15px;
+    background: url(../images/icon/ico_prev.png);
 }
 .news_t .swiperBtn .swiper-button-next {
-    position: absolute;
-    top: 0; right: 0;
-    width: 30px; height: 30px;
+    right: 0;
+    background: url(../images/icon/ico_next.png);
 }
 main .last .news_container h2,
 .title, .desc, .date {color: #fff;}
@@ -310,6 +324,10 @@ main .last .news_container .big #big_slide .swiper-wrapper .slide2 .movImg {back
 main .last .news_container .big #big_slide .swiper-wrapper .slide3 .movImg {background-image: url(../images/news3.jpg);}
 main .last .news_container .big #big_slide .swiper-wrapper .slide4 .movImg {background-image: url(../images/news4.jpg);}
 main .last .news_container .big #big_slide .swiper-wrapper .slide5 .movImg {background-image: url(../images/news5.jpg);}
+main .last .news_container .big #big_slide .swiper-wrapper .slide6 .movImg {background-image: url(../images/news6.jpg);}
+main .last .news_container .big #big_slide .swiper-wrapper .slide7 .movImg {background-image: url(../images/news7.jpg);}
+main .last .news_container .big #big_slide .swiper-wrapper .slide8 .movImg {background-image: url(../images/news8.jpg);}
+main .last .news_container .big #big_slide .swiper-wrapper .slide9 .movImg {background-image: url(../images/news9.jpg);}
 .big_txt {width: 610px;}
 .big_txt .title, .big_txt .desc, .big_txt .date {
     color: #fff;
@@ -327,6 +345,9 @@ main .last .news_container .big #big_slide .swiper-wrapper .slide5 .movImg {back
     white-space: wrap;
     overflow: hidden;
     text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
 }
 .big_txt .date {}
 main .last .news_container .small #small_slide {
@@ -348,3 +369,7 @@ main .last .news_container .small #small_slide .swiper-wrapper .slide2 {backgrou
 main .last .news_container .small #small_slide .swiper-wrapper .slide3 {background-image: url(../images/news3.jpg);}
 main .last .news_container .small #small_slide .swiper-wrapper .slide4 {background-image: url(../images/news4.jpg);}
 main .last .news_container .small #small_slide .swiper-wrapper .slide5 {background-image: url(../images/news5.jpg);}
+main .last .news_container .small #small_slide .swiper-wrapper .slide6 {background-image: url(../images/news6.jpg);}
+main .last .news_container .small #small_slide .swiper-wrapper .slide7 {background-image: url(../images/news7.jpg);}
+main .last .news_container .small #small_slide .swiper-wrapper .slide8 {background-image: url(../images/news8.jpg);}
+main .last .news_container .small #small_slide .swiper-wrapper .slide9 {background-image: url(../images/news9.jpg);}
