@@ -10,6 +10,7 @@ const navSub = document.querySelectorAll('.sub > li')
 const subActive = document.querySelectorAll('.sub > li > a')
 const navSub2 = document.querySelectorAll('.sub2 > li')
 let boolean = true
+console.log(menu,menuBtn,lang,header,section,aside,body,navActive,navSub,navSub2,subActive)
 
 /* for(let i of navActive){
     i.addEventListener('click', function(e){
@@ -26,8 +27,8 @@ lang.forEach(function(t){
         t.classList.add('active')
     })
 })
-menu.style.transform = 'translateX(100%)';
 menu.style.transition = 'all 1s ease';
+// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 menuBtn.addEventListener('click',function(e){
     e.preventDefault()
     if(boolean == true){

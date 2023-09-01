@@ -13,12 +13,16 @@ tab_title.forEach(function(t,i){
         tab_contents[i].style.display = 'block'
     })
 })
+for(let i of culture_title){i.firstElementChild.lastElementChild.style.filter = 'opacity(0)'}
 for(let i of culture_contents){i.style.display = 'none'}
 culture_contents[0].style.display = 'flex'
 culture_title.forEach(function(t,i){
     t.lastElementChild.addEventListener('click',function(e){
         e.preventDefault()
-        for(let i of culture_title){i.classList.remove('active')}
+        for(let i of culture_title){
+            i.classList.remove('active')
+            i.firstElementChild.lastElementChild.style.filter = 'opacity(1)'
+        }
         t.classList.add('active')
         for(let i of culture_contents){i.style.display = 'none'}
         culture_contents[i].style.display = 'flex'

@@ -6,12 +6,10 @@ const big_slide = new Swiper('#big_slide',{
     speed:1000,
     loop:true,
     on:{
-        init:function(e){
-            e.preventDefault()
+        init:function(){
             this.slides[this.activeIndex].querySelector('.swiper-slide .big_txt').style.opacity = '1';
         },
-        slideChange:function(e){
-            e.preventDefault()
+        slideChange:function(){
             this.slides.forEach(target => {
                 target.querySelector('.swiper-slide .big_txt').style.opacity = '0';
                 target.querySelector('.swiper-slide .big_txt').style.transform = 'translateX(30%)';
@@ -36,4 +34,4 @@ const small_slide = new Swiper('#small_slide',{
         prevEl: '.news_container .swiper-button-prev'
     }
 })
-const section = document.querySelectorAll('.section')
+console.log(big_slide,small_slide)
