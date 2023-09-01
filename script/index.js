@@ -37,24 +37,3 @@ const small_slide = new Swiper('#small_slide',{
     }
 })
 const section = document.querySelectorAll('.section')
-const more = document.querySelector('.more')
-const moreAtag = document.querySelector('.more > a')
-const my = new fullpage('main')
-let moreHover = true
-new fullpage('#fullpage', {
-	//options here
-	autoScrolling:true,
-	scrollHorizontally: true
-});
-
-//methods
-fullpage_api.setAllowScrolling(false);
-
-more.addEventListener('mouseover',function(e){
-    e.preventDefault()
-    moreAtag.innerHTML = 'VIEW MORE CONTENTS'
-})
-more.addEventListener('mouseout',function(e){
-    e.preventDefault()
-    moreAtag.innerHTML = '오리지널 콘텐츠 더보기'
-})

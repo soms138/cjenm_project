@@ -170,18 +170,29 @@ main .contents .more {
     z-index: 150;
     padding: 10px 0;
     border-bottom: 2px solid #fff;
+    transition: all 0.3s linear;
 }
-main .contents .more a {
+main .contents .more:hover {border-bottom: 2px solid #FF9700;}
+main .contents .more span {
     color: #fff;
     font-size: 1.333rem;
     font-weight: 800;
     transition: all 0.3s linear;
 }
-main .contents .more img {
+main .contents .more:hover span {color: #FF9700;}
+main .contents .more em {
+    display: inline-block;
+    background-image: url(../images/icon/ico_more.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     width: 15px; height: 15px;
     transition: all 0.3s linear;
 }
-main .contents .more:hover img {transform: rotate(-90deg);}
+main .contents .more:hover em {
+    background-image: url(../images/icon/ico_more_o.png);
+    transform: rotate(-90deg);
+}
 /* business 통합태그 */
 main .business {
     background-position: center;
