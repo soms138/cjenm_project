@@ -5,21 +5,26 @@ const header = document.querySelector('header')
 const section = document.querySelectorAll('main > .section')
 const aside = document.querySelectorAll('aside .bar_wrap')
 const body = document.querySelector('body,html')
-const navActive = document.querySelectorAll('.nav_wrap > li > a')
-const navSub = document.querySelectorAll('.sub > li')
-const subActive = document.querySelectorAll('.sub > li > a')
-const navSub2 = document.querySelectorAll('.sub2 > li')
+const navActive = document.querySelectorAll('.nav_wrap > .sub_open')
+const navSub = document.querySelectorAll('.sub')
 let boolean = true
-console.log(menu,menuBtn,lang,header,section,aside,body,navActive,navSub,navSub2,subActive)
-
-/* for(let i of navActive){
-    i.addEventListener('click', function(e){
+console.log(menu,menuBtn,lang,header,section,aside,body,navActive,navSub)
+// nav menu toggle
+$(document).ready(function(){
+    $(".sub_open>a").click(function(){
+        $(this).next("ul").toggleClass("show");
+    });
+    $(".sub>li>a").click(function(){
+        $(this).next("ul").toggleClass("show");
+    });
+});
+for(let i of navActive){
+    i.firstElementChild.addEventListener('click', function(e){
         e.preventDefault()
-        i.classList.add('active')
-        for(let j of navSub){j.classList.toggle('block')}
+        i.firstElementChild.classList.toggle('active')
     })
-} */
-
+}
+// lang change btn
 lang.forEach(function(t){
     t.addEventListener('click',function(e){
         e.preventDefault()
@@ -28,7 +33,6 @@ lang.forEach(function(t){
     })
 })
 menu.style.transition = 'all 1s ease';
-// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 menuBtn.addEventListener('click',function(e){
     e.preventDefault()
     if(boolean == true){

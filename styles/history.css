@@ -1,0 +1,108 @@
+main {}
+/* margin 태그 */
+main > .title h1, .tab_title, .tab_contents {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+/* main title */
+main > .title {
+    background: url(../images/bg3.jpg) no-repeat center;
+    background-size: cover;
+    height: 400px;
+    position: relative;
+}
+main > .title > h1 {
+    position: absolute;
+    left: 172px;
+    bottom: 102px;
+    font-family: 'Inter', sans-serif;
+    font-size: 3.75rem;
+    font-weight: 700;
+    color: #fff;
+}
+main .history_wrap {
+    background: url(../images/bg2.jpg) fixed no-repeat center;
+    background-size: cover;
+    padding: 100px 0;
+}
+main .history_wrap .tab_title {
+    display: flex;
+    background: rgba(255,255,255,0.7);
+    border: 1px solid #006ECD;
+    border-radius: 40px;
+    padding: 10px;
+    margin: 0 auto 50px;
+    width: 494px;
+}
+main .history_wrap .tab_title a {
+    padding: 15px 20px;
+    font-family: 'Inter', sans-serif;
+    font-size: 1.777rem;
+    font-weight: 700;
+    margin-right: 10px;
+}
+main .history_wrap .tab_title a.active {
+    background: #006ECD;
+    border-radius: 30px;
+    color: #fff;
+}
+/* contents active */
+main .history_wrap .tab_contents > div > .active > p:first-child {color: #000;}
+main .history_wrap .tab_contents > div > .active .imgCls {
+    background: url(../images/icon/ico_history.png);
+    transform: rotate(-45deg);
+}
+.show {display: block !important;}
+/* contents 기본 태그 */
+main .history_wrap .tab_contents {}
+main .history_wrap .tab_contents > div {}
+main .history_wrap .tab_contents > div .history {
+    padding: 40px;
+    border-bottom: 2px solid rgba(0,0,0,0.2);
+    border-left: none;
+    border-right: none;
+    transition: all 0.3s linear;
+    display: flex;
+    justify-content: space-between;
+}
+main .history_wrap .tab_contents > div .h1 {border-top: 2px solid rgba(0,0,0,0.2);}
+main .history_wrap .tab_contents > div .history:hover {
+    background: rgba(243, 243, 243,0.7);
+}
+main .history_wrap .tab_contents > div .h1 {}
+main .history_wrap .tab_contents > div .h2 {}
+main .history_wrap .tab_contents > div .h3 {}
+main .history_wrap .tab_contents > div .h4 {}
+main .history_wrap .tab_contents > div .history > p {}
+main .history_wrap .tab_contents > div .history > p:first-child {
+    font-family: 'Inter', sans-serif;
+    font-size: 3.75rem;
+    font-weight: 700;
+    color: rgba(0,0,0,0.2);
+}
+main .history_wrap .tab_contents > div .history .imgCls {
+    background: url(../images/icon/ico_history_g.png);
+    width: 50px; height: 50px;
+}
+main .history_wrap .tab_contents > div .history .desc {display: none;}
+main .history_wrap .tab_contents > div .history .desc > p {}
+main .history_wrap .tab_contents > div .history .desc > div {
+    width: 700px;
+    margin-bottom: 30px;
+}
+main .history_wrap .tab_contents > div .history .desc > div > p {
+    margin-bottom: 10px;
+}
+main .history_wrap .tab_contents > div .history .desc > div > p:first-child {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 1.333rem;
+    margin-bottom: 20px;
+    transition: all 0.3s linear;
+}
+main .history_wrap .tab_contents > div .history .desc p img {
+    width: 10px; height: 10px;
+    margin-right: 10px;
+    transition: all 0.3s linear;
+}
+main .history_wrap .tab_contents > div .history .desc p span {letter-spacing: -0.02rem;}

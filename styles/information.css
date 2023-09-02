@@ -1,6 +1,7 @@
 main {}
 /* margin 태그 */
-main > .title h1 {
+main > .title h1,
+main .sub_wrap .tab_contents .tab_c1 .culture_title {
     max-width: 1200px;
     margin: 0 auto;
 }
@@ -79,6 +80,7 @@ main .sub_wrap .tab_title a {
     font-family: 'Inter', sans-serif;
     font-size: 1.777rem;
     font-weight: 700;
+    margin-right: 10px;
 }
 main .sub_wrap .tab_title a.active {
     background: #006ECD;
@@ -107,19 +109,34 @@ main .sub_wrap .tab_contents > div .txt_t p:nth-child(3) {
     margin: 0 auto;
 }
 /* acitve 태그모음 */
-main .sub_wrap .tab_contents .tab_c1 .culture_title .power.active {
-    border: 2px solid #fff;
-    padding-top: 80px;
+main .sub_wrap .tab_contents .tab_c1 .culture_title .active {}
+main .sub_wrap .tab_contents .tab_c1 .culture_title .active .power_wrap {
+    transform: translateY(0) !important;
 }
-main .sub_wrap .tab_contents .tab_c1 .culture_title .power.active::after {
-    
+main .sub_wrap .tab_contents .tab_c1 .culture_title .active .power_wrap::after {
+    content: '';
+    display: block;
+    width: 350px; height: 484px;
+    background-size: 100%;
+    border-radius: 30px;
+    position: absolute;
+    left: 0px; top: 0px;
+    z-index: 100;
 }
-main .sub_wrap .tab_contents .tab_c1 .culture_title .power.active .power_e,
-main .sub_wrap .tab_contents .tab_c1 .culture_title .power.active .power_t {color: #FF9700;}
-main .sub_wrap .tab_contents .tab_c1 .culture_title .power.active .power_t {margin-bottom: 50px;}
-main .sub_wrap .tab_contents .tab_c1 .culture_title .power.active .desc {display: block;}
-/* tab_contents 기본태그 */
-/* culture tab */
+main .sub_wrap .tab_contents .tab_c1 .culture_title .active .p1::after {
+    background: url(../images/power_bg1_b.png);
+}
+main .sub_wrap .tab_contents .tab_c1 .culture_title .active .p2::after {
+    background: url(../images/power_bg2_b.png);
+}
+main .sub_wrap .tab_contents .tab_c1 .culture_title .active .p3::after {
+    background: url(../images/power_bg3_b.png);
+}
+main .sub_wrap .tab_contents .tab_c1 .culture_title .active .power_wrap .power_e,
+main .sub_wrap .tab_contents .tab_c1 .culture_title .active .power_wrap .power_t {color: #FF9700;}
+main .sub_wrap .tab_contents .tab_c1 .culture_title .active .power_wrap .power_t {margin-bottom: 50px;}
+main .sub_wrap .tab_contents .tab_c1 .culture_title .active .power_wrap .desc {display: block;}
+main .sub_wrap .tab_contents .tab_c1 .culture_title .power .active .more img {transform: rotate(45deg);}
 main .sub_wrap .tab_contents .tab_c1 .culture_title {
     display: flex;
     align-items: center;
@@ -127,40 +144,27 @@ main .sub_wrap .tab_contents .tab_c1 .culture_title {
 }
 main .sub_wrap .tab_contents .tab_c1 .culture_title .power {
     border-radius: 30px;
-    width: 350px; height: 484px;
-    /* width: calc(33% - 150px / 3); height: 484.2px; */
     position: relative;
     z-index: 50;
-    text-align: center;
-    padding: 80px 40px 0;
     margin-right: 75px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
     overflow: hidden;
 }
 main .sub_wrap .tab_contents .tab_c1 .culture_title .power:last-child {margin-right: 0;}
-main .sub_wrap .tab_contents .tab_c1 .culture_title .p1 {background-image: url(../images/power_bg1.png);}
-main .sub_wrap .tab_contents .tab_c1 .culture_title .p2 {background-image: url(../images/power_bg2.png);}
-main .sub_wrap .tab_contents .tab_c1 .culture_title .p3 {background-image: url(../images/power_bg3.png);}
-main .sub_wrap .tab_contents .tab_c1 .culture_title .power .power_wrap {
-    transform: translateY(105%);
-}
-main .sub_wrap .tab_contents .tab_c1 .culture_title .p1 .power_wrap {
-    transform: translateY(88%);
-}
-main .sub_wrap .tab_contents .tab_c1 .culture_title .power.active .power_wrap::after {
-    content: '';
-    display: block;
-    width: 350px; height: 484px;
-    background-size: cover;
+main .sub_wrap .tab_contents .tab_c1 .culture_title .power .power_bg {
     border-radius: 30px;
-    position: absolute;
-    left: -40px; top: 0;
-    z-index: 100;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
 }
-main .sub_wrap .tab_contents .tab_c1 .culture_title .p1.active .power_wrap::after {
-    background: url(../images/power_bg1_b.png);
+main .sub_wrap .tab_contents .tab_c1 .culture_title .bg1 {background-image: url(../images/power_bg1.png);}
+main .sub_wrap .tab_contents .tab_c1 .culture_title .bg2 {background-image: url(../images/power_bg2.png);}
+main .sub_wrap .tab_contents .tab_c1 .culture_title .bg3 {background-image: url(../images/power_bg3.png);}
+main .sub_wrap .tab_contents .tab_c1 .culture_title .power .power_wrap {
+    width: 350px; height: 484px;
+    text-align: center;
+    padding: 80px 40px 0;
+    transform: translateY(55%);
+    transition: all 1s ease;
 }
 main .sub_wrap .tab_contents .tab_c1 .culture_title .power .power_e,
 main .sub_wrap .tab_contents .tab_c1 .culture_title .power .power_t,
@@ -193,8 +197,10 @@ main .sub_wrap .tab_contents .tab_c1 .culture_title .power .more {
     z-index: 150;
     cursor: pointer;
 }
-main .sub_wrap .tab_contents .tab_c1 .culture_title .power.active .more img {transform: rotate(45deg);}
-main .sub_wrap .tab_contents .tab_c1 .culture_title .power .more img {width: 100%;}
+main .sub_wrap .tab_contents .tab_c1 .culture_title .power .more img {
+    width: 100%;
+    transition: all 0.3s ease;
+}
 /* culture kw */
 main .sub_wrap .tab_contents .tab_c1 .culture_contents {
     width: 1200px;

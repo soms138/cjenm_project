@@ -108,14 +108,6 @@ header .lnb .m_nav span {
     background: #fff;
     transition: all 0.3s;
 }
-/* js 효과 클릭시 transform 활성화 */
-/* header .lnb .m_nav:hover span:nth-child(1) {
-    transform: translateY(8.5px) rotate(45deg);
-}
-header .lnb .m_nav:hover span:nth-child(2) {opacity: 0;}
-header .lnb .m_nav:hover span:nth-child(3) {
-    transform: translateY(-8.5px) rotate(-45deg);
-} */
 header .nav_open {
     background: #222;
     position: fixed;
@@ -159,6 +151,7 @@ header .nav_open .nav_wrap > li > .sub > li > .sub2 li:hover a {
 }
 header .nav_open .open_link .etc a:hover span {color: #006ECD;}
 header .nav_open .open_link .etc a:hover img {transform: rotate(-45deg);}
+.show {display: block !important;}
 /* 기본 태그 */
 header .nav_open .nav_wrap > li .block {display: block;}
 header .nav_open .nav_wrap > li {}
@@ -173,8 +166,9 @@ header .nav_open .nav_wrap > li > a span {transition: all 0.3s linear;}
 header .nav_open .nav_wrap > li > a img {}
 header .nav_open .nav_wrap > li > .sub {
     margin-left: 30px;
+    display: none;
 }
-header .nav_open .nav_wrap > li > .sub > li {display: none;}
+header .nav_open .nav_wrap > li > .sub > li {}
 header .nav_open .nav_wrap > li > .sub > li > a {
     display: block;
     font-size: 1.333rem;
@@ -183,8 +177,9 @@ header .nav_open .nav_wrap > li > .sub > li > a {
 }
 header .nav_open .nav_wrap > li > .sub > li > .sub2 {
     margin-left: 30px;
+    display: none;
 }
-header .nav_open .nav_wrap > li > .sub > li > .sub2 li {display: none;}
+header .nav_open .nav_wrap > li > .sub > li > .sub2 li {}
 header .nav_open .nav_wrap > li > .sub > li > .sub2 li:last-child {margin-bottom: 0;}
 header .nav_open .nav_wrap > li > .sub > li > .sub2 li a {
     display: block;
