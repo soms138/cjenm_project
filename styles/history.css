@@ -47,8 +47,8 @@ main .history_wrap .tab_title a.active {
     color: #fff;
 }
 /* contents active */
-main .history_wrap .tab_contents > div > .active > p:first-child {color: #000;}
-main .history_wrap .tab_contents > div > .active .imgCls {
+main .history_wrap .tab_contents > div > .animated > p:first-child {color: #000;}
+main .history_wrap .tab_contents > div > .animated .imgCls {
     background: url(../images/icon/ico_history.png);
     transform: rotate(-45deg);
 }

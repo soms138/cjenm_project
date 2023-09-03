@@ -1,0 +1,137 @@
+main {}
+main .section {
+    background-color: lightblue;
+    height: 100vh;
+}
+main .main_section {
+    position: relative;
+}
+main .main_section .title {}
+main .main_section .title h1 {
+    position: absolute;
+    left: 172px;
+    bottom: 319px;
+    font-family: 'Inter', sans-serif;
+    font-size: 3.75rem;
+    font-weight: 700;
+    color: #fff;
+    z-index: 150;
+}
+main .main_section .title .tab_contents {}
+main .main_section .title .tab_contents > div {}
+main .main_section .title .tab_contents > div > div {
+    position: absolute;
+    z-index: 150;
+    left: 172px;
+    bottom: 102px;
+}
+main .main_section .title .tab_contents > div > div > p {}
+main .main_section .title .tab_contents > div > div .sub_title,
+main .main_section .title .tab_contents > div > div .name, 
+main .main_section .title .tab_contents > div > div .desc {
+    color: #fff;
+    letter-spacing: -0.02rem;
+}
+main .main_section .title .tab_contents > div > div .sub_title {
+    font-size: 1.777rem;
+    font-weight: 700;
+}
+main .main_section .title .tab_contents > div > div .name {
+    font-size: 3.75rem;
+    font-weight: 700;
+    margin: 20px 0;
+}
+main .main_section .title .tab_contents > div > div .desc {
+    font-size: 1.333rem;
+}
+main .main_section .title .tab_contents > div video {
+    position: relative;
+    z-index: 1;
+    /* top: 50%; */
+    /* transform: translateY(-50%); */
+    width: 100%;
+    /* height: 66.5%; */
+}
+main .main_section .title .tab_contents > div video::after {
+    content: '';
+    display: block;
+    height: 100vh;
+    width: 100%;
+    background: rgba(0,0,0,0.5);
+    position: absolute;
+    left: 0; top: 0;
+    z-index: 100;
+}
+main .main_section .swiper_container {
+    position: absolute;
+    bottom: 102px; right: 100px;
+}
+main .main_section .swiper_container #main_slide {}
+main .main_section .swiper_container #main_slide .swiper-wrapper {
+    display: flex;
+    flex-flow: column nowrap;
+    height: 490px;
+}
+main .main_section .swiper_container #main_slide .swiper-wrapper .active {
+    border: 2px solid #EF151E;
+    filter: brightness(115%);
+}
+main .main_section .swiper_container #main_slide .swiper-wrapper .swiper-slide {
+    display: block;
+    width: 150px; height: 150px !important;
+    margin-bottom: 20px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: all 0.3s linear;
+}
+main .main_section .swiper_container #main_slide .swiper-wrapper .swiper-slide:hover {filter: brightness(115%);}
+main .main_section .swiper_container #main_slide .swiper-wrapper .slide1 {background-image: url(../images/main1.jpg);}
+main .main_section .swiper_container #main_slide .swiper-wrapper .slide2 {background-image: url(../images/main2.jpg);}
+main .main_section .swiper_container #main_slide .swiper-wrapper .slide3 {background-image: url(../images/main3.jpg);}
+main .main_section .swiper_container #main_slide .swiper-wrapper .slide4 {background-image: url(../images/main4.jpg);}
+main .main_section .swiper_container #main_slide .swiper-wrapper .slide5 {background-image: url(../images/main1.jpg);}
+main .main_section .swiper_container #main_slide .swiper-wrapper .slide6 {background-image: url(../images/main2.jpg);}
+main .main_section .swiper_container #main_slide .swiper-wrapper .slide7 {background-image: url(../images/main3.jpg);}
+main .main_section .swiper_container #main_slide .swiper-wrapper .slide8 {background-image: url(../images/main4.jpg);}
+main .c_section {}
+main .c_section h2 {}
+main .c_section h2 a {}
+main .c_section h2 a img {}
+main .c_section .contents {}
+main .c_section .contents > div {}
+main .c_section .contents > div .name {}
+main .c_section .contents > div .desc {}
+main .c_section .contents > div .genre {}
+main .c_section:nth-child(2) .contents .c1 {}
+main .c_section:nth-child(2) .contents .c2 {}
+main .c_section:nth-child(2) .contents .c3 {}
+main .c_section:nth-child(2) .contents .c4 {}
+main .c_section:nth-child(2) .contents .c5 {}
+main .c_section:nth-child(2) .contents .c6 {}
+main .c_section:nth-child(2) .contents .c7 {}
+main .c_section:nth-child(2) .contents .c8 {}
+main .c_section:nth-child(3) .contents .c1 {}
+main .c_section:nth-child(3) .contents .c2 {}
+main .c_section:nth-child(3) .contents .c3 {}
+main .c_section:nth-child(3) .contents .c4 {}
+main .c_section:nth-child(3) .contents .c5 {}
+main .c_section:nth-child(3) .contents .c6 {}
+main .c_section:nth-child(3) .contents .c7 {}
+main .c_section:nth-child(3) .contents .c8 {}
+main .c_section:nth-child(4) .contents .c1 {}
+main .c_section:nth-child(4) .contents .c2 {}
+main .c_section:nth-child(4) .contents .c3 {}
+main .c_section:nth-child(4) .contents .c4 {}
+main .c_section:nth-child(4) .contents .c5 {}
+main .c_section:nth-child(4) .contents .c6 {}
+main .c_section:nth-child(4) .contents .c7 {}
+main .c_section:nth-child(4) .contents .c8 {}
+main .c_section:nth-child(5) .contents .c1 {}
+main .c_section:nth-child(5) .contents .c2 {}
+main .c_section:nth-child(5) .contents .c3 {}
+main .c_section:nth-child(5) .contents .c4 {}
+main .c_section:nth-child(5) .contents .c5 {}
+main .c_section:nth-child(5) .contents .c6 {}
+main .c_section:nth-child(5) .contents .c7 {}
+main .c_section:nth-child(5) .contents .c8 {}

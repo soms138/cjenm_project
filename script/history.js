@@ -1,6 +1,7 @@
 const tab_title = document.querySelectorAll('.tab_title a')
 const tab_contents = document.querySelectorAll('.tab_contents > div')
 const more = document.querySelectorAll('.history > .imgCls')
+const active = document.querySelector('.active > .desc')
 for(let i of tab_contents){i.style.display = 'none'}
 tab_contents[0].style.display = 'block'
 tab_title.forEach(function(t,i){
@@ -13,14 +14,23 @@ tab_title.forEach(function(t,i){
     })
 })
 // history desc toggle
-$(document).ready(function(){
+/* $(document).ready(function(){
     $(".history>.imgCls").click(function(){
-        $(".active>.desc").toggleClass("show");
+        $(".tab_contents>div>div").toggleClass("active")
+        if($(".tab_contents>div>div").hasClass("active") === true){
+            $(".desc").toggleClass("show")
+        }
     });
-});
-for(let i of more){
-    i.addEventListener('click', function(e){
+}); */
+for(let j of more){
+    j.addEventListener('click', function(e){
         e.preventDefault()
-        i.parentElement.classList.toggle('active')
+        j.parentElement.classList.toggle('active')
+        j.parentElement.forEach(function(t,i){
+            true = j.parentElement.classList.toggle('active')
+            if(true){
+                t[i].classList.toggle('show')
+            }
+        })
     })
 }
