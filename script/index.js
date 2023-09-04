@@ -1,3 +1,9 @@
+$(document).ready(function(){
+    $('#fullpage').fullpage({
+        autoScrolling:true,
+        scrillHorizontally:true
+    })
+})
 const big_slide = new Swiper('#big_slide',{
     slidesPerView: 1,
     direction: 'horizontal',

@@ -1,0 +1,170 @@
+main {}
+/* margin 태그 */
+main > .title h1, .tab_title, .tab_contents {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+/* main title */
+main > .title {
+    background: url(../images/bg4.jpg) no-repeat center;
+    background-size: cover;
+    height: 400px;
+    position: relative;
+}
+main > .title > h1 {
+    position: absolute;
+    left: 172px;
+    bottom: 102px;
+    font-family: 'Inter', sans-serif;
+    font-size: 3.75rem;
+    font-weight: 700;
+    color: #fff;
+}
+main .tab_title {
+    display: flex;
+    background: rgba(255,255,255,0.7);
+    border: 1px solid #006ECD;
+    border-radius: 40px;
+    padding: 10px;
+    margin: 100px auto 20px;
+    width: 952px;
+}
+main .tab_title a {
+    padding: 15px 20px;
+    font-family: 'Inter', sans-serif;
+    font-size: 1.777rem;
+    font-weight: 700;
+    margin-right: 10px;
+    border-radius: 30px;
+    transition: all 0.3s linear;
+}
+main .tab_title a:hover,
+main .tab_title a.active {
+    background: #006ECD;
+    color: #fff;
+}
+main .tab_contents {}
+main .tab_contents > div {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+main .tab_contents > div .news_c {
+    width: 370px; height: 415px;
+    filter: drop-shadow(0 3px 10px rgba(0,0,0,0.25));
+    margin: 50px 45px 0 0;
+}
+main .tab_contents > div .news_c:nth-child(3n) {
+    margin-right: 0;
+}
+main .tab_contents > div .news_c .title {
+    padding: 30px;
+    background: #fff;
+    border-radius: 20px 20px 0 0;
+    height: 215px;
+}
+main .tab_contents > div .news_c .title .category {
+    display: flex;
+    align-items: center;
+}
+main .tab_contents > div .news_c .title .category img {
+    width: 30px; height: 30px;
+}
+main .tab_contents > div .news_c .title .category span {
+    background: #f3f3f3;
+    border-radius: 5px;
+    padding: 10px;
+    font-family: 'Inter', sans-serif;
+    margin-left: 10px;
+}
+main .tab_contents > div .news_c .title h2 {
+    margin: 20px 0 30px;
+    font-size: 1.777rem;
+    font-weight: 800;
+    letter-spacing: -0.02rem;
+    height: 64px;
+    line-height: 32px;
+    white-space: wrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+main .tab_contents > div .news_c .title p {letter-spacing: -0.02rem;}
+main .tab_contents > div .news_c .news_img {
+    position: relative;
+    height: 200px;
+    width: 370px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    border-radius: 0 0 20px 20px;
+    transition: all 0.3s ease;
+}
+/* news img 태그모음 */
+main .tab_contents > div:nth-child(2) .news_c:nth-child(9) .news_img,
+main .tab_contents > div:nth-child(4) .news_c:nth-child(9) .news_img,
+main .tab_contents > div:nth-child(1) .news_c:nth-child(1) .news_img,
+main .tab_contents > div:nth-child(3) .news_c:nth-child(1) .news_img,
+main .tab_contents > div:nth-child(5) .news_c:nth-child(1) .news_img {background-image: url(../images/news1.jpg);}
+main .tab_contents > div:nth-child(2) .news_c:nth-child(8) .news_img,
+main .tab_contents > div:nth-child(4) .news_c:nth-child(8) .news_img,
+main .tab_contents > div:nth-child(1) .news_c:nth-child(2) .news_img,
+main .tab_contents > div:nth-child(3) .news_c:nth-child(2) .news_img,
+main .tab_contents > div:nth-child(5) .news_c:nth-child(2) .news_img {background-image: url(../images/news2.jpg);}
+main .tab_contents > div:nth-child(2) .news_c:nth-child(7) .news_img,
+main .tab_contents > div:nth-child(4) .news_c:nth-child(7) .news_img,
+main .tab_contents > div:nth-child(1) .news_c:nth-child(3) .news_img,
+main .tab_contents > div:nth-child(3) .news_c:nth-child(3) .news_img,
+main .tab_contents > div:nth-child(5) .news_c:nth-child(3) .news_img {background-image: url(../images/news3.jpg);}
+main .tab_contents > div:nth-child(2) .news_c:nth-child(6) .news_img,
+main .tab_contents > div:nth-child(4) .news_c:nth-child(6) .news_img,
+main .tab_contents > div:nth-child(1) .news_c:nth-child(4) .news_img,
+main .tab_contents > div:nth-child(3) .news_c:nth-child(4) .news_img,
+main .tab_contents > div:nth-child(5) .news_c:nth-child(4) .news_img {background-image: url(../images/news4.jpg);}
+main .tab_contents > div:nth-child(2) .news_c:nth-child(5) .news_img,
+main .tab_contents > div:nth-child(4) .news_c:nth-child(5) .news_img,
+main .tab_contents > div:nth-child(1) .news_c:nth-child(5) .news_img,
+main .tab_contents > div:nth-child(3) .news_c:nth-child(5) .news_img,
+main .tab_contents > div:nth-child(5) .news_c:nth-child(5) .news_img {background-image: url(../images/news5.jpg);}
+main .tab_contents > div:nth-child(2) .news_c:nth-child(4) .news_img,
+main .tab_contents > div:nth-child(4) .news_c:nth-child(4) .news_img,
+main .tab_contents > div:nth-child(1) .news_c:nth-child(6) .news_img,
+main .tab_contents > div:nth-child(3) .news_c:nth-child(6) .news_img,
+main .tab_contents > div:nth-child(5) .news_c:nth-child(6) .news_img {background-image: url(../images/news6.jpg);}
+main .tab_contents > div:nth-child(2) .news_c:nth-child(3) .news_img,
+main .tab_contents > div:nth-child(4) .news_c:nth-child(3) .news_img,
+main .tab_contents > div:nth-child(1) .news_c:nth-child(7) .news_img,
+main .tab_contents > div:nth-child(3) .news_c:nth-child(7) .news_img,
+main .tab_contents > div:nth-child(5) .news_c:nth-child(7) .news_img {background-image: url(../images/news7.jpg);}
+main .tab_contents > div:nth-child(2) .news_c:nth-child(2) .news_img,
+main .tab_contents > div:nth-child(4) .news_c:nth-child(2) .news_img,
+main .tab_contents > div:nth-child(1) .news_c:nth-child(8) .news_img,
+main .tab_contents > div:nth-child(3) .news_c:nth-child(8) .news_img,
+main .tab_contents > div:nth-child(5) .news_c:nth-child(8) .news_img {background-image: url(../images/news8.jpg);}
+main .tab_contents > div:nth-child(2) .news_c:nth-child(1) .news_img,
+main .tab_contents > div:nth-child(4) .news_c:nth-child(1) .news_img,
+main .tab_contents > div:nth-child(1) .news_c:nth-child(9) .news_img,
+main .tab_contents > div:nth-child(3) .news_c:nth-child(9) .news_img,
+main .tab_contents > div:nth-child(5) .news_c:nth-child(9) .news_img {background-image: url(../images/news9.jpg);}
+/* 기본태그 */
+main .tab_contents > div .news_c:hover .news_img {
+    background-size:110% auto;
+    filter: brightness(110%);
+}
+main .page {
+    text-align: center;
+    margin: 70px 0 100px;
+}
+main .page a {
+    font-size: 1.333rem;
+    margin-right: 30px;
+}
+main .page a:last-child {margin-right: 0;}
+main .page a:hover,
+main .page a.active {
+    color: #006ECD;
+    font-weight: 700;
+    border-bottom: 2px solid #006ECD;
+}

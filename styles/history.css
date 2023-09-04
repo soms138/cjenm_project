@@ -40,32 +40,34 @@ main .history_wrap .tab_title a {
     font-size: 1.777rem;
     font-weight: 700;
     margin-right: 10px;
+    border-radius: 30px;
+    transition: all 0.3s linear;
 }
+main .history_wrap .tab_title a:hover,
 main .history_wrap .tab_title a.active {
     background: #006ECD;
-    border-radius: 30px;
     color: #fff;
 }
 /* contents active */
-main .history_wrap .tab_contents > div > .animated > p:first-child {color: #000;}
-main .history_wrap .tab_contents > div > .animated .imgCls {
+main .history_wrap .tab_contents > div > div.active > p:first-child {color: #000;}
+main .history_wrap .tab_contents > div > div.active .imgCls {
     background: url(../images/icon/ico_history.png);
     transform: rotate(-45deg);
 }
-.show {display: block !important;}
+main .history_wrap .tab_contents > div > div.active > div.show {display: block !important;}
 /* contents 기본 태그 */
 main .history_wrap .tab_contents {}
 main .history_wrap .tab_contents > div {}
 main .history_wrap .tab_contents > div .history {
     padding: 40px;
-    border-bottom: 2px solid rgba(0,0,0,0.2);
+    border-bottom: 2px solid rgba(0,0,0,0.1);
     border-left: none;
     border-right: none;
     transition: all 0.3s linear;
     display: flex;
     justify-content: space-between;
 }
-main .history_wrap .tab_contents > div .h1 {border-top: 2px solid rgba(0,0,0,0.2);}
+main .history_wrap .tab_contents > div .h1 {border-top: 2px solid rgba(0,0,0,0.1);}
 main .history_wrap .tab_contents > div .history:hover {
     background: rgba(243, 243, 243,0.7);
 }
@@ -78,7 +80,7 @@ main .history_wrap .tab_contents > div .history > p:first-child {
     font-family: 'Inter', sans-serif;
     font-size: 3.75rem;
     font-weight: 700;
-    color: rgba(0,0,0,0.2);
+    color: rgba(0,0,0,0.1);
 }
 main .history_wrap .tab_contents > div .history .imgCls {
     background: url(../images/icon/ico_history_g.png);

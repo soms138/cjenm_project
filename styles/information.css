@@ -80,8 +80,10 @@ main .sub_wrap .tab_title a {
     font-family: 'Inter', sans-serif;
     font-size: 1.777rem;
     font-weight: 700;
+    transition: all 0.3s linear;
     margin-right: 10px;
 }
+main .sub_wrap .tab_title a:hover,
 main .sub_wrap .tab_title a.active {
     background: #006ECD;
     border-radius: 30px;
@@ -109,34 +111,17 @@ main .sub_wrap .tab_contents > div .txt_t p:nth-child(3) {
     margin: 0 auto;
 }
 /* acitve 태그모음 */
-main .sub_wrap .tab_contents .tab_c1 .culture_title .active {}
-main .sub_wrap .tab_contents .tab_c1 .culture_title .active .power_wrap {
-    transform: translateY(0) !important;
+main .sub_wrap .tab_contents .tab_c1 .culture_title > div.active .power_bg .power_wrap {
+    transform: translateY(0);
+    padding-top: 80px;
 }
-main .sub_wrap .tab_contents .tab_c1 .culture_title .active .power_wrap::after {
-    content: '';
-    display: block;
-    width: 350px; height: 484px;
-    background-size: 100%;
-    border-radius: 30px;
-    position: absolute;
-    left: 0px; top: 0px;
-    z-index: 100;
-}
-main .sub_wrap .tab_contents .tab_c1 .culture_title .active .p1::after {
-    background: url(../images/power_bg1_b.png);
-}
-main .sub_wrap .tab_contents .tab_c1 .culture_title .active .p2::after {
-    background: url(../images/power_bg2_b.png);
-}
-main .sub_wrap .tab_contents .tab_c1 .culture_title .active .p3::after {
-    background: url(../images/power_bg3_b.png);
-}
-main .sub_wrap .tab_contents .tab_c1 .culture_title .active .power_wrap .power_e,
-main .sub_wrap .tab_contents .tab_c1 .culture_title .active .power_wrap .power_t {color: #FF9700;}
-main .sub_wrap .tab_contents .tab_c1 .culture_title .active .power_wrap .power_t {margin-bottom: 50px;}
-main .sub_wrap .tab_contents .tab_c1 .culture_title .active .power_wrap .desc {display: block;}
-main .sub_wrap .tab_contents .tab_c1 .culture_title .power .active .more img {transform: rotate(45deg);}
+main .sub_wrap .tab_contents .tab_c1 .culture_title > div.active .power_bg .power_wrap::after {border-radius: 30px;}
+main .sub_wrap .tab_contents .tab_c1 .culture_title > div.active .power_bg .power_wrap .power_e,
+main .sub_wrap .tab_contents .tab_c1 .culture_title > div.active .power_bg .power_wrap .power_t {color: #FF9700;}
+main .sub_wrap .tab_contents .tab_c1 .culture_title > div.active .power_bg .power_wrap .power_t {margin-bottom: 50px;}
+main .sub_wrap .tab_contents .tab_c1 .culture_title > div.active .power_bg .power_wrap > .desc {opacity: 1;}
+main .sub_wrap .tab_contents .tab_c1 .culture_title > div.active .power_bg .more img {transform: rotate(45deg);}
+/* 기본 태그 */
 main .sub_wrap .tab_contents .tab_c1 .culture_title {
     display: flex;
     align-items: center;
@@ -162,9 +147,20 @@ main .sub_wrap .tab_contents .tab_c1 .culture_title .bg3 {background-image: url(
 main .sub_wrap .tab_contents .tab_c1 .culture_title .power .power_wrap {
     width: 350px; height: 484px;
     text-align: center;
-    padding: 80px 40px 0;
-    transform: translateY(55%);
+    padding: 50px 40px 0;
+    transform: translateY(60%);
     transition: all 1s ease;
+}
+main .sub_wrap .tab_contents .tab_c1 .culture_title > div .power_bg .power_wrap::after {
+    content: '';
+    display: block;
+    width: 350px; height: 484px;
+    background: rgba(0,0,0,0.7);
+    background-size: 100%;
+    position: absolute;
+    left: 0px; top: 0px;
+    z-index: 100;
+    transition: all 0.3s linear;
 }
 main .sub_wrap .tab_contents .tab_c1 .culture_title .power .power_e,
 main .sub_wrap .tab_contents .tab_c1 .culture_title .power .power_t,
@@ -176,6 +172,7 @@ main .sub_wrap .tab_contents .tab_c1 .culture_title .power .power_e,
 main .sub_wrap .tab_contents .tab_c1 .culture_title .power .power_t  {
     color: #fff;
     font-family: 'Inter', sans-serif;
+    transition: all 0.3s linear;
 }
 main .sub_wrap .tab_contents .tab_c1 .culture_title .power .power_e {}
 main .sub_wrap .tab_contents .tab_c1 .culture_title .power .power_t {
@@ -187,7 +184,7 @@ main .sub_wrap .tab_contents .tab_c1 .culture_title .power .desc {
     color: #fff;
     letter-spacing: -0.02rem;
     line-height: 26px;
-    display: none;
+    opacity: 0;
 }
 main .sub_wrap .tab_contents .tab_c1 .culture_title .power .more {
     width: 15px; height: 15px;
@@ -218,12 +215,11 @@ main .sub_wrap .tab_contents .tab_c1 .culture_contents .power_contents .power_kw
     background: #fff;
     width: 280px;
     padding: 25px;
-    filter: drop-shadow(0 3px 5px rgba(255,255,255,0.5));
     text-align: start;
 }
 main .sub_wrap .tab_contents .tab_c1 .culture_contents .power_contents .power_kw:hover {
     background: #fcfcfc;
-    filter: drop-shadow(0 3px 10px rgba(255,255,255,1));
+    filter: drop-shadow(0 3px 10px rgba(255,255,255,0.5));
 }
 main .sub_wrap .tab_contents .tab_c1 .culture_contents .power_contents .power_kw .kw_title {
     padding-bottom: 15px;

@@ -1,12 +1,6 @@
-@keyframes move {
-    0% {transform: translateX(-50%) translateY(0);}
-    100% {transform: translateX(-50%) translateY(-30px);}
-}
-@keyframes gra_bg {
-    0% {background-position: 0 0;}
-    100% {background-position: 400% 0;}
-}
-@keyframes text_bg {
-    0% {background-position: 0 0;}
-    100% {background-position: 10000px 0;}
+@media screen and (max-aspect-ratio:3/2){
+    .video {
+        width: auto;
+        height: 100vh;
+    }
 }

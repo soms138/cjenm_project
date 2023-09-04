@@ -1,10 +1,11 @@
 main {}
 main .section {
-    background-color: lightblue;
     height: 100vh;
 }
 main .main_section {
     position: relative;
+    width: 100vw;
+    overflow: hidden;
 }
 main .main_section .title {}
 main .main_section .title h1 {
@@ -35,22 +36,25 @@ main .main_section .title .tab_contents > div > div .desc {
 main .main_section .title .tab_contents > div > div .sub_title {
     font-size: 1.777rem;
     font-weight: 700;
+    animation: txt_move 1s linear;
 }
 main .main_section .title .tab_contents > div > div .name {
     font-size: 3.75rem;
     font-weight: 700;
     margin: 20px 0;
+    animation: txt_move 1s 1s linear;
 }
 main .main_section .title .tab_contents > div > div .desc {
     font-size: 1.333rem;
+    animation: txt_move 1s 2s linear;
+    line-height: 31px;
 }
 main .main_section .title .tab_contents > div video {
-    position: relative;
-    z-index: 1;
-    /* top: 50%; */
-    /* transform: translateY(-50%); */
+    position: absolute;
+    z-index: 20;
     width: 100%;
-    /* height: 66.5%; */
+    top: 50%;
+    transform: translateY(-50%);
 }
 main .main_section .title .tab_contents > div video::after {
     content: '';
@@ -65,6 +69,7 @@ main .main_section .title .tab_contents > div video::after {
 main .main_section .swiper_container {
     position: absolute;
     bottom: 102px; right: 100px;
+    z-index: 300;
 }
 main .main_section .swiper_container #main_slide {}
 main .main_section .swiper_container #main_slide .swiper-wrapper {
@@ -94,44 +99,154 @@ main .main_section .swiper_container #main_slide .swiper-wrapper .slide5 {backgr
 main .main_section .swiper_container #main_slide .swiper-wrapper .slide6 {background-image: url(../images/main2.jpg);}
 main .main_section .swiper_container #main_slide .swiper-wrapper .slide7 {background-image: url(../images/main3.jpg);}
 main .main_section .swiper_container #main_slide .swiper-wrapper .slide8 {background-image: url(../images/main4.jpg);}
-main .c_section {}
-main .c_section h2 {}
-main .c_section h2 a {}
-main .c_section h2 a img {}
-main .c_section .contents {}
-main .c_section .contents > div {}
-main .c_section .contents > div .name {}
-main .c_section .contents > div .desc {}
+main .c_section {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 100vh;
+}
+main .c_section h2 {
+    margin: 0 auto 30px;
+}
+main .c_section:nth-child(2) h2 {width: 145px;}
+main .c_section:nth-child(3) h2 {width: 185px;}
+main .c_section:nth-child(4) h2 {width: 155px;}
+main .c_section:nth-child(5) h2 {width: 255px;}
+main .c_section h2 a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+main .c_section:nth-child(2) h2 a em {
+    width: 100px;
+    background-image: url(../images/logo_tvn.png);
+}
+main .c_section:nth-child(3) h2 a em {
+    width: 140px;
+    background-image: url(../images/logo_mnet.png);
+}
+main .c_section:nth-child(4) h2 a em {
+    width: 110px;
+    background-image: url(../images/logo_ocn.png);
+}
+main .c_section:nth-child(5) h2 a em {
+    width: 210px;
+    background-image: url(../images/logo_tooniverse.png);
+}
+main .c_section h2 a em {
+    margin-right: 15px;
+    height: 50px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-indent: -9999px;
+}
+main .c_section h2 a span {
+    background: url(../images/icon/ico_link_g.png) no-repeat center;
+    background-size: contain;
+    width: 30px; height: 30px;
+    transition: all 0.3s ease;
+}
+main .c_section h2 a:hover span {
+    transform: rotate(-45deg);
+    background: url(../images/icon/ico_link_o.png) no-repeat center;
+    background-size: contain;
+}
+main .c_section .contents {
+    width: 1060px;
+    display: flex;
+    flex-flow: row wrap;
+    margin: 0 auto;
+}
+main .c_section .contents > div {
+    margin: 20px 20px 0 0;
+    width: 250px; height: 250px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    padding: 0 30px;
+    position: relative;
+}
+main .c_section .contents > div:nth-child(4n) {margin-right: 0;}
+main .c_section .contents > div:hover::after {
+    content: '';
+    display: block;
+    height: 100%;
+    width: 100%;
+    background: rgba(0,0,0,0.6);
+    position: absolute;
+    left: 0; top: 0;
+    z-index: 50;
+}
+main .c_section .contents > div .name,
+main .c_section .contents > div .desc,
+main .c_section .contents > div .genre {
+    position: relative;
+    z-index: 100;
+    display: none;
+    color: #fff;
+    letter-spacing: -0.02rem;
+}
+main .c_section .contents > div:hover .name,
+main .c_section .contents > div:hover .desc,
+main .c_section .contents > div:hover .genre {
+    display: block;
+    animation: txt_move 1s linear;
+}
+main .c_section .contents > div .name {
+    font-size: 1.333rem;
+    font-weight: 800;
+    line-height: 31px;
+}
+main .c_section .contents > div .desc {
+    font-size: 0.75rem;
+    height: 80px;
+    line-height: 20px;
+    white-space: wrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    margin: 20px 0;
+}
 main .c_section .contents > div .genre {}
-main .c_section:nth-child(2) .contents .c1 {}
-main .c_section:nth-child(2) .contents .c2 {}
-main .c_section:nth-child(2) .contents .c3 {}
-main .c_section:nth-child(2) .contents .c4 {}
-main .c_section:nth-child(2) .contents .c5 {}
-main .c_section:nth-child(2) .contents .c6 {}
-main .c_section:nth-child(2) .contents .c7 {}
-main .c_section:nth-child(2) .contents .c8 {}
-main .c_section:nth-child(3) .contents .c1 {}
-main .c_section:nth-child(3) .contents .c2 {}
-main .c_section:nth-child(3) .contents .c3 {}
-main .c_section:nth-child(3) .contents .c4 {}
-main .c_section:nth-child(3) .contents .c5 {}
-main .c_section:nth-child(3) .contents .c6 {}
-main .c_section:nth-child(3) .contents .c7 {}
-main .c_section:nth-child(3) .contents .c8 {}
-main .c_section:nth-child(4) .contents .c1 {}
-main .c_section:nth-child(4) .contents .c2 {}
-main .c_section:nth-child(4) .contents .c3 {}
-main .c_section:nth-child(4) .contents .c4 {}
-main .c_section:nth-child(4) .contents .c5 {}
-main .c_section:nth-child(4) .contents .c6 {}
-main .c_section:nth-child(4) .contents .c7 {}
-main .c_section:nth-child(4) .contents .c8 {}
-main .c_section:nth-child(5) .contents .c1 {}
-main .c_section:nth-child(5) .contents .c2 {}
-main .c_section:nth-child(5) .contents .c3 {}
-main .c_section:nth-child(5) .contents .c4 {}
-main .c_section:nth-child(5) .contents .c5 {}
-main .c_section:nth-child(5) .contents .c6 {}
-main .c_section:nth-child(5) .contents .c7 {}
-main .c_section:nth-child(5) .contents .c8 {}
+main .c_section .contents > div .genre span {
+    font-size: 0.75rem;
+    font-weight: 800;
+}
+main .c_section .contents > div .genre span:nth-child(2) {margin: 0 5px;}
+main .c_section:nth-child(2) .contents .c1 {background-image: url(../images/tvn1.jpg);}
+main .c_section:nth-child(2) .contents .c2 {background-image: url(../images/tvn2.jpg);}
+main .c_section:nth-child(2) .contents .c3 {background-image: url(../images/tvn3.jpg);}
+main .c_section:nth-child(2) .contents .c4 {background-image: url(../images/tvn4.jpg);}
+main .c_section:nth-child(2) .contents .c5 {background-image: url(../images/tvn5.jpg);}
+main .c_section:nth-child(2) .contents .c6 {background-image: url(../images/tvn6.jpg);}
+main .c_section:nth-child(2) .contents .c7 {background-image: url(../images/tvn7.jpg);}
+main .c_section:nth-child(2) .contents .c8 {background-image: url(../images/tvn8.jpg);}
+main .c_section:nth-child(3) .contents .c1 {background-image: url(../images/mnet1.jpg);}
+main .c_section:nth-child(3) .contents .c2 {background-image: url(../images/mnet2.jpg);}
+main .c_section:nth-child(3) .contents .c3 {background-image: url(../images/mnet3.jpg);}
+main .c_section:nth-child(3) .contents .c4 {background-image: url(../images/mnet4.jpg);}
+main .c_section:nth-child(3) .contents .c5 {background-image: url(../images/mnet5.jpg);}
+main .c_section:nth-child(3) .contents .c6 {background-image: url(../images/mnet6.jpg);}
+main .c_section:nth-child(3) .contents .c7 {background-image: url(../images/mnet7.jpg);}
+main .c_section:nth-child(3) .contents .c8 {background-image: url(../images/mnet8.jpg);}
+main .c_section:nth-child(4) .contents .c1 {background-image: url(../images/ocn1.jpg);}
+main .c_section:nth-child(4) .contents .c2 {background-image: url(../images/ocn2.jpg);}
+main .c_section:nth-child(4) .contents .c3 {background-image: url(../images/ocn3.jpg);}
+main .c_section:nth-child(4) .contents .c4 {background-image: url(../images/ocn4.jpg);}
+main .c_section:nth-child(4) .contents .c5 {background-image: url(../images/ocn5.jpg);}
+main .c_section:nth-child(4) .contents .c6 {background-image: url(../images/ocn6.jpg);}
+main .c_section:nth-child(4) .contents .c7 {background-image: url(../images/ocn7.jpg);}
+main .c_section:nth-child(4) .contents .c8 {background-image: url(../images/ocn8.jpg);}
+main .c_section:nth-child(5) .contents .c1 {background-image: url(../images/tooni1.jpg);}
+main .c_section:nth-child(5) .contents .c2 {background-image: url(../images/tooni2.jpg);}
+main .c_section:nth-child(5) .contents .c3 {background-image: url(../images/tooni3.jpg);}
+main .c_section:nth-child(5) .contents .c4 {background-image: url(../images/tooni4.jpg);}
+main .c_section:nth-child(5) .contents .c5 {background-image: url(../images/tooni5.jpg);}
+main .c_section:nth-child(5) .contents .c6 {background-image: url(../images/tooni6.jpg);}
+main .c_section:nth-child(5) .contents .c7 {background-image: url(../images/tooni7.jpg);}
+main .c_section:nth-child(5) .contents .c8 {background-image: url(../images/tooni8.jpg);}

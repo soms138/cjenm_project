@@ -7,6 +7,7 @@ main .section {
 /* visual */
 main .visual {
     position: relative;
+    width: 100vw;
 }
 main .visual .txt {}
 main .visual .txt > h2 {
@@ -65,9 +66,9 @@ main .visual .txt .txt_box a:hover {
     border: 1px solid #EF151E;
 }
 main .visual video {
-    width: 100%;
-    position: relative;
+    position: absolute;
     z-index: 1;
+    width: 100%;
     top: 50%;
     transform: translateY(-50%);
 }
@@ -113,7 +114,7 @@ main .contents #scroller .slide {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    width: 450px; height: 300px;
+    width: 450px !important; height: 300px;
     margin-right: 30px;
 }
 main .contents #scroller .slide1 {background-image: url(../images/contents1.jpg);}
@@ -217,7 +218,8 @@ main .business::after {
 main .business .txt_box {
     position: absolute;
     left: 50%;
-    transform: translateX(-50%);
+    top: 50%;
+    transform: translate(-50%,-50%);
     z-index: 300;
     text-align: center;
 }
@@ -238,7 +240,7 @@ main .business h2 {
 }
 main .business p:nth-child(3) {line-height: 26px;}
 main .business a {
-    margin: 70px auto 100px;
+    margin: 70px auto 0;
     display: block;
     font-size: 1.333rem;
     text-align: center;
@@ -256,7 +258,7 @@ main .business p img {
     animation: move 1s linear alternate infinite;
     position: absolute;
     left: 50%;
-    bottom: 70px;
+    bottom: 50px;
     z-index: 300;
 }
 /* business 배경태그 */

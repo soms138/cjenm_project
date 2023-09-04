@@ -1917,7 +1917,7 @@
 
                 //End
                 case 35:
-                     if(isScrollAllowed.k.down){
+                    if(isScrollAllowed.k.down){
                         moveTo( $(SECTION_SEL).length );
                     }
                     break;

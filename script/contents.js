@@ -1,6 +1,13 @@
 const tab_contents = document.querySelectorAll('.tab_contents > div')
 const slide = document.querySelectorAll('.swiper-slide')
+const txt = document.querySelectorAll('.contents > div')
 console.log(tab_contents,slide)
+$(document).ready(function(){
+    $('#fullpage').fullpage({
+        autoScrolling:true,
+        scrillHorizontally:true
+    })
+})
 for(let i of tab_contents){i.style.display = 'none'}
 tab_contents[0].style.display = 'block'
 slide.forEach(function(t,i){

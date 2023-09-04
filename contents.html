@@ -14,8 +14,10 @@
     <link rel="icon" href="./images/favicon.png" type="image/x-icon">
     <!-- style -->
     <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/fullPage.css">
     <link rel="stylesheet" href="./styles/common.css">
     <link rel="stylesheet" href="./styles/contents.css">
+    <link rel="stylesheet" href="./styles/animation.css">
 </head>
 <body>
     <?php include('./header.php') ?>
@@ -41,7 +43,7 @@
             <span class="bar"></span>
         </p>
     </aside>
-    <main>
+    <main id="fullpage">
         <div class="section main_section">
             <div class="title">
                 <h1>Contents</h1>
@@ -128,7 +130,7 @@
             </div>
         </div>
         <div class="section c_section">
-            <h2><a href="#"><img src="./images/logo_tvn.png" alt="tvN"></a></h2>
+            <h2><a href="#"><em>tvN</em><span></span></a></h2>
             <div class="contents">
                 <div class="c1">
                     <p class="name">소용없어 거짓말</p>
@@ -186,12 +188,12 @@
                     </p>
                 </div>
                 <div class="c6">
-                    <p class="name"></p>
+                    <p class="name">2억9천 : 결혼전쟁</p>
                     <p class="desc">
                         돈 때문에 아무도 결혼을 꿈꾸지 않는 시대! 결혼을 꿈꾸는 각양각색의 10커플이 모여 2억 9천만 원의 결혼자금을 두고 치열한 대결을 펼친다. 미션을 통해 사랑을 확인할 것인가, 사랑을 의심할 것인가! 서로의 믿음과 사랑을 증명하고 결혼이라는 결승점에 도달할 수 있을까? 2023년, 연애는 끝났다! 예비부부 10쌍의 리얼 커플 서바이벌.
                     </p>
                     <p class="genre">
-                        <span>2억9천 : 결혼전쟁</span>
+                        <span>예능</span>
                         <span>|</span>
                         <span>리얼리티, 서바이벌</span>
                     </p>
@@ -221,7 +223,7 @@
             </div>
         </div>
         <div class="section c_section">
-            <h2><a href="#"><img src="./images/logo_mnet.png" alt="Mnet"></a></h2>
+            <h2><a href="#"><em>Mnet</em><span></span></a></h2>
             <div class="contents">
                 <div class="c1">
                     <p class="name">엠넷 리부트</p>
@@ -293,7 +295,6 @@
                     <p class="name">너의 목소리가 보여10</p>
                     <p class="desc">
                         '너의 목소리가 보여' 9번째 시즌, 직업과 나이, 노래 실력 마저도 숨긴 미스터리 싱어 군단. 얼굴과 몇 가지 단서만으로 실력자인지 음치인지 가려내야 한다. 절대 음치 사이에는 절대 음감 실력자가 숨어있다. '김종국', '유세윤', '이특'이 패널들과 함께 '실력자'와 '음치'를 찾아내는 대반전 음악 추리쇼 '너의 목소리가 보여9'과 함께 Have a 9ood Time!'
-접기
                     </p>
                     <p class="genre">
                         <span>예능</span>
@@ -315,7 +316,7 @@
             </div>
         </div>
         <div class="section c_section">
-            <h2><a href="#"><img src="./images/logo_ocn.png" alt="OCN"></a></h2>
+            <h2><a href="#"><em>OCN</em><span></span></a></h2>
             <div class="contents">
                 <div class="c1">
                     <p class="name">경이로운 소문</p>
@@ -329,7 +330,7 @@
                     </p>
                 </div>
                 <div class="c2">
-                    <p class="name"></p>
+                    <p class="name">써치</p>
                     <p class="desc">
                         남북 분단의 흔적인 비무장지대 DMZ. 어느 날 이곳에 미스터리한 실종과 살인 사건이 일어난다. 엎친 데 덮친 격으로 괴생물체로 변이 한 들개가 발견되기까지. 비밀을 밝히기 위해 최정예 수색대 ‘북극성’이 꾸려진다. 비밀을 추적하던 이들은 이 모든 것이 1997년의 한 사건 때문임을 알게 된다. 한국 최초의 밀리터리 스릴러
                     </p>
@@ -365,7 +366,6 @@
                     <p class="name">루갈</p>
                     <p class="desc">
                         삶의 전부를 잃은 사람들이 바이오 생명공학 기술로 특별한 능력을 얻어 특수조직 ‘루갈’의 인간 병기로 다시 태어난다. 상실이라는 공통분모를 지닌 ‘루갈’의 대원들은 대한민국 최대 테러집단 ‘아르고스’를 박멸하기 위해 맞서 싸우게 되는데, 상을 지배하기 위해 인간 병기를 만드는 절대악과 그에 맞서 기계가 되면서까지 인간성을 지켜내려는 영웅들의 전투극.
-
                     </p>
                     <p class="genre">
                         <span>드라마</span>
@@ -396,7 +396,7 @@
                     </p>
                 </div>
                 <div class="c8">
-                    <p class="name"></p>
+                    <p class="name">왓쳐</p>
                     <p class="desc">
                         믿었던 선배에게 배신당한 뒤 평생을 감시자로 살기로 한 감찰 수사관. 경찰이었던 아버지가 어머니를 살해했을지도 모른다 의심하며 살아가는 젊은 경찰. 살해 위협을 당한 변호사. 그룹 회장 아들의 유괴 사건으로 한자리에 다시 모인 세 남녀가 경찰 내부 비리 조사팀이 되어 권력의 실체를 파헤치는 심리 스릴러
                     </p>
@@ -409,69 +409,70 @@
             </div>
         </div>
         <div class="section c_section">
-            <h2><a href="#"><img src="./images/logo_tooniverse.png" alt="투니버스"></a></h2>
+            <h2><a href="#"><em>투니버스</em><span></span></a></h2>
             <div class="contents">
                 <div class="c1">
                     <p class="name">뿡뿡빵빵 부부맨</p>
                     <p class="desc">
                         "도와줘요 부부맨!" 어느 날, 외계에서 날아온 운석에 맞은 고구마를 먹고 붕실붕실한 방귀를 뀌면 무엇이든 만들 수 있는 초능력을 갖게 된 '부부맨'. 바쁜 엄마를 대신해 육아에 전념하고자 은퇴를 했는데… 사라진 줄로만 알았던 초능력이 아직 살아있었다? 멋진 방귀 구름으로 아이들을 도와주는 세상에서 가장 웃기고 독특한 히어로 아빠와 귀여운 딸 '보니'의 유쾌한 일상을 담은 애니메이션.
                     </p>
-                    <p class="genre">애니메이션</p>
+                    <p class="genre"><span>애니메이션</span></p>
                 </div>
                 <div class="c2">
                     <p class="name">신비아파트 고스트볼 ZERO</p>
                     <p class="desc">
                         붉은 눈의 저주가 세상을 삼켜버렸다! 핏빛으로 물든 세상에 일상을 지배해버린 정체불명의 귀신들까지… '강림'과 '리온'에게 찾아온 알 수 없는 변화와 새로운 존재의 등장으로 혼란에 빠진 하리와 친구들! 그 비밀을 파헤치고 위기에 빠진 세계를 구할 수 있을까?
                     </p>
-                    <p class="genre">애니메이션</p>
+                    <p class="genre"><span>애니메이션</span></p>
                 </div>
                 <div class="c3">
                     <p class="name">신비아파트 고스트볼Z</p>
                     <p class="desc">
                         역대 시즌 최고의 첫방 시청률을 기록한 기대작! 도심 한복판에 나타난 곰이 사람들의 반려동물을 데려간다는 괴담이 퍼지면서, 이를 조사하는 '하리','두리' 남매와 더욱 강력한 힘을 얻기 위해 봉인된 기억을 깨우려는 '강림'이 나선다. 정체불명의 귀도 퇴마사 집단의 실체가 드디어 밝혀지고, 이를 막기 위해 '하리'는 친구들과 힘을 모아 귀도 퇴마사와 불꽃 튀는 전투를 벌인다.
                     </p>
-                    <p class="genre">애니메이션</p>
+                    <p class="genre"><span>애니메이션</span></p>
                 </div>
                 <div class="c4">
                     <p class="name">마카앤로니</p>
                     <p class="desc">
                         오늘도 ‘알버트 박사’의 실험실은 시끄럽다. 타고난 소심함 때문에 작은 사고도 대형사고로 만들어 버리는 고양이 ‘마카’. 사고도 과감하게 치는 펭귄 ‘로니’. 발명에는 진심이지만 ‘마카’와 ‘로니’의 기상천외한 아이디어는 ‘알버트 박사’의 발명품을 산으로 가게 할 뿐. 그리고 이들을 돕는 AI 로봇 ‘알바고’까지. 말이 필요 없는 슬랩스틱 애니메이션.
                     </p>
-                    <p class="genre">애니메이션</p>
+                    <p class="genre"><span>애니메이션</span></p>
                 </div>
                 <div class="c5">
                     <p class="name">신비아파트: 고스트볼 더블X</p>
                     <p class="desc">
                         귀신들의 억울한 사연을 들어줄 줄 아는 착한 마음씨의 소녀, ‘하리’는 귀신이 나타나는 곳이라면 어디든지 친구들과 함께 찾아가 그들의 억울한 사연을 들어주고 승천할 수 있게 도와준다. 귀신을 목격했다는 소문이 끊이지 않는 신비 아파트의 이야기를 들은 ‘하리’는 친구들과 함께 그 실체를 뒤쫓게 되는데, 그들은 괴담의 실체를 밝혀낼 수 있을까?
                     </p>
-                    <p class="genre">애니메이션</p>
+                    <p class="genre"><span>애니메이션</span></p>
                 </div>
                 <div class="c6">
                     <p class="name">포켓몬스터: 리코와 로드의 모험</p>
                     <p class="desc">
                         꿈과 비밀로 가득 찬 포켓몬스터 세계에 설렘과 용기를 안고 발걸음을 내디딘 새로운 두 명의 주인공. 신비한 펜던트를 가진 팔데아 출신 소녀 '리코', 수수께끼의 몬스터볼을 가진 관동 출신 소년 '로드' 두 사람 앞에는 어떤 신비한 포켓몬과 가슴 뛰는 도전이 기다리고 있을까? 리코와 로드의 새로운 모험이 시작된다!
                     </p>
-                    <p class="genre">애니메이션</p>
+                    <p class="genre"><span>애니메이션</span></p>
                 </div>
                 <div class="c7">
                     <p class="name">신비아파트: 고스트볼X의 탄생</p>
                     <p class="desc">
                         고요하고 평화롭던 신비 아파트에 ‘혈안귀’, 복수의 하얀 원혼 ‘백의귀’, 지옥의 피에로 ‘네비로스’가 나타나 ‘신비’와 ‘하리’ 일행을 어둠에 가두려 한다. 이때 어디선가 나타난 전설의 아이기스 퇴마사 ‘리온’의 활약으로 가까스로 위기를 넘기는 ‘신비’와 ‘하리’ 일행! 이들은 흑마법사를 이겨내고 어둠 속에 갇힌 신비 아파트를 무사히 구해낼 수 있을까?
                     </p>
-                    <p class="genre">애니메이션</p>
+                    <p class="genre"><span>애니메이션</span></p>
                 </div>
                 <div class="c8">
                     <p class="name">레인보우 루비</p>
                     <p class="desc">
                         레인보우 빌리지, 조금만 기다려! 밝은 마음을 지닌 여섯 살 소녀 ‘루비’는 장난감들의 세계 '레인보우 빌리지'에서 어떤 문제든 척척 해결하는 해결사예요. 날이 흐려 주민들이 슬퍼하면 가수로 변신해 노래를 불러주고, 숲에서 괴물 소리가 들려 주민들이 공포에 떨면 안전요원으로 변신해 용감하게 숲을 탐색하죠. 나이가 어려서, 여자라서 못 하는 건 없다고요!
-접기
                     </p>
-                    <p class="genre">애니메이션</p>
+                    <p class="genre"><span>애니메이션</span></p>
                 </div>
             </div>
         </div>
     </main>
     <?php include('./footer.php') ?>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="./script/fullPage.js"></script>
     <script src="./script/common.js"></script>
     <script src="./script/contents.js"></script>
 </body>

@@ -44,7 +44,6 @@ aside .bar_wrap:hover span:first-child {
     font-family: 'Inter', sans-serif;
     font-weight: 700;
     color: #fff;
-    width: 180px;
     background: #FF9700;
     border-radius: 5px;
     padding: 10px 15px;
@@ -120,7 +119,9 @@ header .nav_open {
     transform: translateX(100%);
 }
 header .nav_open .nav_wrap {
-    padding-top: 159px;
+    padding-top: 110px;
+    overflow: hidden;
+    height: 530px;
 }
 /* open nav 폰트 통합 태그 */
 header .nav_open .nav_wrap > li > a,
@@ -172,7 +173,7 @@ header .nav_open .nav_wrap > li > .sub > li {}
 header .nav_open .nav_wrap > li > .sub > li > a {
     display: block;
     font-size: 1.333rem;
-    padding: 15px 0;
+    padding: 10px 0;
     transition: all 0.3s linear;
 }
 header .nav_open .nav_wrap > li > .sub > li > .sub2 {
@@ -189,7 +190,7 @@ header .nav_open .nav_wrap > li > .sub > li > .sub2 li a {
 }
 header .nav_open .open_link {
     position: absolute;
-    bottom: 60px;
+    bottom: 40px;
     left: 60px;
 }
 header .nav_open .open_link .sns {
@@ -223,6 +224,7 @@ header .nav_open .open_link .etc a {
     display: flex;
     align-items: center;
 }
+header .nav_open .open_link .etc a:last-child {margin-bottom: 0;}
 header .nav_open .open_link .etc a span {
     font-family: 'Inter', sans-serif;
     font-weight: 700;
