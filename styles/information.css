@@ -93,12 +93,13 @@ main .sub_wrap .tab_title a.active {
 main .sub_wrap .tab_contents {}
 main .sub_wrap .tab_contents > div {}
 main .sub_wrap .tab_contents > div .txt_t {margin: 70px 0;}
-main .sub_wrap .tab_contents > div .txt_t p {margin-bottom: 50px;}
+main .sub_wrap .tab_contents > div .txt_t p {}
 main .sub_wrap .tab_contents > div .txt_t p:first-child {
     font-family: 'Inter', sans-serif;
     color: #fff;
     font-weight: 700;
     font-size: 1.777rem;
+    margin-bottom: 50px;
 }
 main .sub_wrap .tab_contents > div .txt_t p:nth-child(2),
 main .sub_wrap .tab_contents > div .txt_t p:nth-child(3) {
@@ -206,7 +207,7 @@ main .sub_wrap .tab_contents .tab_c1 .culture_contents {
 main .sub_wrap .tab_contents .tab_c1 .culture_contents .power_contents {
     display: flex;
     justify-content: space-between;
-    margin: 70px 0;
+    margin-top: 70px;
 }
 main .sub_wrap .tab_contents .tab_c1 .culture_contents .power_c1 {}
 main .sub_wrap .tab_contents .tab_c1 .culture_contents .power_c2 {}

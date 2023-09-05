@@ -1,6 +1,27 @@
-@media screen and (max-aspect-ratio:3/2){
+/* @media screen and (max-aspect-ratio:3/2){
     .video {
         width: auto;
         height: 100vh;
     }
-}
+} */
+@media screen and (max-width:1600px){
+    /* 1600px 이하일 때 */
+    main .visual video {
+        width: auto;
+        height: 100%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+}/* 1600 end */
+@media screen and (max-width:1440px){
+    /* 1440px 이하일 때 */
+    main .visual .txt {
+        display: flex;
+        flex-flow: column nowrap;
+    }
+    main .visual .txt .txt_box,
+    main .visual .txt > h2 {
+        position: static;
+    }
+    main .visual .txt > h2 {margin-bottom: 50px;}
+}/* 1440 end */
