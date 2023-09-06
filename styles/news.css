@@ -1,7 +1,8 @@
 main {}
 /* margin 태그 */
-main > .title h1, .tab_title, .tab_contents {
+.tab_contents {
     max-width: 1200px;
+    min-width: 390px;
     margin: 0 auto;
 }
 /* main title */
@@ -27,7 +28,7 @@ main .tab_title {
     border-radius: 40px;
     padding: 10px;
     margin: 100px auto 20px;
-    width: 952px;
+    width: 930px;
 }
 main .tab_title a {
     padding: 15px 20px;
@@ -38,6 +39,7 @@ main .tab_title a {
     border-radius: 30px;
     transition: all 0.3s linear;
 }
+main .tab_title a:last-child {margin-right: 0;}
 main .tab_title a:hover,
 main .tab_title a.active {
     background: #006ECD;
@@ -51,9 +53,13 @@ main .tab_contents > div {
 }
 main .tab_contents > div .news_c {
     width: 370px; height: 415px;
-    filter: drop-shadow(0 3px 10px rgba(0,0,0,0.25));
+    filter: drop-shadow(0 3px 5px rgba(0,0,0,0.2));
     margin: 50px 45px 0 0;
 }
+main .tab_contents > div .news_c:hover {
+    filter: drop-shadow(0 3px 10px rgba(0, 110, 205,0.25));
+}
+main .tab_contents > div .news_c:last-child {display: block;}
 main .tab_contents > div .news_c:nth-child(3n) {
     margin-right: 0;
 }

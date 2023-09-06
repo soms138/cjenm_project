@@ -30,11 +30,18 @@ const big_slide = new Swiper('#big_slide',{
     }
 })
 const small_slide = new Swiper('#small_slide',{
-    slidesPerView: 3,
+    slidesPerView: 1,
     direction: 'horizontal',
     autoplay:{delay:3000},
     speed:1000,
     loop:true,
+    breakpoints:{
+        500:{slidesPerView:2},
+        800:{slidesPerView:3},
+        1060:{slidesPerView:4},
+        1200:{slidesPerView:5},
+        1360:{slidesPerView:3},
+    },
     navigation: {
         nextEl: '.news_container .swiper-button-next',
         prevEl: '.news_container .swiper-button-prev'

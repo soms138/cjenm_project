@@ -1,8 +1,8 @@
 main {}
 /* margin 태그 */
-main > .title h1,
 main .sub_wrap .tab_contents .tab_c1 .culture_title {
     max-width: 1200px;
+    min-width: 390px;
     margin: 0 auto;
 }
 /* main title */

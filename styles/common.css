@@ -56,7 +56,7 @@ aside p.active .bar , aside .bar_wrap:hover .bar {
     margin: 0 5px;
 }
 header,footer {
-    min-width: 320px;
+    min-width: 390px;
 }
 header {
     padding: 15px 30px;

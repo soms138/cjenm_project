@@ -10,6 +10,10 @@
     0% {background-position: 0 0;}
     100% {background-position: 10000px 0;}
 }
+@keyframes video_txt_move {
+    0% {transform: translateX(20%); opacity: 0;}
+    100% {transform: translateX(0); opacity: 1;}
+}
 @keyframes txt_move {
     0% {transform: translateY(50%); opacity: 0;}
     100% {transform: translateY(0); opacity: 1;}

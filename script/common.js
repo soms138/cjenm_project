@@ -63,4 +63,10 @@ window.addEventListener('scroll',function(e){
             target.classList.add('active')
         }
     })
+    console.log(window.pageYOffset)
+    if(window.pageYOffset > 300){
+        header.style.background = 'rgba(0,0,0,0.7)'
+    }else {
+        header.style.background = 'none'
+    }
 })

@@ -1,10 +1,12 @@
-main {}
+main {
+    min-width: 390px;
+}
 main .section {
     height: 100vh;
 }
 main .main_section {
     position: relative;
-    width: 100vw;
+    width: 100%;
     overflow: hidden;
 }
 main .main_section .title {}
@@ -25,6 +27,7 @@ main .main_section .title .tab_contents > div > div {
     z-index: 150;
     left: 172px;
     bottom: 102px;
+    animation: video_txt_move 1s ease;
 }
 main .main_section .title .tab_contents > div > div > p {}
 main .main_section .title .tab_contents > div > div .sub_title,
@@ -36,17 +39,14 @@ main .main_section .title .tab_contents > div > div .desc {
 main .main_section .title .tab_contents > div > div .sub_title {
     font-size: 1.777rem;
     font-weight: 700;
-    animation: txt_move 1s linear;
 }
 main .main_section .title .tab_contents > div > div .name {
     font-size: 3.75rem;
     font-weight: 700;
     margin: 20px 0;
-    animation: txt_move 1s 1s linear;
 }
 main .main_section .title .tab_contents > div > div .desc {
     font-size: 1.333rem;
-    animation: txt_move 1s 2s linear;
     line-height: 31px;
 }
 main .main_section .title .tab_contents > div video {
