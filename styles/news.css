@@ -1,8 +1,9 @@
-main {}
+main {
+    min-width: 390px;
+}
 /* margin 태그 */
 .tab_contents {
     max-width: 1200px;
-    min-width: 390px;
     margin: 0 auto;
 }
 /* main title */

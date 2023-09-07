@@ -25,5 +25,11 @@ const main_slide = new Swiper('#main_slide',{
     autoplay:{delay:3000},
     speed:1000,
     loop:true,
+    /* breakpoints:{
+        834:{
+            direction:'horizontal',
+            slidesPerView:5,
+        },
+    }, */
 })
 console.log(main_slide)

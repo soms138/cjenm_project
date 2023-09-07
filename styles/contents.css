@@ -1,3 +1,4 @@
+header {background: rgba(0,0,0,0.7);}
 main {
     min-width: 390px;
 }
@@ -59,7 +60,7 @@ main .main_section .title .tab_contents > div video {
 main .main_section .title .tab_contents > div video::after {
     content: '';
     display: block;
-    height: 100vh;
+    height: 100%;
     width: 100%;
     background: rgba(0,0,0,0.5);
     position: absolute;
@@ -190,6 +191,7 @@ main .c_section .contents > div .genre {
     color: #fff;
     letter-spacing: -0.02rem;
 }
+main .c_section .contents > div:hover .desc {display: -webkit-box !important;}
 main .c_section .contents > div:hover .name,
 main .c_section .contents > div:hover .desc,
 main .c_section .contents > div:hover .genre {
@@ -199,7 +201,7 @@ main .c_section .contents > div:hover .genre {
 main .c_section .contents > div .name {
     font-size: 1.333rem;
     font-weight: 800;
-    line-height: 31px;
+    line-height: 27px;
 }
 main .c_section .contents > div .desc {
     font-size: 0.75rem;

@@ -1,8 +1,9 @@
-main {}
+main {
+    min-width: 390px;
+}
 /* margin 태그 */
 main .sub_wrap .tab_contents .tab_c1 .culture_title {
     max-width: 1200px;
-    min-width: 390px;
     margin: 0 auto;
 }
 /* main title */
@@ -92,7 +93,9 @@ main .sub_wrap .tab_title a.active {
 /* tab_contents 공통태그 */
 main .sub_wrap .tab_contents {}
 main .sub_wrap .tab_contents > div {}
-main .sub_wrap .tab_contents > div .txt_t {margin: 70px 0;}
+main .sub_wrap .tab_contents > div .txt_t {
+    margin: 70px 0;
+}
 main .sub_wrap .tab_contents > div .txt_t p {}
 main .sub_wrap .tab_contents > div .txt_t p:first-child {
     font-family: 'Inter', sans-serif;
@@ -140,7 +143,7 @@ main .sub_wrap .tab_contents .tab_c1 .culture_title .power .power_bg {
     border-radius: 30px;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: cover;
 }
 main .sub_wrap .tab_contents .tab_c1 .culture_title .bg1 {background-image: url(../images/power_bg1.png);}
 main .sub_wrap .tab_contents .tab_c1 .culture_title .bg2 {background-image: url(../images/power_bg2.png);}
@@ -264,7 +267,7 @@ main .sub_wrap .tab_contents .tab_c2 .ci_contents .ci_right .detail .blossom {
     display: flex;
     flex-flow: column nowrap;
     justify-content: space-between;
-    margin: 0 70px 50px 0;
+    margin-right: 70px;
     height: 100%;
 }
 main .sub_wrap .tab_contents .tab_c2 .ci_contents .ci_right .detail .blossom:last-child {margin-right: 0;}
@@ -272,6 +275,7 @@ main .sub_wrap .tab_contents .tab_c2 .ci_contents .ci_right .detail .blossom:las
 .blossom:nth-child(2) img {width: 67.48px; height: 69.32px;}
 .blossom:nth-child(3) img {width: 62.78px; height: 73.54px;}
 main .sub_wrap .tab_contents .tab_c2 .ci_contents .ci_right .detail .blossom span {
+    letter-spacing: -0.02rem;
     font-size: 1.333rem;
     font-weight: 800;
 }

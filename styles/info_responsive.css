@@ -1,0 +1,182 @@
+@media screen and (max-width:1360px) {
+    main .main_wrap .main_btm p:nth-child(2) {width: auto;}
+    main .sub_wrap .tab_title {width: 189px;}
+    main .sub_wrap .tab_title a {
+        padding: 10px 15px;
+        font-size: 1.333rem;
+    }
+    main .sub_wrap .tab_contents .power_contents, main .sub_wrap .tab_contents .tab_c1 .culture_contents {
+        width: calc(100% - 140px);
+        margin: 0 auto;
+    }
+    main .sub_wrap .tab_contents > div .txt_t {
+        width: calc(100% - 140px);
+        margin: 70px auto;
+    }
+    main .sub_wrap .tab_contents .tab_c1 .culture_title > div.active .power_bg .power_wrap {padding-top: 50px;}
+    main .sub_wrap .tab_contents .tab_c1 .culture_title > div.active .power_bg .power_wrap .power_t {
+        margin-bottom: 30px;
+        line-height: 31px;
+    }
+    main .sub_wrap .tab_contents .tab_c1 .culture_title {
+        display: flex;
+        justify-content: center;
+    }
+    main .sub_wrap .tab_contents .tab_c1 .culture_title .power {margin-right: 30px;}
+    main .sub_wrap .tab_contents .tab_c1 .culture_title .power .power_wrap {
+        width: 220px; height: 350px;
+        padding: 40px 20px 20px;
+        transform: translateY(50%);
+    }
+    main .sub_wrap .tab_contents .tab_c1 .culture_title > div .power_bg .power_wrap::after {
+        width: 220px; height: 350px;
+    }
+    main .sub_wrap .tab_contents .tab_c1 .culture_title .power .power_e {
+        font-size: 0.75rem;
+    }
+    main .sub_wrap .tab_contents .tab_c1 .culture_title .power .desc {
+        height: 130px;
+        white-space: wrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 5;
+        -webkit-box-orient: vertical;
+    }
+    main .sub_wrap .tab_contents .tab_c1 .culture_title .power .more {bottom: 20px;}
+    main .sub_wrap .tab_contents .tab_c1 .culture_contents .power_contents {
+        flex-flow: row wrap;
+        justify-content: center;
+        margin: 40px auto 0;
+        width: 720px;
+    }
+    main .sub_wrap .tab_contents .tab_c1 .culture_contents .power_contents .power_kw {margin: 30px 30px 0 0;}
+    main .sub_wrap .tab_contents .tab_c1 .culture_contents .power_contents .power_kw:nth-child(2n) {margin: 30px 0 0 0;}
+    main .sub_wrap .tab_contents > div .txt_t p:nth-child(3) {
+        width: auto;
+    }
+}
+@media screen and (max-width:1060px) {
+    main .main_wrap {padding: 70px;}
+    main .sub_wrap .tab_title {
+        width: 137px;
+        padding: 7px;
+    }
+    main .sub_wrap .tab_title a {
+        padding: 7px 10px;
+        font-size: 1rem;
+    }
+    main .sub_wrap .tab_title a:first-child {margin-right: 7px;}
+    main .sub_wrap .tab_contents > div .txt_t p {font-size: 0.75rem;}
+    main .sub_wrap .tab_contents > div .txt_t p:first-child {font-size: 1.333rem;}
+ 
+    main .sub_wrap .tab_contents .tab_c2 .ci_contents p {width: 354.1px; height: 170px;}
+    main .sub_wrap .tab_contents .tab_c2 .ci_contents .ci_right {margin-left: 70px;}
+    main .sub_wrap .tab_contents .tab_c2 .ci_contents .ci_right .detail {
+        height: 90px;
+        margin-bottom: 35px;
+    }
+    main .sub_wrap .tab_contents .tab_c2 .ci_contents .ci_right .detail .blossom {margin-right: 50px;}
+    .blossom:nth-child(1) img {width: 44.77px; height: 55px;}
+    .blossom:nth-child(2) img {width: 53.54px; height: 55px;}
+    .blossom:nth-child(3) img {width: 46.95px; height: 55px;}
+    main .sub_wrap .tab_contents .tab_c2 .ci_contents .ci_right .detail .blossom span {font-size: 1rem;}
+    main .sub_wrap .tab_contents .tab_c2 .ci_contents .ci_right .download a:first-child {margin-right: 25px;}
+}
+@media screen and (max-width:834px) {
+    main > .title > h1 {
+        position: absolute;
+        display: inline;
+        left: 50%;
+        bottom: 50px;
+        transform: translateX(-50%);
+        font-size: 2.369rem;
+    }
+    main .main_wrap {padding: 50px 30px;}
+    main .sub_wrap .tab_contents .tab_c1 .culture_title div.active,
+    main .sub_wrap .tab_contents .tab_c1 .culture_title div.active .power_bg {
+        border-radius: 30px;
+    }
+    main .sub_wrap .tab_contents .tab_c1 .culture_title > div.active .power_bg .power_wrap::after {
+        width: 210px; height: 270px;
+    }
+    main .sub_wrap .tab_contents .tab_c1 .culture_title > div.active .power_bg .power_wrap {
+        padding-top: 40px;
+        width: 210px; height: 270px;
+        padding: 40px 20px 20px;
+    }
+    main .sub_wrap .tab_contents .tab_c1 .culture_title > div.active .power_bg .power_wrap .power_t {
+        font-size: 1rem;
+        line-height: 26px !important;
+        width: 150px;
+        margin: 0 auto 20px;
+    }
+    main .sub_wrap .tab_contents .tab_c1 .culture_title > div.active .power_bg .power_wrap::after, 
+    main .sub_wrap .tab_contents .tab_c1 .culture_title > div.active .power_bg .power_wrap .power_t,
+    main .sub_wrap .tab_contents .tab_c1 .culture_title > div.active .power_bg .power_wrap .power_e {display: block;}
+    main .sub_wrap .tab_contents .tab_c1 .culture_title div.active .more {bottom: 20px;}
+    main .sub_wrap .tab_contents .tab_c1 .culture_title {
+        display: flex;
+        justify-content: center;
+    }
+    main .sub_wrap .tab_contents .tab_c1 .culture_title .power .power_wrap {
+        width: 30px; height: 270px;
+    }
+    main .sub_wrap .tab_contents .tab_c1 .culture_title .power,
+    main .sub_wrap .tab_contents .tab_c1 .culture_title .power .power_bg {
+        border-radius: 10px;
+    }
+    main .sub_wrap .tab_contents .tab_c1 .culture_title > div .power_bg .power_wrap::after,
+    main .sub_wrap .tab_contents .tab_c1 .culture_title > div .power_bg .power_wrap .power_t,.power_e {display: none;}
+    main .sub_wrap .tab_contents .tab_c1 .culture_title .power .power_e {
+        font-size: 0.5rem;
+    }
+    main .sub_wrap .tab_contents .tab_c1 .culture_title .power .desc {
+        font-size: 0.75rem;
+        line-height: 22px;
+        height: 88px;
+        white-space: wrap;
+        -webkit-line-clamp: 4;
+    }
+    main .sub_wrap .tab_contents .tab_c1 .culture_title .power .more {bottom: 50%;}
+    main .sub_wrap .tab_contents .tab_c1 .culture_contents .power_contents {
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+        margin-top: 50px;
+        width: 0;
+    }
+    main .sub_wrap .tab_contents .tab_c1 .culture_contents .power_contents .power_kw {
+        width: 330px;
+        margin: 20px 0 0 0 !important;
+    }
+    main .sub_wrap .tab_contents .tab_c1 .culture_contents .power_contents .power_kw .kw_title {
+        font-size: 1rem;
+        padding-bottom: 10px;
+        margin-bottom: 15px;
+    }
+    main .sub_wrap .tab_contents .tab_c1 .culture_contents .power_contents .power_kw .kw_desc {
+        font-size: 0.5rem;
+        line-height: 20px;
+    }
+    main .sub_wrap .tab_contents .power_contents, main .sub_wrap .tab_contents .tab_c1 .culture_contents, main .sub_wrap .tab_contents .tab_c1 .culture_title {width: calc(100% - 60px);}
+    main .sub_wrap .tab_contents > div .txt_t {
+        width: calc(100% - 60px);
+        margin: 30px auto;
+    }
+    main .sub_wrap .tab_contents .tab_c2 .ci_contents {flex-flow: column nowrap;}
+    main .sub_wrap .tab_contents .tab_c2 .ci_contents p {width: 249.96px; height: 120px;}
+    main .sub_wrap .tab_contents .tab_c2 .ci_contents .ci_right {margin: 60px 0 0 0;}
+    main .sub_wrap .tab_contents .tab_c2 .ci_contents .ci_right .detail {
+        height: 70px;
+        margin-bottom: 35px;
+    }
+    .blossom:nth-child(1) img {width: 36.63px; height: 45px;}
+    .blossom:nth-child(2) img {width: 43.81px; height: 45px;}
+    .blossom:nth-child(3) img {width: 38.42px; height: 45px;}
+    main .sub_wrap .tab_contents .tab_c2 .ci_contents .ci_right .detail .blossom span {font-size: 0.75rem;}
+    main .sub_wrap .tab_contents .tab_c2 .ci_contents .ci_right .download a:first-child {margin-right: 25px;}
+    main .sub_wrap .tab_contents .tab_c2 .ci_contents .ci_right .download a {width: 90px;}
+    main .sub_wrap .tab_contents .tab_c2 .ci_contents .ci_right .download a span {font-size: 0.75rem;}
+    .download a span:last-child {width: 10px; height: 10px;}
+}

@@ -1,8 +1,9 @@
-main {}
+main {
+    min-width: 390px;
+}
 /* margin 태그 */
 .tab_contents {
     max-width: 1200px;
-    min-width: 390px;
     margin: 0 auto;
 }
 /* main title */
@@ -40,7 +41,7 @@ main .history_wrap .tab_title a {
     font-family: 'Inter', sans-serif;
     font-size: 1.777rem;
     font-weight: 700;
-    margin-right: 10px;
+    margin-right: 8px;
     border-radius: 30px;
     transition: all 0.3s linear;
 }
@@ -56,6 +57,7 @@ main .history_wrap .tab_contents > div > div.active .imgCls {
     transform: rotate(-45deg);
 }
 main .history_wrap .tab_contents > div > div.active >  .desc_left > div.show {display: block !important;}
+main .history_wrap .tab_contents > div div.active {align-items: flex-start;}
 /* contents 기본 태그 */
 main .history_wrap .tab_contents {}
 main .history_wrap .tab_contents > div {}
@@ -67,6 +69,7 @@ main .history_wrap .tab_contents > div .history {
     transition: all 0.3s linear;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 main .history_wrap .tab_contents > div .h1 {border-top: 2px solid rgba(0,0,0,0.1);}
 main .history_wrap .tab_contents > div .history:hover {
@@ -111,9 +114,13 @@ main .history_wrap .tab_contents > div .history .desc > div > p:first-child {
     margin-bottom: 20px;
     transition: all 0.3s linear;
 }
+main .history_wrap .tab_contents > div .history .desc > div > p:nth-child(2),
+main .history_wrap .tab_contents > div .history .desc > div > p:last-child {
+    display: flex;
+}
 main .history_wrap .tab_contents > div .history .desc p img {
     width: 10px; height: 10px;
-    margin-right: 10px;
+    margin: 5px 10px 0 0;
     transition: all 0.3s linear;
 }
 main .history_wrap .tab_contents > div .history .desc p span {letter-spacing: -0.02rem;}

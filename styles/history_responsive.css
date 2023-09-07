@@ -1,0 +1,94 @@
+@media screen and (max-width:1440px){
+    /* main .history_wrap {padding: 100px 70px;} */
+    .tab_title, .tab_contents {
+        width: calc(100% - 140px);
+    }
+}
+@media screen and (max-width:1210px){
+    main .history_wrap .tab_contents > div .history > .desc_left {
+        flex-flow: column nowrap;
+    }
+    main .history_wrap .tab_contents > div .history > .desc_left > div {margin-top: 40px;}
+}
+@media screen and (max-width:1060px){
+    main > .title > h1 {
+        position: absolute;
+        display: inline;
+        left: 50%;
+        bottom: 50px;
+        transform: translateX(-50%);
+        font-size: 2.369rem;
+    }
+    main .history_wrap {padding: 70px;}
+    main .history_wrap .tab_title {
+        margin-bottom: 30px;
+        width: 385px;
+    }
+    main .history_wrap .tab_title a {
+        margin-right: 10px;
+        padding: 10px 15px;
+        font-size: 1.333rem;
+    }
+    main .history_wrap .tab_title a:last-child {margin-right: 0;}
+    main .history_wrap .tab_contents > div .history {padding: 20px 10px;}
+    main .history_wrap .tab_contents > div .history > .desc_left > p:first-child {
+        font-size: 2.369rem;
+    }
+    main .history_wrap .tab_contents > div .history > .desc_left > div {margin-top: 30px;}
+    main .history_wrap .tab_contents > div .history .imgCls {width: 35px; height: 35px;}
+    main .history_wrap .tab_contents > div .history .desc {padding: 0;}
+    main .history_wrap .tab_contents > div .history .desc > div {
+        margin-bottom: 25px;
+        width: 100%;
+    }
+    main .history_wrap .tab_contents > div .history .desc > div > p {margin-bottom: 0;}
+    main .history_wrap .tab_contents > div .history .desc > div > p:first-child {
+        font-size: 1rem;
+        margin-bottom: 10px;
+    }
+    main .history_wrap .tab_contents > div .history .desc p img {
+        width: 7px; height: 7px;
+        margin-right: 5px;
+    }
+    main .history_wrap .tab_contents > div .history .desc p span {
+        font-size: 0.75rem;
+        line-height: 15px;
+    }
+}
+@media screen and (max-width:834px){
+    .tab_title, .tab_contents {width: calc(100% - 60px);}
+    main .history_wrap {padding: 30px;}
+    main .history_wrap .tab_title {
+        margin-bottom: 30px;
+        width: 283px;
+    }
+    main .history_wrap .tab_title a {
+        display: block;
+        margin-right: 7px;
+        padding: 7px 10px;
+        font-size: 1rem;
+    }
+    main .history_wrap .tab_title a:last-child {margin-right: 0;}
+}
+@media screen and (max-width:650px){
+    main .history_wrap .tab_contents > div .history > .desc_left > p:first-child {
+        font-size: 1.777rem;
+    }
+    main .history_wrap .tab_contents > div .history > .desc_left > div {margin-top: 30px;}
+    main .history_wrap .tab_contents > div .history .imgCls {width: 20px; height: 20px;}
+    main .history_wrap .tab_contents > div .history .desc > div {
+        margin-bottom: 25px;
+    }
+    main .history_wrap .tab_contents > div .history .desc > div > p {margin-bottom: 0;}
+    main .history_wrap .tab_contents > div .history .desc > div > p:first-child {
+        font-size: 0.75rem;
+        margin-bottom: 10px;
+    }
+    main .history_wrap .tab_contents > div .history .desc p img {
+        width: 7px; height: 7px;
+    }
+    main .history_wrap .tab_contents > div .history .desc p span {
+        font-size: 0.5rem;
+        line-height: 15px;
+    }
+}

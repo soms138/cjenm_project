@@ -279,7 +279,10 @@ footer .fnb_t .t_right a:nth-child(1) {background-image: url(../images/icon/ico_
 footer .fnb_t .t_right a:nth-child(1):hover {background-image: url(../images/icon/ico_youtube.png);}
 footer .fnb_t .t_right a:nth-child(2) {background-image: url(../images/icon/ico_fb_b.png);}
 footer .fnb_t .t_right a:nth-child(2):hover {background-image: url(../images/icon/ico_fb.png);}
-footer .fnb_t .t_right a:nth-child(3) {background-image: url(../images/icon/ico_instargram_b.png);}
+footer .fnb_t .t_right a:nth-child(3) {
+    background-image: url(../images/icon/ico_instargram_b.png);
+    margin-right: 0;
+}
 footer .fnb_t .t_right a:nth-child(3):hover {background-image: url(../images/icon/ico_instargram.png);}
 footer .fnb_btm {
     display: flex;

@@ -1,13 +1,8 @@
-/* @media screen and (max-aspect-ratio:3/2){
-    .video {
-        width: auto;
-        height: 100vh;
+@media screen and (max-width:1920px){
+    main .last .news_container {
+        height: 650px;
     }
-} */
-@media screen and (max-width:1600px){
-    /* 1600px 이하일 때 */
-    main .visual video {}
-}/* 1600 end */
+}
 @media screen and (max-width:1440px){
     /* 1440px 이하일 때 */
     /* index */
@@ -28,30 +23,27 @@
         left: 50%;
         transform: translate(-50%,-50%);
     }
-    /* history */
-    /* main .history_wrap {padding: 100px 70px;} */
-    .tab_title, .tab_contents {
-        width: calc(100% - 140px);
-    }
 }/* 1440 end */
 @media screen and (max-width:1360px){
     /* index */
     main .last .news_container {
-        padding: 70px;
-        height: 526px;
+        padding: 100px 0 70px;
+        margin: 0 70px;
+        height: 655px;
     }
-    main .last .news_container .big #big_slide {height: 300px;}
+    main .last .news_container .big #big_slide {height: 270px;}
     main .last .news_container .big #big_slide .swiper-wrapper .swiper-slide {
         display: flex;
         justify-content: space-between;
     }
     main .last .news_container .big #big_slide .swiper-wrapper .swiper-slide .movImg {
-        width: 45%;
+        width: 40%;
         height: 100%;
         margin-right: 0;
     }
+    footer .fnb_wrap {margin: 0 70px;}
     .big_txt {
-        width: 50%;
+        width: 55%;
         display: flex;
         flex-flow: column nowrap;
         justify-content: space-between;
@@ -68,13 +60,7 @@
         width: 100%;
     }
     .news_t {margin-bottom: 40px;}
-    /* history */
-}
-@media screen and (max-width:1210px){
-    main .history_wrap .tab_contents > div .history > .desc_left {
-        flex-flow: column nowrap;
-    }
-    main .history_wrap .tab_contents > div .history > .desc_left > div {margin-top: 40px;}
+    footer .fnb_t .t_left {margin-right: 30px;}
 }
 @media screen and (max-width:1060px){
     /* index */
@@ -135,50 +121,10 @@
     .big_txt {
         width: 55%;
     }
-    /* history */
-    main > .title > h1 {
-        position: absolute;
-        display: inline;
-        left: 50%;
-        bottom: 50px;
-        transform: translateX(-50%);
-        font-size: 2.369rem;
+    main .last .news_container {
+        height: 620px;
     }
-    main .history_wrap {padding: 70px;}
-    main .history_wrap .tab_title {
-        margin-bottom: 30px;
-        width: 369px;
-    }
-    main .history_wrap .tab_title a {
-        margin-right: 10px;
-        padding: 10px 15px;
-        font-size: 1.333rem;
-    }
-    main .history_wrap .tab_title a:last-child {margin-right: 0;}
-    main .history_wrap .tab_contents > div .history {padding: 20px 10px;}
-    main .history_wrap .tab_contents > div .history > .desc_left > p:first-child {
-        font-size: 2.369rem;
-    }
-    main .history_wrap .tab_contents > div .history > .desc_left > div {margin-top: 30px;}
-    main .history_wrap .tab_contents > div .history .imgCls {width: 35px; height: 35px;}
-    main .history_wrap .tab_contents > div .history .desc {padding: 0;}
-    main .history_wrap .tab_contents > div .history .desc > div {
-        margin-bottom: 25px;
-        width: 100%;
-    }
-    main .history_wrap .tab_contents > div .history .desc > div > p {margin-bottom: 0;}
-    main .history_wrap .tab_contents > div .history .desc > div > p:first-child {
-        font-size: 1rem;
-        margin-bottom: 10px;
-    }
-    main .history_wrap .tab_contents > div .history .desc p img {
-        width: 7px; height: 7px;
-        margin-right: 5px;
-    }
-    main .history_wrap .tab_contents > div .history .desc p span {
-        font-size: 0.75rem;
-        line-height: 15px;
-    }
+    main .last .news_container .big #big_slide {height: 215px;}
 }
 @media screen and (max-width:834px){
     /* index */
@@ -221,6 +167,10 @@
         padding: 15px;
         width: 120px;
     }
+    main .last .news_container {
+        margin: 0 30px;
+        height: 690px;
+    }
     .news_t {margin-bottom: 30px;}
     main .last .news_container .news_t h2 {font-size: 1.777rem;}
     .news_t .swiperBtn {width: 50px;}
@@ -258,21 +208,20 @@
     main .last .news_container .big #big_slide .swiper-wrapper .swiper-slide .movImg {
         width: 100%; height: 100%;
     }
-    main .last .news_container .big #big_slide {height: 350px;}
-    /* history */
-    .tab_title, .tab_contents {width: calc(100% - 60px);}
-    main .history_wrap {padding: 70px;}
-    main .history_wrap .tab_title {
-        margin-bottom: 30px;
-        width: 278px;
+    main .last .news_container .big #big_slide {height: 295px;}
+    footer .fnb_wrap {
+        padding: 30px 0;
+        margin: 0 30px;
     }
-    main .history_wrap .tab_title a {
-        display: block;
-        margin-right: 7px;
-        padding: 7px 10px;
-        font-size: 1rem;
+    footer .fnb_t .t_left a,
+    footer .fnb_t .t_left span {
+        font-size: 0.75rem;
+        line-height: 22px;
     }
-    main .history_wrap .tab_title a:last-child {margin-right: 0;}
+    footer .fnb_btm .btm_left p {
+        font-size: 0.75rem;
+        margin-bottom: 7px;
+    }
 }
 @media screen and (max-width:650px){
     /* index */
@@ -287,29 +236,19 @@
         padding: 15px 0;
     }
     main .visual .txt .txt_box h2 {font-size: 1rem;}
-    /* history */
-    main .history_wrap .tab_contents > div .history > .desc_left > p:first-child {
-        font-size: 1.777rem;
-    }
-    main .history_wrap .tab_contents > div .history > .desc_left > div {margin-top: 30px;}
-    main .history_wrap .tab_contents > div .history .imgCls {width: 20px; height: 20px;}
-    main .history_wrap .tab_contents > div .history .desc > div {
-        margin-bottom: 25px;
-    }
-    main .history_wrap .tab_contents > div .history .desc > div > p {margin-bottom: 0;}
-    main .history_wrap .tab_contents > div .history .desc > div > p:first-child {
-        font-size: 0.75rem;
-        margin-bottom: 10px;
-    }
-    main .history_wrap .tab_contents > div .history .desc p img {
-        width: 7px; height: 7px;
-    }
-    main .history_wrap .tab_contents > div .history .desc p span {
-        font-size: 0.5rem;
-        line-height: 15px;
-    }
 }
 @media screen and (max-width:600px){
+    aside {display: none;}
+    header {padding: 10px 30px;}
+    header h1 {
+        width: 70px; height: 39.97px;
+    }
+    header .lnb .lang {display: none;}
+    header .lnb .m_nav {
+        width: 30px; height: 30px;
+        padding: 7px 3px;
+    }
+    header .lnb .m_nav span {height: 2px;}
     main .contents .more {
         padding: 5px 0;
     }
@@ -319,13 +258,48 @@
     }
     main .contents .more em {width: 7px; height: 7px;}
     main .business .txt_box p:nth-child(3) {display: none;}
+    main .business .txt_box p:nth-child(1) {font-size: 0.75rem;}
+    main .business .txt_box h2 {font-size: 2.369rem;}
+    main .business .txt_box a {
+        font-size: 1rem;
+        width: 110px;
+        padding: 15px 0;
+    }
     main .last .news_container {
-        padding: 50px;
+        padding: 100px 0 50px;
         height: 500px;
     }
-    main .last .news_container .big #big_slide {height: 300px;}
-    /* history */
-
+    main .last .news_container {height: 660px;}
+    main .last .news_container .big #big_slide {height: 285px;}
+    footer .fnb_t {
+        flex-flow: column nowrap;
+        justify-content: flex-start;
+        margin-bottom: 20px;
+    }
+    footer .fnb_t .t_left {
+        margin: 0 0 20px 0;
+    }
+    footer .fnb_t .t_left a,
+    footer .fnb_t .t_left span {
+        font-size: 0.5rem;
+        line-height: 20px;
+    }
+    footer .fnb_t .t_right a {
+        width: 20px; height: 20px;
+        margin-right: 15px;
+    }
+    footer .fnb_btm {
+        flex-flow: column nowrap;
+    }
+    footer .fnb_btm .btm_left p:nth-child(3),
+    footer .fnb_btm .btm_left p:last-child {
+        margin-bottom: 20px;
+    }
+    footer .fnb_btm .btm_left p {
+        font-size: 0.5rem;
+    }
+    footer .fnb_btm .btm_right .site_btn span {font-size: 0.75rem;}
+    footer .fnb_btm .btm_right .site_btn img {width: 10px; height: 10px;}
 }
 @media screen and (max-width:380px){
     /* index */
@@ -342,5 +316,5 @@
         width: 110px;
         padding: 15px 0;
     }
-    /* history */
+    main .last .news_container .big #big_slide {height: 300px;}
 }

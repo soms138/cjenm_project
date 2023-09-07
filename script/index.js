@@ -36,8 +36,8 @@ const small_slide = new Swiper('#small_slide',{
     speed:1000,
     loop:true,
     breakpoints:{
-        500:{slidesPerView:2},
-        800:{slidesPerView:3},
+        400:{slidesPerView:2},
+        700:{slidesPerView:3},
         1060:{slidesPerView:4},
         1200:{slidesPerView:5},
         1360:{slidesPerView:3},
