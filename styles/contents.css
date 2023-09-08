@@ -13,7 +13,7 @@ main .main_section {
 main .main_section .title {}
 main .main_section .title h1 {
     position: absolute;
-    left: 172px;
+    left: 150px;
     bottom: 319px;
     font-family: 'Inter', sans-serif;
     font-size: 3.75rem;

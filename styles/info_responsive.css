@@ -18,13 +18,13 @@
         justify-content: center;
     }
     main .sub_wrap .tab_contents .tab_c1 .culture_title .power {margin-right: 30px;}
-    main .sub_wrap .tab_contents .tab_c1 .culture_title .power .power_wrap {
+    main .sub_wrap .tab_contents .tab_c1 .culture_title .power .power_bg {
         width: 220px; height: 350px;
-        padding: 40px 20px 20px;
-        transform: translateY(50%);
     }
-    main .sub_wrap .tab_contents .tab_c1 .culture_title > div .power_bg .power_wrap::after {
-        width: 220px; height: 350px;
+    main .sub_wrap .tab_contents .tab_c1 .culture_title .power .power_wrap {
+        transform: translateY(50%);
+        width: 100%;
+        padding: 40px 20px 20px;
     }
     main .sub_wrap .tab_contents .tab_c1 .culture_title .power .power_e {
         font-size: 0.75rem;
@@ -100,13 +100,11 @@
     main .sub_wrap .tab_contents .tab_c1 .culture_title div.active,
     main .sub_wrap .tab_contents .tab_c1 .culture_title div.active .power_bg {
         border-radius: 30px;
-    }
-    main .sub_wrap .tab_contents .tab_c1 .culture_title > div.active .power_bg .power_wrap::after {
         width: 210px; height: 270px;
     }
     main .sub_wrap .tab_contents .tab_c1 .culture_title > div.active .power_bg .power_wrap {
+        width: 100%;
         padding-top: 40px;
-        width: 210px; height: 270px;
         padding: 40px 20px 20px;
     }
     main .sub_wrap .tab_contents .tab_c1 .culture_title > div.active .power_bg .power_wrap .power_t {
@@ -123,7 +121,7 @@
         display: flex;
         justify-content: center;
     }
-    main .sub_wrap .tab_contents .tab_c1 .culture_title .power .power_wrap {
+    main .sub_wrap .tab_contents .tab_c1 .culture_title .power .power_bg {
         width: 30px; height: 270px;
     }
     main .sub_wrap .tab_contents .tab_c1 .culture_title .power,

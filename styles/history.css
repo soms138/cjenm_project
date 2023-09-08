@@ -15,8 +15,8 @@ main > .title {
 }
 main > .title > h1 {
     position: absolute;
-    left: 172px;
-    bottom: 102px;
+    left: 150px;
+    bottom: 100px;
     font-family: 'Inter', sans-serif;
     font-size: 3.75rem;
     font-weight: 700;
@@ -51,13 +51,13 @@ main .history_wrap .tab_title a.active {
     color: #fff;
 }
 /* contents active */
-main .history_wrap .tab_contents > div > div.active > .desc_left > p:first-child {color: #000;}
-main .history_wrap .tab_contents > div > div.active .imgCls {
+main .history_wrap .tab_contents > div > a.active > .desc_left > p:first-child {color: #000;}
+main .history_wrap .tab_contents > div > a.active .imgCls {
     background-image: url(../images/icon/ico_history.png);
     transform: rotate(-45deg);
 }
-main .history_wrap .tab_contents > div > div.active >  .desc_left > div.show {display: block !important;}
-main .history_wrap .tab_contents > div div.active {align-items: flex-start;}
+main .history_wrap .tab_contents > div > a.active > .desc_left > div.show {display: block !important;}
+main .history_wrap .tab_contents > div > a.active {align-items: flex-start;}
 /* contents 기본 태그 */
 main .history_wrap .tab_contents {}
 main .history_wrap .tab_contents > div {}
@@ -94,6 +94,7 @@ main .history_wrap .tab_contents > div .history .imgCls {
     background: url(../images/icon/ico_history_g.png) no-repeat center;
     background-size: 100%;
     width: 50px; height: 50px;
+    transition: all 0.3s ease;
 }
 main .history_wrap .tab_contents > div .history .desc {
     display: none;

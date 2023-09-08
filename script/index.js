@@ -1,8 +1,9 @@
-$(document).ready(function(){
-    $('#fullpage').fullpage({
+$('#fullpage').fullpage({
         autoScrolling:true,
-        scrillHorizontally:true
-    })
+        scrillHorizontally:true,
+        navigation: true,
+        navigationPosition: 'right',
+        navigationTooltips: ['Untold Originals', 'Original Contents','TV Shows','Film','Music','Digital Business','Performing Arts','Animaition','News'],
 })
 const big_slide = new Swiper('#big_slide',{
     slidesPerView: 1,

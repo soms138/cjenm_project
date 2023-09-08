@@ -2,7 +2,7 @@ const tab_title = document.querySelectorAll('.tab_title a')
 const tab_contents = document.querySelectorAll('.tab_contents > div')
 const culture_title = document.querySelectorAll('.culture_title > div')
 const culture_contents = document.querySelectorAll('.culture_contents > div')
-const more = document.querySelectorAll('.power_bg > .more')
+const power = document.querySelectorAll('.power')
 for(let i of tab_contents){i.style.display = 'none'}
 tab_contents[0].style.display = 'block'
 tab_title.forEach(function(t,i){
@@ -27,7 +27,7 @@ more.forEach(function(t,i){
 }) */
 for(let i of culture_contents){i.style.display = 'none'}
 culture_contents[0].style.display = 'flex'
-more.forEach(function(t,i){
+power.forEach(function(t,i){
     t.addEventListener('click',function(e){
         e.preventDefault()
         culture_title[i].classList.toggle('active')

@@ -15,8 +15,8 @@ main > .title {
 }
 main > .title > h1 {
     position: absolute;
-    left: 172px;
-    bottom: 102px;
+    left: 150px;
+    bottom: 100px;
     font-family: 'Inter', sans-serif;
     font-size: 3.75rem;
     font-weight: 700;
@@ -94,7 +94,8 @@ main .sub_wrap .tab_title a.active {
 main .sub_wrap .tab_contents {}
 main .sub_wrap .tab_contents > div {}
 main .sub_wrap .tab_contents > div .txt_t {
-    margin: 70px 0;
+    margin: 70px auto;
+    width: 900px;
 }
 main .sub_wrap .tab_contents > div .txt_t p {}
 main .sub_wrap .tab_contents > div .txt_t p:first-child {
@@ -137,6 +138,7 @@ main .sub_wrap .tab_contents .tab_c1 .culture_title .power {
     z-index: 50;
     margin-right: 75px;
     overflow: hidden;
+    cursor: pointer;
 }
 main .sub_wrap .tab_contents .tab_c1 .culture_title .power:last-child {margin-right: 0;}
 main .sub_wrap .tab_contents .tab_c1 .culture_title .power .power_bg {
@@ -144,23 +146,23 @@ main .sub_wrap .tab_contents .tab_c1 .culture_title .power .power_bg {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    width: 350px; height: 484px;
 }
 main .sub_wrap .tab_contents .tab_c1 .culture_title .bg1 {background-image: url(../images/power_bg1.png);}
 main .sub_wrap .tab_contents .tab_c1 .culture_title .bg2 {background-image: url(../images/power_bg2.png);}
 main .sub_wrap .tab_contents .tab_c1 .culture_title .bg3 {background-image: url(../images/power_bg3.png);}
 main .sub_wrap .tab_contents .tab_c1 .culture_title .power .power_wrap {
-    width: 350px; height: 484px;
     text-align: center;
     padding: 50px 40px 0;
     transform: translateY(60%);
     transition: all 1s ease;
+    width: 100%; height: 100%;
 }
 main .sub_wrap .tab_contents .tab_c1 .culture_title > div .power_bg .power_wrap::after {
     content: '';
     display: block;
-    width: 350px; height: 484px;
     background: rgba(0,0,0,0.7);
-    background-size: 100%;
+    width: 100%; height: 100%;
     position: absolute;
     left: 0px; top: 0px;
     z-index: 100;
@@ -183,6 +185,7 @@ main .sub_wrap .tab_contents .tab_c1 .culture_title .power .power_t {
     font-size: 1.333rem;
     font-weight: 700;
     margin: 10px 0 0;
+    line-height: 31px;
 }
 main .sub_wrap .tab_contents .tab_c1 .culture_title .power .desc {
     color: #fff;

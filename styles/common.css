@@ -11,7 +11,7 @@ html::-o-scrollbar-thumb:hover {background-color: #555;}
 ::-webkit-scrollbar-thumb:hover {background-color: #555;}
 body, html {scroll-behavior: smooth;}
 /* aside */
-aside {
+/* aside {
     position: fixed;
     right: 50px; top: 50%;
     transform: translateY(-50%);
@@ -54,7 +54,7 @@ aside p.active .bar , aside .bar_wrap:hover .bar {
     background-size: cover;
     width: 5px; height: 30px;
     margin: 0 5px;
-}
+} */
 header,footer {
     min-width: 390px;
 }
