@@ -5,7 +5,7 @@
         padding: 10px 15px;
         font-size: 1.333rem;
     }
-    main .sub_wrap .tab_contents .power_contents, main .sub_wrap .tab_contents .tab_c1 .culture_contents {
+    main .sub_wrap .tab_contents .power_contents, main .sub_wrap .tab_contents .tab_c1 .culture_contents, main .main_wrap .main_btm {
         width: calc(100% - 140px);
         margin: 0 auto;
     }
@@ -93,6 +93,7 @@
         font-size: 2.369rem;
     }
     main .main_wrap {padding: 50px 30px;}
+    main .main_wrap .main_btm {width: 100%}
     main .sub_wrap .tab_contents .tab_c1 .culture_title div.active,
     main .sub_wrap .tab_contents .tab_c1 .culture_title div.active .power_bg {
         border-radius: 30px;
