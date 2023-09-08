@@ -23,6 +23,7 @@
         position: static;
     }
     main .visual .txt > h2 {margin-bottom: 50px;}
+    main .visual .txt > h2 p:first-child {margin-bottom: 10px;}
 }/* 1440 end */
 @media screen and (max-width:1360px){
     /* index */
@@ -127,6 +128,7 @@
 @media screen and (max-width:834px){
     /* index */
     main .visual .txt > h2 {margin-left: 30px;}
+    main .visual .txt > h2 p:first-child {margin-bottom: 5px;}
     main .visual .txt .txt_box {padding-left: 30px;}
     .simply-scroll-container {height: 150px;}
     main .contents #scroller .slide {
@@ -153,7 +155,10 @@
         margin: 5px 0 30px;
     }
     main .business {padding: 30px;}
-    main .business .txt_box p:nth-child(1) {font-size: 1rem;}
+    main .business .txt_box p:nth-child(1) {
+        font-size: 1rem;
+        line-height: 22px;
+    }
     main .business .txt_box h2 {
         font-size: 3.75rem;
         margin: 15px 0 35px;
@@ -214,10 +219,10 @@
     main .visual .txt > h2 p:first-child {font-size: 1rem;}
     main .visual .txt > h2 p:last-child {font-size: 2.369rem;}
     main .visual .txt .txt_box {padding: 30px;}
-    main .visual .txt .txt_box p:first-child {font-size: 0.5rem;}
+    main .visual .txt .txt_box p:first-child {font-size: 0.75rem;}
     main .visual .txt .txt_box a {
         width: 100px;
-        font-size: 0.5rem;
+        font-size: 0.75rem;
         padding: 15px 0;
     }
     main .visual .txt .txt_box h2 {font-size: 1rem;}
@@ -232,11 +237,6 @@
     }
     main .contents .more em {width: 7px; height: 7px;}
     main .business .txt_box p:nth-child(3) {display: none;}
-    main .business .txt_box p:nth-child(1) {font-size: 0.75rem;}
-    main .business .txt_box h2 {
-        font-size: 2.369rem;
-        line-height: 48px;
-    }
     main .business .txt_box a {
         font-size: 1rem;
         width: 110px;
@@ -248,21 +248,4 @@
     }
     main .last .news_container {height: 660px;}
     main .last .news_container .big #big_slide {height: 285px;}
-}
-@media screen and (max-width:380px){
-    /* index */
-    main .visual .txt .txt_box {
-        flex-flow: column nowrap;
-        align-items: flex-start;
-    }
-    main .visual .txt .txt_box .box_left {margin-bottom: 20px;}
-    main .business .txt_box p:nth-child(1) {font-size: 0.75rem;}
-    main .business .txt_box h2 {font-size: 2.369rem;}
-    main .business .txt_box p:nth-child(3) {font-size: 0.5rem;}
-    main .business .txt_box a {
-        font-size: 1rem;
-        width: 110px;
-        padding: 15px 0;
-    }
-    main .last .news_container .big #big_slide {height: 300px;}
 }

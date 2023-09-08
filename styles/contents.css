@@ -22,7 +22,16 @@ main .main_section .title h1 {
     z-index: 150;
 }
 main .main_section .title .tab_contents {}
-main .main_section .title .tab_contents > div {}
+main .main_section .title .tab_contents > div::after {
+    content: '';
+    display: block;
+    height: 100%;
+    width: 100%;
+    background: rgba(0,0,0,0.5);
+    position: absolute;
+    left: 0; top: 0;
+    z-index: 100;
+}
 main .main_section .title .tab_contents > div > div {
     position: absolute;
     z-index: 150;
@@ -50,22 +59,13 @@ main .main_section .title .tab_contents > div > div .desc {
     font-size: 1.333rem;
     line-height: 31px;
 }
-main .main_section .title .tab_contents > div video {
+main .main_section .title .tab_contents > div iframe {
     position: absolute;
     z-index: 20;
     width: 100%;
+    height: 100vh;
     top: 50%;
     transform: translateY(-50%);
-}
-main .main_section .title .tab_contents > div video::after {
-    content: '';
-    display: block;
-    height: 100%;
-    width: 100%;
-    background: rgba(0,0,0,0.5);
-    position: absolute;
-    left: 0; top: 0;
-    z-index: 100;
 }
 main .main_section .swiper_container {
     position: absolute;
@@ -202,6 +202,9 @@ main .c_section .contents > div .name {
     font-size: 1.333rem;
     font-weight: 800;
     line-height: 27px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 main .c_section .contents > div .desc {
     font-size: 0.75rem;

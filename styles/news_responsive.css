@@ -107,7 +107,6 @@
     }
     main .tab_contents > div .news_c .title .category img {width: 18px; height: 18px;}
     main .tab_contents > div .news_c .title .category span {
-        font-size: 0.5rem;
         padding: 7px;
     }
     main .tab_contents > div .news_c .title h2 {
@@ -116,7 +115,6 @@
         line-height: 20px;
         height: 40px;
     }
-    main .tab_contents > div .news_c .title p {font-size: 0.5rem;}
     main .tab_contents > div .news_c .news_img {
         width: 160px; height: 100px;
         background-size: 100% auto;

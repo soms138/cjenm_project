@@ -51,7 +51,7 @@ menuBtn.addEventListener('click',function(e){
         boolean = true
     }
 })
-window.addEventListener('scroll',function(e){
+/* window.addEventListener('scroll',function(e){
     e.preventDefault()
     aside.forEach(function(target,index){
         target.addEventListener('click',function(e){
@@ -69,4 +69,4 @@ window.addEventListener('scroll',function(e){
     }else {
         header.style.background = 'none'
     }
-})
+}) */

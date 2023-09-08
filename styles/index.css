@@ -23,7 +23,7 @@ main .visual .txt > h2 > p {
 }
 main .visual .txt > h2 p:first-child {
     font-size: 1.777rem;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 main .visual .txt > h2 p:last-child {font-size: 3.75rem;}
 main .visual .txt .txt_box {

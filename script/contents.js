@@ -21,15 +21,15 @@ slide.forEach(function(t,i){
 })
 const main_slide = new Swiper('#main_slide',{
     slidesPerView: 3,
-    direction: 'vertical',
+    direction: 'horizontal',
     autoplay:{delay:3000},
     speed:1000,
     loop:true,
-    /* breakpoints:{
+    breakpoints:{
         834:{
-            direction:'horizontal',
+            direction:'vertical',
             slidesPerView:5,
         },
-    }, */
+    },
 })
 console.log(main_slide)

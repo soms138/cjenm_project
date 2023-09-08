@@ -1,10 +1,5 @@
 @media screen and (max-width:1360px) {
     main .main_wrap .main_btm p:nth-child(2) {width: auto;}
-    main .sub_wrap .tab_title {width: 189px;}
-    main .sub_wrap .tab_title a {
-        padding: 10px 15px;
-        font-size: 1.333rem;
-    }
     main .sub_wrap .tab_contents .power_contents, main .sub_wrap .tab_contents .tab_c1 .culture_contents, main .main_wrap .main_btm {
         width: calc(100% - 140px);
         margin: 0 auto;
@@ -58,18 +53,11 @@
 }
 @media screen and (max-width:1060px) {
     main .main_wrap {padding: 70px;}
-    main .sub_wrap .tab_title {
-        width: 137px;
-        padding: 7px;
-    }
+    main .sub_wrap .tab_title {width: 189px;}
     main .sub_wrap .tab_title a {
-        padding: 7px 10px;
-        font-size: 1rem;
+        padding: 10px 15px;
+        font-size: 1.333rem;
     }
-    main .sub_wrap .tab_title a:first-child {margin-right: 7px;}
-    main .sub_wrap .tab_contents > div .txt_t p {font-size: 0.75rem;}
-    main .sub_wrap .tab_contents > div .txt_t p:first-child {font-size: 1.333rem;}
- 
     main .sub_wrap .tab_contents .tab_c2 .ci_contents p {width: 354.1px; height: 170px;}
     main .sub_wrap .tab_contents .tab_c2 .ci_contents .ci_right {margin-left: 70px;}
     main .sub_wrap .tab_contents .tab_c2 .ci_contents .ci_right .detail {
@@ -93,7 +81,22 @@
         font-size: 2.369rem;
     }
     main .main_wrap {padding: 50px 30px;}
+    main .main_wrap .main_t p {font-size: 1rem;}
+    main .main_wrap .main_t h2 {font-size: 2.369rem;}
     main .main_wrap .main_btm {width: 100%}
+    main .main_wrap .main_btm p:nth-child(1),
+    main .main_wrap .main_btm p {font-size: 0.75rem;}
+    main .sub_wrap .tab_title {
+        width: 137px;
+        padding: 7px;
+    }
+    main .sub_wrap .tab_title a {
+        padding: 7px 10px;
+        font-size: 1rem;
+    }
+    main .sub_wrap .tab_title a:first-child {margin-right: 7px;}
+    main .sub_wrap .tab_contents > div .txt_t p {font-size: 0.75rem;}
+    main .sub_wrap .tab_contents > div .txt_t p:first-child {font-size: 1.333rem;}
     main .sub_wrap .tab_contents .tab_c1 .culture_title div.active,
     main .sub_wrap .tab_contents .tab_c1 .culture_title div.active .power_bg {
         border-radius: 30px;
@@ -129,9 +132,6 @@
     }
     main .sub_wrap .tab_contents .tab_c1 .culture_title > div .power_bg .power_wrap::after,
     main .sub_wrap .tab_contents .tab_c1 .culture_title > div .power_bg .power_wrap .power_t,.power_e {display: none;}
-    main .sub_wrap .tab_contents .tab_c1 .culture_title .power .power_e {
-        font-size: 0.5rem;
-    }
     main .sub_wrap .tab_contents .tab_c1 .culture_title .power .desc {
         font-size: 0.75rem;
         line-height: 22px;
@@ -155,10 +155,6 @@
         font-size: 1rem;
         padding-bottom: 10px;
         margin-bottom: 15px;
-    }
-    main .sub_wrap .tab_contents .tab_c1 .culture_contents .power_contents .power_kw .kw_desc {
-        font-size: 0.5rem;
-        line-height: 20px;
     }
     main .sub_wrap .tab_contents .power_contents, main .sub_wrap .tab_contents .tab_c1 .culture_contents, main .sub_wrap .tab_contents .tab_c1 .culture_title {width: calc(100% - 60px);}
     main .sub_wrap .tab_contents > div .txt_t {

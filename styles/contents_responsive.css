@@ -1,6 +1,6 @@
 @media screen and (max-width:1700px){
-    main .main_section .title .tab_contents > div video {
-        width: auto;
+    main .main_section .title .tab_contents > div iframe {
+        height: 100%;
         left: 50%;
         transform: translate(-50%,-50%);
     }
@@ -26,7 +26,7 @@
     main .main_section .title .tab_contents > div > div .desc {font-size: 1rem;}
     main .main_section .swiper_container #main_slide .swiper-wrapper {height: 340px;}
     main .main_section .swiper_container #main_slide .swiper-wrapper .swiper-slide {
-        width: 130px; height: 130px !important;
+        width: 130px !important; height: 130px !important;
         margin-bottom: 15px;
     }
 }
@@ -44,7 +44,7 @@
     }
     main .c_section .contents > div .genre span,
     main .c_section .contents > div .desc {
-        font-size: 0.5rem;
+        font-size: 0.75rem;
         line-height: 18px;
     }
     main .c_section .contents > div .desc {height: 72px;}
@@ -58,31 +58,34 @@
 @media screen and (max-width:834px){
     main .main_section .title h1 {
         left: 30px;
-        bottom: 222px;
+        bottom: 253px;
         font-size: 2.369rem;
     }
     main .main_section .title .tab_contents > div > div {
         background: rgba(0,0,0,0.7) center;
         background-size: cover;
-        height: 203px;
+        height: 233px;
         width: 100vw;
         padding: 20px 30px;
         left: 0;
         bottom: 0;
     }
+    main .main_section .title .tab_contents > div::after {display: none;}
     main .main_section .title .tab_contents > div > div .sub_title {font-size: 0.75rem;}
     main .main_section .title .tab_contents > div > div .name {
         font-size: 1.333rem;
         margin: 5px 0 0;
     }
     main .main_section .title .tab_contents > div > div .desc {display: none;}
+    main .main_section .swiper_container {
+        bottom: 20px; right: 0; left: 50%; transform: translateX(-50%);
+    }
     main .main_section .swiper_container #main_slide .swiper-wrapper {
         flex-flow: row nowrap;
-        height: 70px;
-        width: 330px;
+        height: 130px;
+        width: calc(100% - 60px) !important;
     }
     main .main_section .swiper_container #main_slide .swiper-wrapper .swiper-slide {
-        width: 70px; height: 70px !important;
         margin: 0 7px 0 0;
     }
     main .c_section .contents {
@@ -91,17 +94,19 @@
     }
     main .c_section .contents > div {
         width: 150px; height: 150px;
+        padding: 15px;
     }
     main .c_section .contents > div .name {
-        font-size: 0.7rem;
-        line-height: 18px;
+        font-size: 1rem;
+        line-height: 23px;
     }
-    main .c_section .contents > div .genre span,
+    main .c_section .contents > div:hover .genre,
+    main .c_section .contents > div .genre {display: none;}
     main .c_section .contents > div .desc {
-        font-size: 0.438rem;
-        line-height: 12px;
+        line-height: 18px;
+        height: 54px;
+        -webkit-line-clamp:3;
     }
-    main .c_section .contents > div .desc {height: 36px;}
     main .c_section .contents > div:nth-last-child(1),
     main .c_section .contents > div:nth-last-child(2) {display: none;}
     main .c_section .contents > div {margin: 10px 10px 0 0;}
@@ -109,6 +114,12 @@
     main .c_section .contents > div:nth-child(4n) {margin-right: 10px;}
 }
 @media screen and (max-width:600px){
+    aside {display: none;}
+    header {padding: 10px 30px;}
+    header h1 {
+        width: 70px; height: 39.97px;
+    }
+    header .lnb .lang {display: none;}
     main .c_section .contents {
         justify-content: center;
         width: 310px;
@@ -116,16 +127,6 @@
     main .c_section .contents > div {
         width: 150px; height: 150px;
     }
-    main .c_section .contents > div .name {
-        font-size: 0.7rem;
-        line-height: 18px;
-    }
-    main .c_section .contents > div .genre span,
-    main .c_section .contents > div .desc {
-        font-size: 0.438rem;
-        line-height: 12px;
-    }
-    main .c_section .contents > div .desc {height: 36px;}
     main .c_section .contents > div:nth-last-child(1),
     main .c_section .contents > div:nth-last-child(2) {display: none;}
     main .c_section .contents > div {margin: 10px 10px 0 0;}

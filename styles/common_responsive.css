@@ -39,7 +39,7 @@
     }
     footer .fnb_t .t_left a,
     footer .fnb_t .t_left span {
-        font-size: 0.5rem;
+        font-size: 0.75rem;
         line-height: 20px;
     }
     footer .fnb_t .t_right a {
@@ -54,7 +54,7 @@
         margin-bottom: 20px;
     }
     footer .fnb_btm .btm_left p {
-        font-size: 0.5rem;
+        font-size: 0.75rem;
     }
     footer .fnb_btm .btm_right .site_btn span {font-size: 0.75rem;}
     footer .fnb_btm .btm_right .site_btn img {width: 10px; height: 10px;}
