@@ -11,35 +11,30 @@ html::-o-scrollbar-thumb:hover {background-color: #555;}
 ::-webkit-scrollbar-thumb:hover {background-color: #555;}
 body, html {scroll-behavior: smooth;}
 /* aside */
-/* aside {
+/* 
+
+aside .bar_wrap span {
+} */
+#fp-nav.right {
     position: fixed;
     right: 50px; top: 50%;
     transform: translateY(-50%);
     z-index: 500;
 }
-aside .bar_wrap {
+#fp-nav ul {
     display: flex;
-    justify-content: flex-end;
+    flex-flow: column nowrap;
     align-items: center;
+    justify-content: center;
+    position: relative;
+}
+#fp-nav ul li {
     margin-bottom: 10px;
+    display: flex;
+    align-items: center;
 }
-aside .bar_wrap span {
-    transition: all 0.3s linear;
-}
-aside .bar_wrap span:first-child {
+#fp-nav ul li .fp-tooltip.right {
     opacity: 0;
-    margin-right: 5px;
-}
-aside .bar_wrap .bar {
-    display: block;
-    background: url(../images/icon/icon_dot_star_g.png) no-repeat center;
-    background-size: cover;
-    width: 15px; height: 15px;
-    transition: all 0.3s linear;
-    border-radius: 2.5px;
-}
-aside .bar_wrap:hover span:first-child {
-    opacity: 1;
     text-align: center;
     font-family: 'Inter', sans-serif;
     font-weight: 700;
@@ -47,14 +42,36 @@ aside .bar_wrap:hover span:first-child {
     background: #FF9700;
     border-radius: 5px;
     padding: 10px 15px;
-    position: relative;
+    position: absolute;
+    top: -60%;
 }
-aside p.active .bar , aside .bar_wrap:hover .bar {
-    background: #FF9700;
+#fp-nav ul li:hover .fp-tooltip.right {
+    opacity: 1;
+}
+#fp-nav ul li a span {
+    display: block;
+    background: url(../images/icon/icon_dot_star_g.png) no-repeat center;
     background-size: cover;
-    width: 5px; height: 30px;
+    width: 15px; height: 15px;
+    transition: all 0.3s linear;
+    border-radius: 2.5px;
+    box-shadow: none;
+    margin: 0;
+    left: 0; top: 0;
+}
+#fp-nav ul li a.active span {
+    display: block;
+    background: #FF9700;
     margin: 0 5px;
-} */
+    border-radius: 2.5px;
+}
+#fp-nav ul li a.active span, #fp-nav ul li:hover a span, #fp-nav ul li:hover a.active span {
+    background: url(../images/icon/icon_dot_star_o.png) no-repeat center;
+    background-size: cover;
+    width: 15px; height: 15px;
+    margin: 0;
+    box-shadow: none;
+}
 header,footer {
     min-width: 390px;
 }

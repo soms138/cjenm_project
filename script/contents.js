@@ -1,6 +1,7 @@
 const tab_contents = document.querySelectorAll('.tab_contents > div')
 const slide = document.querySelectorAll('.swiper-slide')
 const txt = document.querySelectorAll('.contents > div')
+const nav = document.querySelectorAll('#fp-nav ul li')
 console.log(tab_contents,slide)
 $('#fullpage').fullpage({
     autoScrolling:true,
@@ -31,6 +32,15 @@ const main_slide = new Swiper('#main_slide',{
             direction:'vertical',
             slidesPerView:5,
         },
+        600:{
+            direction:'horizontal',
+            slidesPerView:4,
+        },
+        400:{
+            direction:'horizontal',
+            slidesPerView:3,
+        },
     },
 })
 console.log(main_slide)
+for(let i of nav){i.lastElementChild.style.display = 'none'}

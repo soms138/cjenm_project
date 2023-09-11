@@ -9,6 +9,13 @@ main .visual {
     position: relative;
     width: 100vw;
 }
+main .visual::after {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0; top: 0;
+    width: 100%; height: 100%; z-index: 999;
+}
 main .visual .txt {}
 main .visual .txt > h2 {
     position: absolute;

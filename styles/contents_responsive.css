@@ -79,11 +79,15 @@
     main .main_section .title .tab_contents > div > div .desc {display: none;}
     main .main_section .swiper_container {
         bottom: 20px; right: 0; left: 50%; transform: translateX(-50%);
+        width: 100%;
+    }
+    main .main_section .swiper_container #main_slide {
+        width: calc(100% - 60px);
     }
     main .main_section .swiper_container #main_slide .swiper-wrapper {
         flex-flow: row nowrap;
         height: 130px;
-        width: calc(100% - 60px) !important;
+        width: 100%;
     }
     main .main_section .swiper_container #main_slide .swiper-wrapper .swiper-slide {
         margin: 0 7px 0 0;
