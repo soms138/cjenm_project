@@ -78,7 +78,7 @@
         justify-content: space-between;
     }
     main .visual .txt .txt_box a {margin-top: 0;}
-    .simply-scroll-container {height: 250px;}
+    .simply-scroll-container,.simply-scroll .simply-scroll-clip {height: 250px;}
     main .contents #scroller .slide {
         width: 375px !important; height: 250px;
     }
@@ -130,7 +130,7 @@
     main .visual .txt > h2 {margin-left: 30px;}
     main .visual .txt > h2 p:first-child {margin-bottom: 5px;}
     main .visual .txt .txt_box {padding-left: 30px;}
-    .simply-scroll-container {height: 150px;}
+    .simply-scroll-container,.simply-scroll .simply-scroll-clip {height: 150px;}
     main .contents #scroller .slide {
         width: 225px !important; height: 150px;
     }

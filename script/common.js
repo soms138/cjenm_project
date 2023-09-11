@@ -7,6 +7,8 @@ const aside = document.querySelectorAll('aside .bar_wrap')
 const body = document.querySelector('body,html')
 const navActive = document.querySelectorAll('.nav_wrap > .sub_open')
 const navSub = document.querySelectorAll('.sub')
+const site_btn = document.querySelector('.btm_right .site_btn')
+const site_open = document.querySelector('.btm_right .site_open')
 let boolean = true
 console.log(menu,menuBtn,lang,header,section,aside,body,navActive,navSub)
 // nav menu toggle
@@ -50,6 +52,11 @@ menuBtn.addEventListener('click',function(e){
 
         boolean = true
     }
+})
+site_btn.addEventListener('click',function(e){
+    e.preventDefault()
+    this.lastElementChild.classList.toggle('rotate')
+    site_open.classList.toggle('show')
 })
 /* window.addEventListener('scroll',function(e){
     e.preventDefault()

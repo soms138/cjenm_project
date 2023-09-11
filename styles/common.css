@@ -302,7 +302,11 @@ footer .fnb_btm .btm_right .site_btn span {
     font-family: 'Inter', sans-serif;
     font-weight: 700;
 }
-footer .fnb_btm .btm_right .site_btn img {width: 15px; height: 15px;}
+footer .fnb_btm .btm_right .site_btn img {
+    width: 15px; height: 15px;
+    transition: all 0.3s linear;
+}
+.rotate {transform: rotate(-90deg);}
 footer .fnb_btm .btm_right .site_open {
     display: none;
     position: absolute;
@@ -315,7 +319,9 @@ footer .fnb_btm .btm_right .site_open {
     width: 220px;
     height: 300px;
     overflow-y: auto;
+    transition: all 0.3s linear;
 }
+.show {display: block;}
 footer .fnb_btm .btm_right .site_open > li {}
 footer .fnb_btm .btm_right .site_open > li > .site_sub {}
 footer .fnb_btm .btm_right .site_open > li > .site_sub li {

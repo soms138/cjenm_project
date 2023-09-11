@@ -340,6 +340,7 @@ main .last .news_container h2,
 main .last .news_container .news_t h2 {
     font-family: 'Inter', sans-serif;
     font-size: 2.369rem;
+    line-height: 58px;
     font-weight: 700;
 }
 main .last .news_container .big {}
