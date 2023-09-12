@@ -33,7 +33,7 @@ main .main_section .title .tab_contents > div::after {
     display: block;
     height: 100%;
     width: 100%;
-    background: rgba(0,0,0,0.5);
+    background: linear-gradient(0deg, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0) 100%);
     position: absolute;
     left: 0; top: 0;
     z-index: 100;
