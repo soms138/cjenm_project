@@ -75,10 +75,10 @@ main .visual .txt .txt_box a:hover {
     background: rgba(239, 21, 30,0.7);
     border: 1px solid #EF151E;
 }
-main .visual iframe {
+main .visual video {
     position: absolute;
     z-index: 1;
-    width: 100%;
+    width: 150%;
     height: 100vh;
     top: 50%;
     transform: translateY(-50%);

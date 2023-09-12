@@ -15,10 +15,10 @@ body, html {scroll-behavior: smooth;}
 
 aside .bar_wrap span {
 } */
+#fp-nav {}
 #fp-nav.right {
     position: fixed;
     right: 50px; top: 50%;
-    transform: translateY(-50%);
     z-index: 500;
 }
 #fp-nav ul {
