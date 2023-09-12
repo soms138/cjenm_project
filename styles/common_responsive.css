@@ -18,7 +18,7 @@
     }
 }
 @media screen and (max-width:600px){
-    aside {display: none;}
+    #fp-nav.right {display: none;}
     header {padding: 10px 30px;}
     header h1 {
         width: 70px; height: 39.97px;
