@@ -1,6 +1,13 @@
-@media screen and (max-width:1700px){
-    main .main_section .title .tab_contents > div iframe {
+@media screen and (max-width:1920px){
+    main .main_section .title .tab_contents > div video {
+        height: auto;
+        width: auto;
+    }
+}
+@media screen and (max-width:1854px){
+    main .main_section .title .tab_contents > div video {
         height: 100%;
+        width: auto;
         left: 50%;
         transform: translate(-50%,-50%);
     }

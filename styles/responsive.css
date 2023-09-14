@@ -1,4 +1,4 @@
-@media screen and (max-width:1920px){
+/* @media screen and (max-width:1920px){
     main .visual video {
         width: auto;
         left: 50%;
@@ -6,6 +6,23 @@
     }
     main .last .news_container {
         height: 650px;
+    }
+} */
+@media screen and (max-width:1920px){
+    main .visual video {
+        height: auto;
+        width: auto;
+    }
+    main .last .news_container {
+        height: 650px;
+    }
+}
+@media screen and (max-width:1854px){
+    main .visual video {
+        height: 100%;
+        width: auto;
+        left: 50%;
+        transform: translate(-50%,-50%);
     }
 }
 @media screen and (max-width:1440px){

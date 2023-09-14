@@ -14,7 +14,7 @@ main .visual::after {
     display: block;
     position: absolute;
     left: 0; top: 0;
-    width: 100%; height: 100%; z-index: 999;
+    width: 100%; height: 100%; z-index: 500;
 }
 main .visual .txt {}
 main .visual .txt > h2 {
@@ -37,10 +37,9 @@ main .visual .txt .txt_box {
     position: absolute;
     bottom: 100px;
     right: 100px;
-    z-index: 300;
+    z-index: 600;
     background: rgba(0,0,0,0.7);
     padding: 50px;
-    width: 505px;
 }
 main .visual .txt .txt_box p,
 main .visual .txt .txt_box h2 {
