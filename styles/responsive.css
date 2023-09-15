@@ -8,11 +8,14 @@
     main .last .news_container {
         height: 650px;
     }
+    .news_t .swiperBtn {
+        margin-top: 20px;
+    }
 }
 @media screen and (max-width:1440px){
     /* 1440px 이하일 때 */
     /* index */
-    aside {right: 30px;}
+    #fp-nav.right {right: 15px;}
     main .visual .txt {
         display: flex;
         flex-flow: column nowrap;

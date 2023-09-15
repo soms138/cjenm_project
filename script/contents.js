@@ -2,7 +2,6 @@ const tab_contents = document.querySelectorAll('.tab_contents > div')
 const slide = document.querySelectorAll('.swiper-slide')
 const txt = document.querySelectorAll('.contents > div')
 const nav = document.querySelectorAll('#fp-nav ul li')
-const header = document.querySelector('header')
 console.log(tab_contents,slide,txt,nav)
 $('#fullpage').fullpage({
     autoScrolling:true,
@@ -10,14 +9,7 @@ $('#fullpage').fullpage({
     navigation: true,
     navigationPosition: 'right',
     navigationTooltips: ['Contents','tvN','Mnet','OCN','Tooniverse'],
-    /* onLeave: function(origin,direction){
-		var origin = this;
-		if(origin.index == 0 && direction =='down'){
-			header.style.backgroundColor = 'rgba(0,0,0,0.7)'
-		}else{
-			header.style.backgroundColor = 'none'
-		}
-	} */
+    
 })
 for(let i of tab_contents){i.style.display = 'none'}
 tab_contents[0].style.display = 'block'

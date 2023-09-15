@@ -43,7 +43,7 @@ main .main_section .title .tab_contents > div > div {
     z-index: 150;
     left: 100px;
     bottom: 100px;
-    animation: video_txt_move 1s ease;
+    /* animation: video_txt_move 1s ease; */
 }
 main .main_section .title .tab_contents > div > div > p {}
 main .main_section .title .tab_contents > div > div .sub_title,
@@ -51,19 +51,24 @@ main .main_section .title .tab_contents > div > div .name,
 main .main_section .title .tab_contents > div > div .desc {
     color: #fff;
     letter-spacing: -0.02rem;
+    white-space: nowrap;
+    opacity: 0;
 }
 main .main_section .title .tab_contents > div > div .sub_title {
     font-size: 1.777rem;
     font-weight: 700;
+    animation: move-y 0.5s linear both;
 }
 main .main_section .title .tab_contents > div > div .name {
     font-size: 3.75rem;
     font-weight: 700;
     margin: 20px 0;
+    animation: move-y 0.5s 0.5s linear both;
 }
 main .main_section .title .tab_contents > div > div .desc {
     font-size: 1.333rem;
     line-height: 31px;
+    animation: move-y 0.5s 1s linear both;
 }
 main .main_section .title .tab_contents > div video {
     position: absolute;
@@ -176,6 +181,7 @@ main .c_section .contents > div {
     justify-content: center;
     padding: 0 30px;
     position: relative;
+    transition: all 0.3s linear;
 }
 main .c_section .contents > div:nth-child(4n) {margin-right: 0;}
 main .c_section .contents > div:hover::after {
@@ -202,7 +208,6 @@ main .c_section .contents > div:hover .name,
 main .c_section .contents > div:hover .desc,
 main .c_section .contents > div:hover .genre {
     display: block;
-    animation: txt_move 1s linear;
 }
 main .c_section .contents > div .name {
     font-size: 1.333rem;
@@ -211,6 +216,7 @@ main .c_section .contents > div .name {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+    animation: opacity 0.5s linear both;
 }
 main .c_section .contents > div .desc {
     font-size: 0.75rem;
@@ -222,11 +228,13 @@ main .c_section .contents > div .desc {
     -webkit-line-clamp: 4;
     -webkit-box-orient: vertical;
     margin: 20px 0;
+    animation: opacity 0.5s 0.5s linear both;
 }
 main .c_section .contents > div .genre {}
 main .c_section .contents > div .genre span {
     font-size: 0.75rem;
     font-weight: 800;
+    animation: opacity 0.5s 1s linear both;
 }
 main .c_section .contents > div .genre span:nth-child(2) {margin: 0 5px;}
 main .c_section:nth-child(2) .contents .c1 {background-image: url(../images/tvn1.jpg);}

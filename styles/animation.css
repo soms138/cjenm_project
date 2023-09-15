@@ -2,6 +2,14 @@
     0% {transform: translateX(-50%) translateY(0);}
     100% {transform: translateX(-50%) translateY(-30px);}
 }
+@keyframes move-y {
+    0% {transform: translateX(0) translateY(50px); opacity: 0;}
+    100% {transform: translateX(0) translateY(0); opacity: 1;}
+}
+@keyframes opacity {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
 @keyframes gra_bg {
     0% {background-position: 0 0;}
     100% {background-position: 400% 0;}

@@ -7,7 +7,7 @@
     }
 }
 @media screen and (max-width:1440px){
-    aside {right: 30px;}
+    #fp-nav.right {right: 15px;}
 }
 @media screen and (max-width:1360px){
     main .main_section .title {padding: 0 70px;}
@@ -121,7 +121,7 @@
     main .c_section .contents > div:nth-child(4n) {margin-right: 10px;}
 }
 @media screen and (max-width:600px){
-    aside {display: none;}
+    #fp-nav.right {display: none;}
     header {padding: 10px 30px;}
     header h1 {
         width: 70px; height: 39.97px;

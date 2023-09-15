@@ -59,15 +59,15 @@
                 <a href="https://www.instagram.com/cjenm.official/">인스타그램</a>
             </div>
             <div class="etc">
-                <a href="https://www.tving.com/onboarding">
+                <a href="#">
                     <span>TVING</span>
                     <img src="./images/icon/ico_link.png" alt="">
                 </a>
-                <a href="http://www.studiodragon.net/front/kr/main/main;jsessionid=0AA0ABD945141260BF504E1185ADBA53/">
+                <a href="#">
                     <span>STUDIO DRAGON</span>
                     <img src="./images/icon/ico_link.png" alt="">
                 </a>
-                <a href="https://company.cjonstyle.com/">
+                <a href="#">
                     <span>CJ ONSTYLE</span>
                     <img src="./images/icon/ico_link.png" alt="">
                 </a>

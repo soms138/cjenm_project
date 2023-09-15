@@ -31,8 +31,12 @@ main .visual .txt > h2 > p {
 main .visual .txt > h2 p:first-child {
     font-size: 1.777rem;
     margin-bottom: 15px;
+    animation: move-y 0.5s linear both;
 }
-main .visual .txt > h2 p:last-child {font-size: 3.75rem;}
+main .visual .txt > h2 p:last-child {
+    font-size: 3.75rem;
+    animation: move-y 0.5s 0.5s linear both;
+}
 main .visual .txt .txt_box {
     position: absolute;
     z-index: 800;
@@ -114,13 +118,14 @@ main .contents::after {
 	width: 100%;
     height: 300px;
 }
+.simply-scroll-list {}
 main .contents #scroller {
     position: relative;
     z-index: 150;
     display: flex;
+    width: 6720px !important;
 }
 .simply-scroll-clip {height: 100%;}
-main .contents #scroller {width: 2800% !important;}
 main .contents #scroller .slide {
     position: relative;
     display: block;
@@ -263,14 +268,19 @@ main .business p {
     color: #fff;
     letter-spacing: -0.02rem;
 }
-main .business p:nth-child(1) {font-size: 1.333rem;}
+main .business p:nth-child(1) {
+    font-size: 1.333rem;
+    animation: move-y 0.5s linear both;
+}
 main .business h2 {
     font-weight: 700;
     font-size: 4.375rem;
     margin: 10px 0 45px;
     line-height: 85px;
 }
-main .business p:nth-child(3) {line-height: 26px;}
+main .business p:nth-child(3) {
+    line-height: 26px;
+}
 main .business a {
     margin: 70px auto 0;
     display: block;
@@ -324,6 +334,7 @@ main .last .news_container {
 .news_t .swiperBtn {
     position: relative;
     width: 75px;
+    margin-top: 25px;
 }
 .news_t .swiperBtn .swiper-button-prev,
 .news_t .swiperBtn .swiper-button-next {
@@ -357,7 +368,7 @@ main .last .news_container .big #big_slide .swiper-wrapper .swiper-slide {
 }
 main .last .news_container .big #big_slide .swiper-wrapper .swiper-slide .movImg {
     display: block;
-    width: 550px; height: 340px;
+    width: 550px; height: 320px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -384,12 +395,9 @@ main .last .news_container .big #big_slide .swiper-wrapper .slide9 .movImg {back
     font-size: 1.777rem;
     font-weight: 800;
     line-height: 32px;
-    white-space: wrap;
+    white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    display: -webkit-box;
-    -webkit-line-clamp: 2;
-    -webkit-box-orient: vertical;
 }
 .big_txt .desc {
     width: 610px; height: 52px;

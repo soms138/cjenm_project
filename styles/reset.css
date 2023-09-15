@@ -30,7 +30,4 @@ css 디자인 결과에서 숨겨지는 대상태그에
 .news_t .swiper-button-next::after {
     display: none;
 }
-/* .swiper .swiper-button-prev::after,
-.swiper .swiper-button-next::after {
-    display: none;
-} */
+.fp-controlArrow {display: none;}
