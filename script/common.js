@@ -10,7 +10,7 @@ const navSub = document.querySelectorAll('.sub')
 const site_btn = document.querySelector('.btm_right .site_btn')
 const site_open = document.querySelector('.btm_right .site_open')
 let boolean = true
-console.log(menu,menuBtn,lang,header,section,aside,body,navActive,navSub)
+console.log(menu,menuBtn,lang,header,section,aside,body,navActive,navSub,site_btn,site_open,boolean)
 // nav menu toggle
 $(document).ready(function(){
     $(".sub_open>a").click(function(){
@@ -58,22 +58,3 @@ site_btn.addEventListener('click',function(e){
     this.lastElementChild.classList.toggle('rotate')
     site_open.classList.toggle('show')
 })
-/* window.addEventListener('scroll',function(e){
-    e.preventDefault()
-    aside.forEach(function(target,index){
-        target.addEventListener('click',function(e){
-            e.preventDefault()
-            window.scrollTo(0,section[index].offsetTop)
-        })
-        if(body.scrollTop >= section[index].offsetTop){
-            for(let j of aside){j.classList.remove('active')}
-            target.classList.add('active')
-        }
-    })
-    console.log(window.pageYOffset)
-    if(window.pageYOffset > 300){
-        header.style.background = 'rgba(0,0,0,0.7)'
-    }else {
-        header.style.background = 'none'
-    }
-}) */

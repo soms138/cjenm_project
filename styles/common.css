@@ -19,7 +19,7 @@ aside .bar_wrap span {
 #fp-nav.right {
     position: fixed;
     right: 50px; top: 50%;
-    z-index: 900;
+    z-index: 500;
 }
 #fp-nav ul {
     display: flex;
@@ -48,16 +48,20 @@ aside .bar_wrap span {
 #fp-nav ul li:hover .fp-tooltip.right {
     opacity: 1;
 }
+#fp-nav ul li a span:hover {
+    transform: rotate(360deg);
+}
 #fp-nav ul li a span {
     display: block;
     background: url(../images/icon/icon_dot_star_g.png) no-repeat center;
     background-size: cover;
     width: 15px; height: 15px;
-    transition: all 0.3s linear, transform 1.5s ease;
+    transition: all 0.3s linear, transform 1s ease;
     border-radius: 2.5px;
     box-shadow: none;
     margin: 0;
     left: 0; top: 0;
+    cursor: pointer;
 }
 #fp-nav ul li a.active span {
     display: block;
@@ -65,7 +69,6 @@ aside .bar_wrap span {
     margin: 0 5px;
     border-radius: 2.5px;
 }
-#fp-nav ul li:hover a span {transform: rotate(360deg);}
 #fp-nav ul li a.active span, #fp-nav ul li:hover a span, #fp-nav ul li:hover a.active span {
     background: url(../images/icon/icon_dot_star_o.png) no-repeat center;
     background-size: cover;

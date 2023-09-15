@@ -35,9 +35,9 @@ main .visual .txt > h2 p:first-child {
 main .visual .txt > h2 p:last-child {font-size: 3.75rem;}
 main .visual .txt .txt_box {
     position: absolute;
+    z-index: 800;
     bottom: 100px;
     right: 100px;
-    z-index: 600;
     background: rgba(0,0,0,0.7);
     padding: 50px;
 }

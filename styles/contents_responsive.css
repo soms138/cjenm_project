@@ -2,12 +2,6 @@
     main .main_section .title .tab_contents > div video {
         height: auto;
         width: auto;
-    }
-}
-@media screen and (max-width:1854px){
-    main .main_section .title .tab_contents > div video {
-        height: 100%;
-        width: auto;
         left: 50%;
         transform: translate(-50%,-50%);
     }
@@ -61,27 +55,29 @@
     main .c_section .contents > div:nth-child(3n) {margin-right: 0;}
     main .c_section .contents > div:nth-child(4n) {margin-right: 15px;}
 }
-@media screen and (max-width:1060px){}
+@media screen and (max-width:1060px){
+    main .main_section .title .tab_contents > div > div .desc {width: 320px;}
+}
 @media screen and (max-width:834px){
     main .main_section .title h1 {
         left: 30px;
-        bottom: 253px;
+        bottom: 265px;
         font-size: 2.369rem;
     }
     main .main_section .title .tab_contents > div > div {
         background: rgba(0,0,0,0.7) center;
         background-size: cover;
-        height: 233px;
+        height: 250px;
         width: 100vw;
         padding: 20px 30px;
         left: 0;
         bottom: 0;
     }
     main .main_section .title .tab_contents > div::after {display: none;}
-    main .main_section .title .tab_contents > div > div .sub_title {font-size: 0.75rem;}
+    main .main_section .title .tab_contents > div > div .sub_title {font-size: 1rem;}
     main .main_section .title .tab_contents > div > div .name {
-        font-size: 1.333rem;
-        margin: 5px 0 0;
+        font-size: 1.777rem;
+        margin: 10px 0 0;
     }
     main .main_section .title .tab_contents > div > div .desc {display: none;}
     main .main_section .swiper_container {
