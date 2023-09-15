@@ -2,7 +2,7 @@ const tab_contents = document.querySelectorAll('.tab_contents > div')
 const slide = document.querySelectorAll('.swiper-slide')
 const txt = document.querySelectorAll('.contents > div')
 const nav = document.querySelectorAll('#fp-nav ul li')
-console.log(tab_contents,slide)
+console.log(tab_contents,slide,txt,nav)
 $('#fullpage').fullpage({
     autoScrolling:true,
     scrillHorizontally:true,

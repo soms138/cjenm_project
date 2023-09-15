@@ -2,7 +2,7 @@ const tab_title = document.querySelectorAll('.tab_title a')
 const tab_contents = document.querySelectorAll('.tab_contents > div')
 const more = document.querySelectorAll('.history')
 const desc = document.querySelectorAll('.history .desc')
-console.log(tab_contents,tab_title,more)
+console.log(tab_contents,tab_title,more,desc)
 for(let i of tab_contents){i.style.display = 'none'}
 tab_contents[0].style.display = 'block'
 tab_title.forEach(function(t,i){
