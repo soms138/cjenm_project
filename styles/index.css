@@ -1,3 +1,4 @@
+#fp-nav ul li:last-child {display: none !important;}
 /* main */
 main {min-width: 390px;}
 /* section 통합 태그 */
