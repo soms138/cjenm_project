@@ -5,8 +5,18 @@ const body = document.querySelector('body,html')
 const navActive = document.querySelectorAll('.nav_wrap > .sub_open')
 const site_btn = document.querySelector('.btm_right .site_btn')
 const site_open = document.querySelector('.btm_right .site_open')
+const header = document.querySelector('header')
 let boolean = true
-console.log(menu,menuBtn,lang,body,navActive,site_btn,site_open,boolean)
+console.log(menu,menuBtn,lang,body,navActive,site_btn,site_open,boolean,header)
+header.style.transition = 'all 0.3s linear'
+window.addEventListener('scroll',function(){
+    console.log(window.pageYOffset)
+    if(window.pageYOffset > 200){
+        header.style.backgroundColor = 'rgba(0,0,0,0.8)'
+    }else{
+        header.style.backgroundColor = 'none'
+    }
+})
 $(".sub_open>a").click(function(){
     $(this).next("ul").toggleClass("show");
 });

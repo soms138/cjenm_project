@@ -23,18 +23,20 @@ main .visual .txt > h2 {
     z-index: 300;
     bottom: 100px;
     left: 100px;
+    display: flex;
+    flex-flow: column nowrap;
 }
-main .visual .txt > h2 > p {
+main .visual .txt > h2 > span {
     font-family: 'Inter', sans-serif;
     font-weight: 700;
     color: #fff;
 }
-main .visual .txt > h2 p:first-child {
+main .visual .txt > h2 span:first-child {
     font-size: 1.777rem;
     margin-bottom: 15px;
     animation: move-y 0.5s linear both;
 }
-main .visual .txt > h2 p:last-child {
+main .visual .txt > h2 span:last-child {
     font-size: 3.75rem;
     animation: move-y 0.5s 0.5s linear both;
 }
@@ -195,8 +197,8 @@ main .contents .text_bg {
     position: relative;
     z-index: 150;
     width: 100%;
-    height: 115px;
-    margin: 20px 0 50px;
+    height: 80px;
+    margin: 5px 0 50px;
     filter: opacity(30%);
     animation: text_bg 50s linear alternate-reverse infinite;
 }

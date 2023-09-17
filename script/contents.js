@@ -9,6 +9,27 @@ $('#fullpage').fullpage({
     navigation: true,
     navigationPosition: 'right',
     navigationTooltips: ['Contents','tvN','Mnet','OCN','Tooniverse'],
+    onLeave: function(origin,direction){
+		var origin = this;
+		//구역 1을 떠난 후
+        /* origin.forEach(function(x,y){
+            if(x[y] == 0 && direction =='down'){
+                header.style.backgroundColor = 'rgba(0,0,0,0.8)'
+            }else{
+                header.style.backgroundColor = 'none'
+            }
+        }) */
+		if(origin.index == 0 && direction =='down'){
+			header.style.backgroundColor = 'rgba(0,0,0,0.8)'
+		}else{
+			header.style.backgroundColor = 'none'
+		}
+		/* if(origin.index == 0 && direction =='down'){
+			header.style.backgroundColor = 'rgba(0,0,0,0.8)'
+		}else if(origin.index == 0 && direction == 'up'){
+			header.style.backgroundColor = 'none'
+		} */
+	}
     
 })
 for(let i of tab_contents){i.style.display = 'none'}
@@ -44,4 +65,3 @@ const main_slide = new Swiper('#main_slide',{
     },
 })
 console.log(main_slide)
-for(let i of nav){i.lastElementChild.style.display = 'none'}
