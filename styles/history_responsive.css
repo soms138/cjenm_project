@@ -1,5 +1,4 @@
 @media screen and (max-width:1440px){
-    /* main .history_wrap {padding: 100px 70px;} */
     .tab_title, .tab_contents {
         width: calc(100% - 140px);
     }
@@ -11,14 +10,6 @@
     main .history_wrap .tab_contents > div .history > .desc_left > div {margin-top: 40px;}
 }
 @media screen and (max-width:1060px){
-    main > .title > h1 {
-        position: absolute;
-        display: inline;
-        left: 50%;
-        bottom: 50px;
-        transform: translateX(-50%);
-        font-size: 2.369rem;
-    }
     main .history_wrap {padding: 70px;}
     main .history_wrap .tab_title {
         margin-bottom: 30px;
@@ -56,6 +47,13 @@
     }
 }
 @media screen and (max-width:834px){
+    main > .title > h1 {
+        position: absolute;
+        display: inline;
+        left: 50%;
+        bottom: 50px;
+        font-size: 2.369rem;
+    }
     .tab_title, .tab_contents {width: calc(100% - 60px);}
     main .history_wrap {padding: 30px;}
     main .history_wrap .tab_title {

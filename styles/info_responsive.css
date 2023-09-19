@@ -77,7 +77,6 @@
         display: inline;
         left: 50%;
         bottom: 50px;
-        transform: translateX(-50%);
         font-size: 2.369rem;
     }
     main .main_wrap {padding: 50px 30px;}

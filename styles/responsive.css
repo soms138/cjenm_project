@@ -232,6 +232,11 @@
     main .visual .txt .txt_box h2 {font-size: 1rem;}
 }
 @media screen and (max-width:600px){
+    header .nav_open {
+        padding: 0 40px;
+        width: 100vh;
+    }
+    header .nav_open .nav_wrap {min-width: 390px;}
     main .contents .more {
         padding: 5px 0;
     }

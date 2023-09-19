@@ -34,11 +34,11 @@ main .visual .txt > h2 > span {
 main .visual .txt > h2 span:first-child {
     font-size: 1.777rem;
     margin-bottom: 15px;
-    animation: move-y 0.5s linear both;
+    animation: move-fix 0.5s linear both;
 }
 main .visual .txt > h2 span:last-child {
     font-size: 3.75rem;
-    animation: move-y 0.5s 0.5s linear both;
+    animation: move-fix 0.5s 0.5s linear both;
 }
 main .visual .txt .txt_box {
     position: absolute;
@@ -273,7 +273,6 @@ main .business p {
 }
 main .business p:nth-child(1) {
     font-size: 1.333rem;
-    animation: move-y 0.5s linear both;
 }
 main .business h2 {
     font-weight: 700;
@@ -355,9 +354,10 @@ main .last .news_container {
     background: url(../images/icon/ico_next.png) no-repeat center;
     background-size: cover;
 }
-main .last .news_container h2,
+main .last .news_container h2 > a,
 .title, .desc, .date {color: #fff;}
-main .last .news_container .news_t h2 {
+main .last .news_container .news_t h2 > a {
+    display: block;
     font-family: 'Inter', sans-serif;
     font-size: 2.369rem;
     line-height: 58px;

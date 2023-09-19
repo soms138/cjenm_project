@@ -15,12 +15,14 @@ main > .title {
 }
 main > .title > h1 {
     position: absolute;
-    left: 100px;
+    left: 50%;
     bottom: 100px;
     font-family: 'Inter', sans-serif;
     font-size: 3.75rem;
     font-weight: 700;
     color: #fff;
+    opacity: 0;
+    animation: move-y 0.5s linear both;
 }
 main .main_wrap {
     padding: 100px 0;

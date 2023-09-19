@@ -27,6 +27,8 @@ main .main_section .title h1 {
     font-weight: 700;
     color: #fff;
     z-index: 150;
+    opacity: 0;
+    animation: move-fix 0.5s linear both;
 }
 main .main_section .title .tab_contents {}
 main .main_section .title .tab_contents > div::after {
@@ -44,7 +46,6 @@ main .main_section .title .tab_contents > div > div {
     z-index: 150;
     left: 100px;
     bottom: 100px;
-    /* animation: video_txt_move 1s ease; */
 }
 main .main_section .title .tab_contents > div > div > p {}
 main .main_section .title .tab_contents > div > div .sub_title,
@@ -58,18 +59,18 @@ main .main_section .title .tab_contents > div > div .desc {
 main .main_section .title .tab_contents > div > div .sub_title {
     font-size: 1.777rem;
     font-weight: 700;
-    animation: move-y 0.5s linear both;
+    animation: move-fix 0.5s 0.5s linear both;
 }
 main .main_section .title .tab_contents > div > div .name {
     font-size: 3.75rem;
     font-weight: 700;
     margin: 20px 0;
-    animation: move-y 0.5s 0.5s linear both;
+    animation: move-fix 0.5s 1s linear both;
 }
 main .main_section .title .tab_contents > div > div .desc {
     font-size: 1.333rem;
     line-height: 31px;
-    animation: move-y 0.5s 1s linear both;
+    animation: move-fix 0.5s 1s linear both;
 }
 main .main_section .title .tab_contents > div video {
     position: absolute;

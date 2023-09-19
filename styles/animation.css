@@ -3,8 +3,12 @@
     100% {transform: translateX(-50%) translateY(-30px);}
 }
 @keyframes move-y {
-    0% {transform: translateX(0) translateY(50px); opacity: 0;}
-    100% {transform: translateX(0) translateY(0); opacity: 1;}
+    0% {transform: translateX(-50%) translateY(50px); opacity: 0;}
+    100% {transform: translateX(-50%) translateY(0); opacity: 1;}
+}
+@keyframes move-fix {
+    0% {transform: translateY(50px); opacity: 0;}
+    100% {transform: translateY(0); opacity: 1;}
 }
 @keyframes opacity {
     0% {opacity: 0;}
