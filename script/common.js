@@ -40,8 +40,8 @@ menu.style.transition = 'all 1s ease';
 menuBtn.addEventListener('click',function(e){
     e.preventDefault()
     if(boolean == true){
-        this.firstElementChild.style.transform = 'translateY(8.5px) rotate(45deg)'
-        this.lastElementChild.style.transform = 'translateY(-8.5px) rotate(-45deg)'
+        this.firstElementChild.style.transform = 'translateY(11px) rotate(45deg)'
+        this.lastElementChild.style.transform = 'translateY(-11px) rotate(-45deg)'
         this.lastElementChild.previousElementSibling.style.display = 'none'
         menu.style.transform = 'translateX(0)';
         

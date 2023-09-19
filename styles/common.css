@@ -110,8 +110,7 @@ header .lnb .lang a:hover, header .lnb .lang a.active {
 header .lnb .lang a:first-child,header .lnb .lang img {margin-right: 10px;}
 header .lnb .lang img {width: 40px;}
 header .lnb .m_nav {
-    width: 40px; height: 40px;
-    padding: 10px 5px;
+    width: 35px; height: 25px;
     display: flex;
     flex-flow: column nowrap;
     justify-content: space-between;
@@ -135,9 +134,9 @@ header .nav_open {
     transform: translateX(100%);
 }
 header .nav_open .nav_wrap {
-    padding-top: 110px;
+    padding-top: 100px;
     overflow: hidden;
-    height: 700px;
+    height: 530px;
 }
 /* open nav 폰트 통합 태그 */
 header .nav_open .nav_wrap > li > a,
@@ -173,6 +172,7 @@ header .nav_open .open_link .etc a:hover img {transform: rotate(-45deg);}
 header .nav_open .nav_wrap > li .block {display: block;}
 header .nav_open .nav_wrap > li {}
 header .nav_open .nav_wrap > li > a {
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;

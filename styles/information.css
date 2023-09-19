@@ -85,6 +85,7 @@ main .sub_wrap .tab_title a {
     font-weight: 700;
     transition: all 0.3s linear;
     margin-right: 10px;
+    border-radius: 30px;
 }
 main .sub_wrap .tab_title a:hover,
 main .sub_wrap .tab_title a.active {
