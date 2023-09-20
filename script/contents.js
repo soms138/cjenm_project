@@ -9,27 +9,14 @@ $('#fullpage').fullpage({
     navigation: true,
     navigationPosition: 'right',
     navigationTooltips: ['Contents','tvN','Mnet','OCN','Tooniverse'],
-    /* onLeave: function(origin,direction){
-		var origin = this;
-        origin.forEach(function(x,y){
-            if(x[y] == 0 && direction =='down'){
-                header.style.backgroundColor = 'rgba(0,0,0,0.8)'
-            }else{
-                header.style.backgroundColor = 'none'
-            }
-        })
-		if(origin.index == 0 && direction =='down'){
-			header.style.backgroundColor = 'rgba(0,0,0,0.8)'
-		}else{
-			header.style.backgroundColor = 'none'
-		}
-		if(origin.index == 0 && direction =='down'){
-			header.style.backgroundColor = 'rgba(0,0,0,0.8)'
-		}else if(origin.index == 0 && direction == 'up'){
-			header.style.backgroundColor = 'none'
-		}
-	} */
-    
+    onLeave: function(origin, destination, direction, trigger){
+        if(destination>=2){
+            console.log('true')
+            header.style.backgroundColor = 'rgba(0,0,0,0.8)'
+        }else {
+            header.style.background = 'none'
+        }
+    }    
 })
 for(let i of tab_contents){i.style.display = 'none'}
 tab_contents[0].style.display = 'block'
