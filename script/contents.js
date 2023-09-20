@@ -35,6 +35,7 @@ const main_slide = new Swiper('#main_slide',{
     autoplay:{delay:3000},
     speed:1000,
     loop:true,
+    spaceBetween: 15,
     breakpoints:{
         834:{
             direction:'vertical',

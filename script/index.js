@@ -12,6 +12,7 @@ const big_slide = new Swiper('#big_slide',{
     effect : 'fade',
     speed:1000,
     loop:true,
+    spaceBetween: 10,
     on:{
         init:function(){
             this.slides[this.activeIndex].querySelector('.swiper-slide .big_txt').style.opacity = '1';
@@ -36,6 +37,7 @@ const small_slide = new Swiper('#small_slide',{
     autoplay:{delay:3000},
     speed:1000,
     loop:true,
+    spaceBetween: 20,
     breakpoints:{
         400:{slidesPerView:2},
         700:{slidesPerView:3},

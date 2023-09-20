@@ -426,7 +426,6 @@ main .last .news_container .small #small_slide .swiper-wrapper .swiper-slide {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    margin-right: 20px;
 }
 main .last .news_container .small #small_slide .swiper-wrapper .slide1 {background-image: url(../images/news1.jpg);}
 main .last .news_container .small #small_slide .swiper-wrapper .slide2 {background-image: url(../images/news2.jpg);}
